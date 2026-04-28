@@ -1,4 +1,4 @@
-from typing import List, Dict, Optional, Any
+from typing import List, Dict, Optional, Any, Tuple
 import json
 import requests
 
@@ -29,6 +29,8 @@ class AgentBenchmark:
                 ...以上都是当前这个episode历史交互记录
                 {"role": "assistant", "content": "智能体最新一轮生成的要发给服务端的交互信息"}
             ]
+            注意：每一次assistant的content只能是tool_call，或 response_to_user中的一种。tool_call放入"[]"list中，符合json的格式；response_to_user放入"string"中
+
         
         :return: 评测服务端返回 { "stop": bool, "role": "user/tools", "content": str }
         """
@@ -53,15 +55,19 @@ class AgentBenchmark:
 
         except Exception as e:
             return {
-                "stop": True,
                 "role": "error",
-                "content": f"接口调用失败：{str(e)}"
+                "content": f"接口调用失败：STOP {str(e)}" # 如果网络错误，强制加入STOP字符防止死循环
             }
 
     @staticmethod
-    def is_terminated(response: Dict[str, Any]) -> bool:
-        """判断是否结束本轮对话（STOP）"""
-        return response.get("stop", False)
+    def is_terminated(content: str) -> Tuple[bool, bool]:
+        """判断是否结束本轮对话，并在文本中匹配 STOP 和 SUCCESS 关键字"""
+        if not isinstance(content, str):
+            return False, False
+        is_stop = "STOP" in content
+        is_success = "SUCCESS" in content if is_stop else False
+        
+        return is_stop, is_success
 
 
 # ===================== 参赛者调用示例 =====================
@@ -71,11 +77,12 @@ if __name__ == "__main__":
 
     # 1. 设定参数（严格匹配接口要求）
     candidate_id = "your_test_id"  # 参赛者ID（必填）
-    scenario_id = "retail1"           # 场景ID
-    task_id = "1"              # 题目ID
+    scenario_id = "retail1"            # 场景ID
+    task_id = "1"              # 任务ID
     use_tools = False              # 是否使用工具
 
     # 2. 初始交互消息（角色规范：assistant 为智能体）
+    # ！！注意：当开启一个新的episode进行交互时，之前episode中message的交互历史请务必清空，否则会直接影响服务端中用户信息的返回。
     messages = [
         {"role": "assistant", "content": "How can I help you?"}
     ]
@@ -99,17 +106,22 @@ if __name__ == "__main__":
         # 打印当前轮返回结果
         print("当前返回结果：")
         print(json.dumps(resp, ensure_ascii=False, indent=2))
-        is_stop = env.is_terminated(resp)
+        
+        # 提取 content 字符串传入 is_terminated 进行关键字匹配
+        is_stop, is_success = env.is_terminated(resp.get("content", ""))
         print(f"是否终止对话：{is_stop}")
+        if is_stop:
+            print(f"当前任务是否成功：{is_success}")
+        
         # 判断是否终止：stop=True 则退出循环
         if is_stop:
             print("\n===== 当前episode对话已终止，结束所有交互 =====")
-            # 此时，可以将messages中的当前episode的所有历史记录清空，下一次新的episode开启之后，messages中从新开始维护交互历史。
+            # 再次强调，此时，请将messages中的当前episode的所有历史记录清空，下一次新的episode开启之后，messages中请从新开始维护交互历史。
 
         # 将服务器返回的消息追加到历史列表（必须维护）
         messages.append({
-            "role": resp["role"],
-            "content": resp["content"]
+            "role": resp.get("role", "user"),
+            "content": resp.get("content", "")
         })
         
         # 自行实现智能体返回结果
@@ -118,9 +130,9 @@ if __name__ == "__main__":
         # 将新结果添加进对话messages中, 位于列表的最后
         messages.append({
             "role": "assistant",
-            "content/tools_call": new_agent_message
+            "content": "[tool_call] or response to user"
         })
-        #如果在新交互内容生成时同时包含了content和tools_call两个信息，只处理tools_call信息。
+        #！！注意：每一次请求服务器，最新的content只能是tool_call，或 response_to_user中的一种。tool_call放入"[]"list中，符合json的格式；response_to_user放入"string"中
 
         # 轮数+1，继续下一轮
         round_num += 1
