@@ -5,6 +5,10 @@
 EgoLink (Egocentric Language-Vision Interactive Network Knowledge Challenge) is designed to advance embodied AI in complex, real-world egocentric scenarios.  
 The challenge evaluates integrated intelligence across social perception, causal reasoning, intent prediction, multimodal interaction, tool use, and autonomous planning.
 
+- Challenge Homepage: https://ego-link.github.io/challenge2026/
+- Registration: https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform
+- E3 Dataset: https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset
+
 ---
 
 ## Table of Contents
@@ -106,14 +110,14 @@ Key capabilities:
 ### Track 1
 
 - **2026.04.15**: E3 dataset available for pre-download.
-- **2026.04.30**: Training dataset released.
+- **2026.05.10**: Training dataset label release.
 - **2026.06.08**: Evaluation dataset released.
-- **2026.06.22 - 2026.06.25**: Final answer and report submission window.
+- **2026.06.15 - 2026.06.25**: Final answer and report submission window.
 
 ### Track 2
 
 - **2026.05.25**: Online testing opens.
-- **2026.06.22 - 2026.06.25**: Final answer and report submission window.
+- **2026.06.15 - 2026.06.25**: Final answer and report submission window.
 
 ## Presentation Policy
 
@@ -136,9 +140,3 @@ CC BY-NC-SA 4.0 for non-commercial research and education usage.
 
 ---
 
-## Links
-
-- Challenge Homepage: https://ego-link.github.io/challenge2026/
-- Challenge Repository: https://github.com/ego-link/egolink2026
-- E3 Dataset: https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset
-- Registration: https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform
