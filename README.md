@@ -1,6 +1,6 @@
 # EgoLink 2026 Challenge
 
-![EgoLink logo](doc/logo.png)
+<img src="doc/logo.png" alt="EgoLink logo" width="320" />
 
 EgoLink (Egocentric Language-Vision Interactive Network Knowledge Challenge) is designed to advance embodied AI in complex, real-world egocentric scenarios.  
 The challenge evaluates integrated intelligence across social perception, causal reasoning, intent prediction, multimodal interaction, tool use, and autonomous planning.
