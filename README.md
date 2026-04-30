@@ -16,8 +16,6 @@ The challenge evaluates integrated intelligence across social perception, causal
 - [Evaluation](#evaluation)
 - [Important Dates](#important-dates)
 - [Presentation Policy](#presentation-policy)
-- [Organisers](#organisers)
-- [Challenge Chairs](#challenge-chairs)
 - [Contact](#contact)
 - [License](#license)
 
@@ -123,24 +121,6 @@ ACM Multimedia 2026 is an **on-site only** event.
 All accepted papers and challenge contributions must be presented physically on site.  
 Remote presentation is not supported. Any no-show contribution may be removed from conference proceedings.
 
-## Organisers
-
-- Jian Liu (Ant Group)
-- Weiqiang Wang (Ant Group)
-- Chang Yao (Zhejiang University)
-- Jingyuan Chen (Zhejiang University)
-
-## Challenge Chairs
-
-- Yueying Feng (Zhejiang University)
-- Bohan Yu (Ant Group)
-- Renhe Sun (Ant Group)
-- Zitong Wang (Ant Group)
-- Tong Niu (Ant Group)
-- Yunqi Liu (Ant Group)
-- Haolin He (The Chinese University of Hong Kong, CUHK)
-- Chang Han (Ant Group)
-
 ## Contact
 
 - **Track 1**
@@ -158,7 +138,7 @@ CC BY-NC-SA 4.0 for non-commercial research and education usage.
 
 ## Links
 
-- Challenge Homepage: https://github.com/ego-link
+- Challenge Homepage: https://ego-link.github.io/challenge2026/
 - Challenge Repository: https://github.com/ego-link/egolink2026
 - E3 Dataset: https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset
 - Registration: https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform
