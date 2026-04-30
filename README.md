@@ -160,5 +160,5 @@ CC BY-NC-SA 4.0 for non-commercial research and education usage.
 
 - Challenge Homepage: https://github.com/ego-link
 - Challenge Repository: https://github.com/ego-link/egolink2026
-- E3 Dataset: (to be added)
-- Registration: (to be added)
+- E3 Dataset: https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset
+- Registration: https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform
