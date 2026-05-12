@@ -116,8 +116,8 @@ Key capabilities:
 
 ### Track 2
 
-- **2026.05.25**: Online testing opens.
-- **2026.06.15 - 2026.06.25**: Final answer and report submission window.
+- **2026.05.18 - 2026.06.25**: Training tasks and sandbox released.
+- **2026.06.18 - 2026.06.25**: Final answer and report submission window.
 
 ## Presentation Policy
 
