@@ -39,9 +39,9 @@ The core goal is to foster tightly coupled perception, reasoning, and decision-m
 
 ## News
 
+- **May 12, 2026**: Track2 submission guidance updated (See https://github.com/ego-link/egolink2026/tree/main/doc/track2 for details).
 - **Apr 15, 2026**: Registration is now open. Welcome to sign up.
 - **Apr 2, 2026**: Official challenge website initialized.
-- **May 12, 2026**: Track2 submission guidance updated (See https://github.com/ego-link/egolink2026/tree/main/doc/track2 for details).
 
 ## Challenge Tasks
 
