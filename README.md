@@ -77,11 +77,12 @@ Key capabilities:
 
 ### Track 1
 
-The Track 1 dataset comprises three components:
+The Track 1 dataset comprises E3 videos, labels, and MCQ data. See [`dataset/track1/README.md`](dataset/track1/README.md) for details.
 
 - **E3 Videos**: Video data from the [E3 egocentric emotion dataset](https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset).
 - **Labels**: Updated training labels in [`E3_train.json`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/E3_train.json). Use these labels with the E3 videos; do not use the original E3 labels.
-- **MCQ**: Curated multiple-choice questions in [`train_MCQ.jsonl`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl).
+- **MCQ (train)**: Curated multiple-choice questions in [`train_MCQ.jsonl`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl).
+- **MCQ (validation)**: Validation multiple-choice questions in [`val_MCQ.jsonl`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/val_MCQ.jsonl). The validation set is a subset of the complete evaluation set.
 
 - **Scale**: 20,000+ egocentric clips and 70+ hours of video.
 - **Coverage**: Meetings, family, education, social gatherings, and service scenarios.
