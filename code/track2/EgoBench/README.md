@@ -1,3 +1,89 @@
+## Final Evaluation Phase
+The final evaluation scenarios will be released on 2026.06.18. The following 309 tasks in 5 scenarios constitute the **final test set**:
+
+| Scenario | Scenario Number |
+|----------|-----------------|
+| Retail   | 6, 10           |
+| Kitchen  | 4               |
+| Restaurant | 5             |
+| Order    | 2               |
+
+The corresponding task files (`retail6.json`, `retail10.json`, `kitchen4.json`, `restaurant5.json`, `order2.json`) are located in the `scenarios/final/` directory. These files do **not** contain the `ground_truth` field.
+
+### How to Run the Final Evaluation Scenarios (will be released on 2026.06.18)
+
+**Step 1**: Make sure your model configuration and environment variables are properly set (refer to the [Configuration](#configuration) section above).
+
+**Step 2**: Run the final evaluation scenarios using the `--final_eval` flag:
+
+```bash
+bash run_all_scenarios.sh --final_eval
+```
+
+You can also limit the number of tasks per scenario for a quick test before running all tasks:
+
+```bash
+bash run_all_scenarios.sh --final_eval --num_tasks 5
+```
+
+**Step 3**: After execution completes, the interaction results will be saved under the `results/{model_name}/` directory:
+
+```
+results/
+└── {model_name}/
+    ├── retail6_easy.json
+    ├── retail10_easy.json
+    ├── kitchen4_easy.json
+    ├── restaurant5_easy.json
+    └── order2_easy.json
+```
+
+### Submission
+Please rename the results/{model_name}/ folder containing the above 5 result files to results/{your_team_name}/ before submission. The submission email address is:
+
+
+> **egolink.challenge@gmail.com**
+
+Note: To increase the cost of manual tampering and reduce the possibility of human-edited interaction trajectories, we have released all examples from these five scenarios. However, during the final evaluation, we will only score a randomly selected subset of 50–100 tasks from them (the evaluated tasks will be the same for every participating team).
+
+In addition, to ensure transparency and openness in the evaluation process, we plan to release the ground-truth answers for the finally selected evaluation tasks after the submission deadline, so that all participants can verify and inspect the results.
+
+Submission requirements:
+
+1. Only submit the interaction results for the final evaluation scenarios: retail6, retail10, kitchen4, restaurant5, and order2. Please keep the original file names and place these 5 result files under results/{your_team_name}/.
+
+2. In addition to the result files, all participants are required to submit a PDF report with no more than 2 pages in the main body (there is no specific format requirement for this report), describing the methods used in the Track 2 challenge, including but not limited to: the GitHub code repository (required), the agent construction framework, the training method of the backbone/foundation model, experimental settings, and other essential details needed for reproducing the experiments. If applicable, materials such as prompts may be included in the appendix, which has no page limit. The PDF file should be named your_team_name.pdf.
+
+3. Place the result folder and the PDF report into one folder, compress it, and send it as an email attachment.
+
+4. The email subject and the attachment name must follow the format: {your_team_name}_track2.
+
+5. After comprehensively evaluating the implementation approach, code quality, and benchmark results, teams with outstanding performance will be contacted by email and invited to submit a more detailed technical report in ACM MM format.
+
+6. Each team is strongly encouraged to submit only once. If the same team submits multiple times, only the latest submission received before 23:59 AOE on June 25 will be considered. During the submission period, the organizers will not provide real-time feedback on the accuracy of your submitted answers. However, after receiving your email, we will send a confirmation of receipt within 24 hours. If you do not receive a reply within 24 hours, please feel free to contact us by email.
+
+7. If you have any other questions or encounter any difficulties, please feel free to contact us by email at any time.
+
+Example submission structure:
+
+```
+{your_team_name}_track2.zip
+└──your_team_name.pdf
+└──results/
+    └──your_team_name/
+        ├── retail6_easy.json
+        ├── retail10_easy.json
+        ├── kitchen4_easy.json
+        ├── restaurant5_easy.json
+        └── order2_easy.json
+
+```
+
+
+
+
+
+
 # EgoBench Competition - Participant Guide
 
 We propose a framework for evaluating (MLLM) customer service agents (under test), which comprises an interaction sandbox and an automated evaluation pipeline. The interaction sandbox features a simulated user, a tool library, and a database. The simulated user is responsible for issuing tasks to the agents under test. In response, these agents can output two types of content within the sandbox: natural language responses for conversational engagement with the user, and tool calls that either retrieve information or modify the database as requested. Following each task interaction, the automated evaluation pipeline assesses performance by measuring tool-call accuracy and verifying the final state of the database.
