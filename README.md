@@ -38,7 +38,7 @@ It holistically tests whether an AI system can:
 The core goal is to foster tightly coupled perception, reasoning, and decision-making for embodied intelligence.
 
 ## News
-
+- **June 12, 2026**: The final submission requirements for Track 2 have been updated in https://github.com/ego-link/egolink2026/blob/main/code/track2/EgoBench/README.md.
 - **May 12, 2026**: We released updated labels for **part 1** of the Track 1 training set (See https://github.com/ego-link/egolink2026/blob/main/dataset/track1/E3_train.json for details). **Part 2**: MCQ data released at https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl. **Important Note**: Please use the video data from the E3 dataset paired with our label information. Do not use the original labels from the E3 dataset.
 - **May 12, 2026**: Track 2 submission guidance updated (See https://github.com/ego-link/egolink2026/tree/main/doc/track2 for details).
 - **Apr 15, 2026**: Registration is now open. Welcome to sign up.
