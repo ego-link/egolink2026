@@ -38,6 +38,7 @@ It holistically tests whether an AI system can:
 The core goal is to foster tightly coupled perception, reasoning, and decision-making for embodied intelligence.
 
 ## News
+- **June 15, 2026**: Track 1 evaluation set released on Hugging Face (See https://huggingface.co/datasets/EgoLink/EgoLink2026 for details).
 - **June 12, 2026**: The final submission requirements for Track 2 have been updated in https://github.com/ego-link/egolink2026/blob/main/code/track2/EgoBench/README.md.
 - **May 12, 2026**: We released updated labels for **part 1** of the Track 1 training set (See https://github.com/ego-link/egolink2026/blob/main/dataset/track1/E3_train.json for details). **Part 2**: MCQ data released at https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl. **Important Note**: Please use the video data from the E3 dataset paired with our label information. Do not use the original labels from the E3 dataset.
 - **May 12, 2026**: Track 2 submission guidance updated (See https://github.com/ego-link/egolink2026/tree/main/doc/track2 for details).
@@ -83,6 +84,7 @@ The Track 1 dataset comprises E3 videos, labels, and MCQ data. See [`dataset/tra
 - **Labels**: Updated training labels in [`E3_train.json`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/E3_train.json). Use these labels with the E3 videos; do not use the original E3 labels.
 - **MCQ (train)**: Curated multiple-choice questions in [`train_MCQ.jsonl`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl).
 - **MCQ (validation)**: Validation multiple-choice questions in [`val_MCQ.jsonl`](https://github.com/ego-link/egolink2026/blob/main/dataset/track1/val_MCQ.jsonl). The validation set is a subset of the complete evaluation set.
+- **MCQ (evaluation)**: The Track 1 evaluation set is available on [Hugging Face](https://huggingface.co/datasets/EgoLink/EgoLink2026), including `Eval.jsonl` (4,030 multiple-choice questions) and the corresponding egocentric videos under `data/`.
 
 - **Scale**: 20,000+ egocentric clips and 70+ hours of video.
 - **Coverage**: Meetings, family, education, social gatherings, and service scenarios.
@@ -102,6 +104,7 @@ The Track 1 dataset comprises E3 videos, labels, and MCQ data. See [`dataset/tra
 ### Track 1
 
 - **Protocol**: Multi-dimensional MCQ evaluation.
+- **Evaluation Set**: Available at [EgoLink/EgoLink2026 on Hugging Face](https://huggingface.co/datasets/EgoLink/EgoLink2026).
 - **Main Metric**: Overall Top-1 Accuracy.
 - **Sub-Metrics**: Dimension-wise scores for emotion, causality, intent, and summarization.
 - **Maintenance**: Website, leaderboard, and evaluation toolkit are planned to be maintained through 2029.
@@ -119,7 +122,7 @@ The Track 1 dataset comprises E3 videos, labels, and MCQ data. See [`dataset/tra
 
 - **2026.04.15**: E3 dataset available for pre-download.
 - **2026.05.10**: Training dataset label release.
-- **2026.06.08**: Evaluation dataset released.
+- **2026.06.15**: Evaluation dataset released.
 - **2026.06.15 - 2026.06.25**: Final answer and report submission window.
 
 ### Track 2

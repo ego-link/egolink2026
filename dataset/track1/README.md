@@ -16,6 +16,11 @@ Track 1 is built on [E3 (Exploring Embodied Emotion)](https://github.com/Explori
 | [`train_MCQ.jsonl`](train_MCQ.jsonl) | **Part 2 — Training MCQ.** Curated multiple-choice questions for model training, covering social reasoning dimensions such as emotional perception, causal reasoning, intent prediction, and egocentric summarization. |
 | [`val_MCQ.jsonl`](val_MCQ.jsonl) | **Validation MCQ.** Multiple-choice questions for local validation during development. |
 
+**Evaluation set (Hugging Face):** The Track 1 evaluation benchmark is hosted at [EgoLink/EgoLink2026](https://huggingface.co/datasets/EgoLink/EgoLink2026). It includes:
+
+- **`Eval.jsonl`**: 4,030 multiple-choice evaluation questions.
+- **`data/`**: 1,055 egocentric video files referenced by the `path` field in each sample.
+
 Each MCQ record typically includes `id`, `question`, `choices`, `answer`, `question_type`, `path` (relative to the E3 video root), and `annotation_difficulty`.
 
 ## Usage Notes
@@ -24,5 +29,6 @@ Each MCQ record typically includes `id`, `question`, `choices`, `answer`, `quest
 2. Align video paths in our JSON/JSONL files with your local E3 video directory.
 3. Use `E3_train.json` and `train_MCQ.jsonl` together for training.
 4. Use `val_MCQ.jsonl` to validate your approach before final submission.
+5. Download the Track 1 evaluation set from [Hugging Face](https://huggingface.co/datasets/EgoLink/EgoLink2026) for final evaluation and submission.
 
-**Please note:** The validation set (`val_MCQ.jsonl`) is a **subset of the complete evaluation set**. It is intended for development and sanity checks only; final leaderboard scoring uses the held-out evaluation set released separately according to the challenge timeline.
+**Please note:** The validation set (`val_MCQ.jsonl`) is a **subset of the complete evaluation set**. It is intended for development and sanity checks only; final leaderboard scoring uses the held-out evaluation set on [Hugging Face](https://huggingface.co/datasets/EgoLink/EgoLink2026).
