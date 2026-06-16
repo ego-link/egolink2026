@@ -1,5 +1,11 @@
 ## Final Evaluation Phase
-The final evaluation scenarios will be released on 2026.06.18. The following 309 tasks in 5 scenarios constitute the **final test set**:
+
+The final evaluation test set will be released on **June 16, 2026 at 20:00 (GMT+8)**. All participants are required to submit their result files and technical report by the deadline of **June 22, 2026 at 20:00 (GMT+8)**.
+
+> ⚠️ **Important Notice on Schedule Adjustment**
+> Since the detailed technical report deadline for outstanding teams is June 25, 2026, we have advanced both the test set release date and the submission deadline. To prevent direct tampering with interaction answers, we are releasing the **entire test set**. Participants are expected to complete testing on all samples within this six-day window. If you have any questions or concerns regarding this timeline, please raise an issue or contact us via email.
+
+The following 309 tasks in 5 scenarios constitute the **final test set**:
 
 | Scenario | Scenario Number |
 |----------|-----------------|
@@ -10,7 +16,7 @@ The final evaluation scenarios will be released on 2026.06.18. The following 309
 
 The corresponding task files (`retail6.json`, `retail10.json`, `kitchen4.json`, `restaurant5.json`, `order2.json`) are located in the `scenarios/final/` directory. These files do **not** contain the `ground_truth` field.
 
-⏰ Deadline: June 23, 2026 at 22:00 (GMT+8)
+⏰ Deadline: June 22, 2026 at 20:00 (GMT+8)
 
 ### How to Run the Final Evaluation Scenarios (will be released on 2026.06.18)
 
@@ -54,7 +60,10 @@ Submission requirements:
 
 1. Only submit the interaction results for the final evaluation scenarios: retail6, retail10, kitchen4, restaurant5, and order2. Please keep the original file names and place these 5 result files under results/{your_team_name}/.
 
-2. In addition to the result files, all participants are required to submit a PDF report with no more than 2 pages in the main body (there is no specific format requirement for this report), describing the methods used in the Track 2 challenge, including but not limited to: the GitHub code repository (required), the agent construction framework, the training method of the backbone/foundation model, experimental settings, and other essential details needed for reproducing the experiments. If applicable, materials such as prompts may be included in the appendix, which has no page limit. The PDF file should be named your_team_name.pdf.
+2. In addition to the result files, all participants are required to submit a PDF report with no more than 2 pages in the main body (there is no specific format requirement for this report), describing the methods used in the Track 2 challenge, including but not limited to: the GitHub code repository (required), the agent construction framework, the training method of the backbone/foundation model, experimental settings, and other essential details needed for reproducing the experiments. If applicable, materials such as prompts may be included in the appendix, which has no page limit.
+   - **Format Recommendation**: Although a 2-page document was previously mentioned, we now **strongly recommend** submitting this report in **ACM MM format**, focusing on the methodology. The paper length should be **6 pages + up to 2 additional pages for references only**.
+   - **Official Template**: [https://www.acm.org/publications/proceedings-template](https://www.acm.org/publications/proceedings-template)
+   - The PDF file should be named `{your_team_name}.pdf`.
 
 3. Place the result folder and the PDF report into one folder, compress it, and send it as an email attachment.
 
@@ -62,7 +71,7 @@ Submission requirements:
 
 5. After comprehensively evaluating the implementation approach, code quality, and benchmark results, teams with outstanding performance will be contacted by email and invited to submit a more detailed technical report in ACM MM format.
 
-6. Each team is strongly encouraged to submit only once. If the same team submits multiple times, only the latest submission received before June 23, 2026 at 22:00 (GMT+8) will be considered. During the submission period, the organizers will not provide real-time feedback on the accuracy of your submitted answers. However, after receiving your email, we will send a confirmation of receipt within 24 hours. If you do not receive a reply within 24 hours, please feel free to contact us by email.
+6. Each team is strongly encouraged to submit only once. If the same team submits multiple times, only the latest submission received before June 22, 2026 at 20:00 (GMT+8) will be considered. During the submission period, the organizers will not provide real-time feedback on the accuracy of your submitted answers. However, after receiving your email, we will send a confirmation of receipt within 24 hours. If you do not receive a reply within 24 hours, please feel free to contact us by email.
 
 7. If you have any other questions or encounter any difficulties, please feel free to contact us by email at any time.
 
@@ -80,9 +89,6 @@ Example submission structure:
         └── order2_easy.json
 
 ```
-
-
-
 
 
 
