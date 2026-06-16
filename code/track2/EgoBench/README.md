@@ -10,6 +10,8 @@ The final evaluation scenarios will be released on 2026.06.18. The following 309
 
 The corresponding task files (`retail6.json`, `retail10.json`, `kitchen4.json`, `restaurant5.json`, `order2.json`) are located in the `scenarios/final/` directory. These files do **not** contain the `ground_truth` field.
 
+⏰ Deadline: June 23, 2026 at 22:00 (GMT+8)
+
 ### How to Run the Final Evaluation Scenarios (will be released on 2026.06.18)
 
 **Step 1**: Make sure your model configuration and environment variables are properly set (refer to the [Configuration](#configuration) section above).
@@ -60,7 +62,7 @@ Submission requirements:
 
 5. After comprehensively evaluating the implementation approach, code quality, and benchmark results, teams with outstanding performance will be contacted by email and invited to submit a more detailed technical report in ACM MM format.
 
-6. Each team is strongly encouraged to submit only once. If the same team submits multiple times, only the latest submission received before 23:59 AOE on June 25 will be considered. During the submission period, the organizers will not provide real-time feedback on the accuracy of your submitted answers. However, after receiving your email, we will send a confirmation of receipt within 24 hours. If you do not receive a reply within 24 hours, please feel free to contact us by email.
+6. Each team is strongly encouraged to submit only once. If the same team submits multiple times, only the latest submission received before June 23, 2026 at 22:00 (GMT+8) will be considered. During the submission period, the organizers will not provide real-time feedback on the accuracy of your submitted answers. However, after receiving your email, we will send a confirmation of receipt within 24 hours. If you do not receive a reply within 24 hours, please feel free to contact us by email.
 
 7. If you have any other questions or encounter any difficulties, please feel free to contact us by email at any time.
 
