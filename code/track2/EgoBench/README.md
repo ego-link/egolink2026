@@ -26,7 +26,7 @@ No. The JSON files under EgoBench/scenarios/final, as well as any information c
 To avoid causing similar confusion for other participants, we will remove irrelevant information from the files under EgoBench/scenarios/final. In addition, during the evaluation phase, we will also strictly examine whether the service agent designed by any participant directly uses information from the files under EgoBench/scenarios/final. Any such use will be considered cheating and handled accordingly.
 
 
-### How to Run the Final Evaluation Scenarios (will be released on 2026.06.18)
+### How to Run the Final Evaluation Scenarios (has released on 2026.06.16)
 
 **Step 1**: Make sure your model configuration and environment variables are properly set (refer to the [Configuration](#configuration) section above).
 
