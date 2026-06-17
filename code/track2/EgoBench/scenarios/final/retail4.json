@@ -64,7 +64,6 @@
         }
       }
     ],
-    "task_id": 1,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -72,7 +71,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 1
   },
   {
     "Instruction": "You are a sommelier (User ID: mike_roberts_234). Ask the AI Service Agent to confirm the taste of the bottle with a white label and the bottle containing red liquid among the wines you are pointing at. If either one has a \"sweet\" taste, ask the AI Service Agent to look for wines with a tax rate below 0.13, a unit price below 300 yuan, and originating from Italy, and add the one with the lowest sugar content to the cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If both are \"sweet\", ask the AI Service Agent to find wines originating from France, with a \"savory\" taste, and a discount factor greater than or equal to 0.9, and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If neither has a \"sweet\" taste, ask the AI Service Agent to find wines with \"gluten-free\" characteristics, priced below 400 yuan, and originating from Australia, and add the one with the highest calories. If there are multiple wines tied for the highest calorie count among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the cart.",
@@ -111,7 +111,6 @@
         }
       }
     ],
-    "task_id": 2,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -119,7 +118,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 2
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: lisa_wong_456). Please ask the AI Service Agent to check whether the wine you are pointing at that contains golden-yellow liquid and the wine with a pink label are both \"low-calorie\". If both are, ask the AI Service Agent to search for wines from New Zealand with a tax rate below 0.15 and a price below 250 yuan, and add the wine with the lowest carbohydrate content to your cart. If there are multiple wines tied for the lowest carbohydrate content among those that meet the conditions, you want all of them to be added. If only one is, ask the AI Service Agent to search for wines from Spain with a \"savory\" flavor and a discount factor of 0.9, and add the wine with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. If neither is, ask the AI Service Agent to find wines from France with \"low-sugar\" characteristics and a price below 350 yuan, and add the cheapest wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are not fully purchased, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total tax for the items in the shopping cart.",
@@ -190,7 +190,6 @@
         }
       }
     ],
-    "task_id": 3,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -198,7 +197,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 3
   },
   {
     "Instruction": "You are a wine collector (User ID: mark_taylor_789). Please ask the AI service agent to query the country of origin for the wine you are pointing at with a gold foil cap and the wine containing red liquid. If they are from the same country, ask the AI service agent to search for wines with a \"mild\" taste, a tax rate below 0.14, and from this same origin, and add the one with the lowest fat content to the shopping cart. If there are multiple wines tied for the lowest fat content among those that meet the conditions, you want all of them to be added. If they are from different countries, ask the AI service agent to find wines originating from Italy, with \"low sodium\" characteristics, and on discount, and add the one with the highest calorie content. If there are multiple wines tied for the highest calorie content among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI service agent to check the shopping list and the shopping cart to identify any wines on the list that have not been purchased or are incomplete in quantity, and add these missing or incomplete wines to the shopping cart according to the list. Finally, ask the AI service agent to calculate the total nutritional value of the items in the shopping cart.",
@@ -293,7 +293,6 @@
         }
       }
     ],
-    "task_id": 4,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -301,7 +300,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 4
   },
   {
     "Instruction": "You are a Party Planning Specialist (User ID: alice_wong_456). Please ask the AI Service Agent to query the prices of the wine with the thickest bottle body and the wine with a pink label. If the pink-labeled wine is cheaper, ask the AI Service Agent to find wines that are from Australia, have a tax rate below 0.12, and have a \"savory\" taste, then add the one with the lowest sugar content to the cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If the wine with the thickest bottle body is cheaper, ask the AI Service Agent to find wines that are from New Zealand, have a discount factor less than 0.7, and feature \"low calorie\", then add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If the prices are the same, ask the AI Service Agent to find wines that are from Spain, priced below 350 yuan, and feature \"low fat\", then add the one with the highest protein content to the cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the cart.",
@@ -340,7 +340,6 @@
         }
       }
     ],
-    "task_id": 5,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -348,7 +347,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 5
   },
   {
     "Instruction": "You are a wine critic (User ID: john_doe_123). Please ask the AI Service Agent to check whether the bottle to the right of the first bottle you are pointing at satisfies both \"Sweet\" and \"Low-calorie\". If both conditions are met, ask the AI Service Agent to find wines from Italy with a tax rate below 0.10 and a price above 200 yuan, and add the one with the lowest sodium content to the cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If only one condition is met, ask the AI Service Agent to find wines from France with a \"Mild\" taste and currently on discount, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If neither condition is met, ask the AI Service Agent to find wines from Spain with a \"Low sugar\" feature and a price below 500 yuan, and add the one with the highest calorie content to the cart. If there are multiple wines tied for the highest calorie content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax amount for the items in the cart.",
@@ -391,14 +391,14 @@
         }
       }
     ],
-    "task_id": 6,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Scanavino Prosecco"
-    ]
+    ],
+    "task_id": 6
   },
   {
     "Instruction": "You are a budget wine lover (User ID: emma_brown_123). Ask the AI Service Agent to check whether the wine with a white label among the wines you are pointing at and the bottle to the right of the first bottle you are pointing at are on discount. If both are on discount, ask the AI Service Agent to find wines from Chile with a tax rate below 0.11 and a \"low-calorie\" feature, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If only one is on discount, ask the AI Service Agent to find wines from New Zealand with a \"sour\" taste and a unit price below 300 yuan, and add the one with the highest protein content. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. If neither is on discount, ask the AI Service Agent to find wines from Australia with a \"gluten-free\" feature and a discount factor less than 0.7, and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total sodium content of the items in the cart.",
@@ -501,7 +501,6 @@
         }
       }
     ],
-    "task_id": 7,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -509,7 +508,8 @@
     "value": [
       "Bosco del Merlo",
       "Scanavino Prosecco"
-    ]
+    ],
+    "task_id": 7
   },
   {
     "Instruction": "You are a wine instructor (User ID: david_jones_987). Ask the AI Service Agent to confirm the origins of the first bottle you are pointing at and the bottle to its right. If both bottles are from countries where the average price of all wines is higher than 100 yuan, ask the AI Service Agent to look for wines from Italy with a tax rate lower than 0.12 and a 'sweet' taste, and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If only one of the bottles is from such a country, ask the AI Service Agent to find wines from New Zealand with a 'low-fat' characteristic, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If neither bottle is from such a country, ask the AI Service Agent to look for wines from Australia priced above 100 yuan with a 'savory' taste, and add the one with the highest sugar content to your cart. If there are multiple wines tied for the highest sugar content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -594,14 +594,14 @@
         }
       }
     ],
-    "task_id": 8,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Scanavino Prosecco"
-    ]
+    ],
+    "task_id": 8
   },
   {
     "Instruction": "Results:\nYou are a wine retailer (User ID: tom_harris_123). Please ask the AI Service Agent to check whether the wine among those you are pointing at that has a gold foil cap and the bottle to the right of the second bottle you are pointing at both possess \"low fat\" and \"low calorie\" attributes. If both wines possess these attributes, ask the AI Service Agent to find wines from Italy with a tax rate below 0.1 and a unit price below 300 yuan, and add the wine with the highest protein content to the cart. If there are multiple wines tied for the highest protein among those that meet the conditions, add all of them. If only one of the wines possesses both attributes, ask the AI Service Agent to find wines from France with a \"mild\" mouthfeel, and add the wine with the lowest sodium content to the cart. If there are multiple wines tied for the lowest sodium among those that meet the conditions, add all of them. If neither wine possesses these attributes, ask the AI Service Agent to find wines from Spain with a \"low fat\" feature and a price below 400 yuan, and add the discounted wine with the lowest price to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are not fully purchased, and add the missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total nutritional content of the items in the shopping cart.",
@@ -664,7 +664,6 @@
         }
       }
     ],
-    "task_id": 9,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -672,7 +671,8 @@
     "value": [
       "Bosco del Merlo",
       "Henkell Trocken"
-    ]
+    ],
+    "task_id": 9
   },
   {
     "Instruction": "You are a sommelier (User ID: mark_taylor_789). Ask the AI Service Agent to query the price and discount of the wine with a gold capsule and a yellow label from the wines you are pointing at, and confirm whether it has a \"bitter\" taste. If it is bitter, ask the AI Service Agent to find wines from Italy with a tax rate below 0.12 and featuring \"low-calorie,\" and add the cheapest qualifying wine to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. If it is not bitter, ask the AI Service Agent to check the origin of the wine with a pink label. If it is from France, ask the AI Service Agent to find wines from France with a unit price below 250 yuan and a \"sweet\" taste, and add the one with the lowest sugar content. If there are multiple wines tied for the lowest sugar content, add all of them. If it is not from France, ask the AI Service Agent to add the cheapest wine from the inventory that is from Spain and \"gluten-free.\" If there are multiple wines tied for the lowest price, add all of them. Finally, ask the AI Service Agent to calculate the total tax for the items in the cart.",
@@ -715,14 +715,14 @@
         }
       }
     ],
-    "task_id": 10,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Scanavino Prosecco"
-    ]
+    ],
+    "task_id": 10
   },
   {
     "Instruction": "You are an Italian wine collector (User ID: sarah_liu_789). Focus on the first bottle of wine you are pointing at. You need to ask the AI Service Agent to query its origin, nutritional information, and whether it is on discount. If there is a discount, ask the AI Service Agent to look for other wines that are from Italy, feature \"low sodium, low sugar\" characteristics, and have a unit price below 200 yuan, and then add the qualifying bottle with the lowest calorie count to your cart. If multiple bottles tie for the lowest calorie count among those that meet the conditions, you want all of them to be added. If there is no discount, ask the AI Service Agent to check whether the wine with a pink label is from Italy. If it is, ask the AI Service Agent to find wines from Italy with a tax rate below 0.14 and a \"mild\" taste profile, and add the qualifying bottle with the highest protein content to the cart. If multiple bottles tie for the highest protein content among those that meet the conditions, you want all of them to be added. If the wine with the pink label is not from Italy, ask the AI Service Agent to add the cheapest \"low sugar\" wine(s) from New Zealand. If multiple wines tie for the lowest price, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total dietary fiber content of the items in your cart.",
@@ -785,14 +785,14 @@
         }
       }
     ],
-    "task_id": 11,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 11
   },
   {
     "Instruction": "You are a health-conscious buyer (User ID: alice_wong_456). Please ask the AI Service Agent to check whether the wine containing red liquid has the \"low sugar\" characteristic. If yes, ask the AI Service Agent to find wines from France with a tax rate below 0.15 and a unit price below 250 yuan, and add the wine with the lowest calories to the cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, add all of them. If no, ask the AI Service Agent to check the origin of the wine with the thickest bottle, and search for wines from the same origin that have the \"low sugar\" characteristic and a discount factor less than 1, and add the cheapest wine to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to identify which wines on the list have not been purchased or are not fully purchased, and add all missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total tax for the items in the shopping cart.",
@@ -847,14 +847,14 @@
         }
       }
     ],
-    "task_id": 12,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 12
   },
   {
     "Instruction": "You are a wine merchant (User ID: david_chen_456). Ask the AI Service Agent to confirm the category and price of the bottle to the right of the first bottle you are pointing at. If there are wines in the same category with a unit price below 100 yuan and currently on sale, ask the AI Service Agent to search for wines that are from Italy, have a tax rate below 0.13, a discount factor greater than 0.9, and a taste of \"sour\", and add the qualifying wine with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If there are no such wines in the same category, ask the AI Service Agent to check whether the second bottle to the right of the second bottle you are pointing at is from Italy. If it is, select the wine(s) from Italy with the lowest calorie count from the inventory and add them to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in your cart.",
@@ -907,14 +907,14 @@
         }
       }
     ],
-    "task_id": 13,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Scanavino Prosecco"
-    ]
+    ],
+    "task_id": 13
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: lisa_wong_456). Please ask the AI Service Agent to query the country of origin and taste profile of the wine you are pointing at that has a gold foil cap. Next, have the AI Service Agent check whether the bottle to the right of the wine with red liquid—which has a gold cap with red details—is on discount. If there is a discount, ask the AI Service Agent to find wines produced in France, with a tax rate below 0.12, and featuring a \"low fat\" characteristic, and add the qualifying wine(s) with the lowest sugar content to the shopping cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, add all of them. If there is no discount, ask the AI Service Agent to find wines that share the same origin as the first bottle, have a \"sweet\" taste profile, and are priced below 300 yuan, and add the cheapest qualifying wine(s) to the shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. Finally, ask the AI Service Agent to calculate the total tax payable for the items in the shopping cart.",
@@ -965,14 +965,14 @@
         }
       }
     ],
-    "task_id": 14,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 14
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: john_doe_123). Ask the AI Service Agent to query the price and discount of wines with red accents on the capsule. Next, ask the AI Service Agent to check whether wines with pale yellow labels have the \"low-calorie\" feature. If so, ask the AI Service Agent to look for wines that are from Italy, have a tax rate below 0.1, and a unit price below 450 yuan, and add the wine with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. If not, ask the AI Service Agent to look for wines that originate from the same place as the wines with red accents, have the \"low-calorie\" feature, and have a discount factor less than 0.9, and add the cheapest qualifying wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total fat content of the items in your cart.",
@@ -1027,14 +1027,14 @@
         }
       }
     ],
-    "task_id": 15,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Henkell Trocken"
-    ]
+    ],
+    "task_id": 15
   },
   {
     "Instruction": "You are a wine connoisseur (User ID: emma_clark_654). Ask the AI Service Agent to query the tax rate and price of the bottle with the thickest body. Then, ask the AI Service Agent to check whether the wine containing red liquid has a \"sweet\" taste. If it is sweet, ask the AI Service Agent to look for wines from Spain priced below 250 yuan, and add the one with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If it is not sweet, ask the AI Service Agent to look for wines from the same origin as the red liquid wine, with a \"sweet\" taste and currently on discount, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -1097,14 +1097,14 @@
         }
       }
     ],
-    "task_id": 16,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 16
   },
   {
     "Instruction": "Results:\nYou are a wine dealer (User ID: mike_roberts_234). Ask the AI Service Agent to query the nutrition information and discount details for the first bottle of wine you are pointing at. Then, ask the AI Service Agent to check whether the bottle to the right of the wine with the pink label is from Italy. If it is, ask the AI Service Agent to search for wines from Italy with a tax rate below 0.12 and the \"low sugar\" characteristic, and add the one with the lowest calorie content to your cart. If there are multiple wines tied for the lowest calorie content, add all of them. If it is not, ask the AI Service Agent to search for wines from France with the \"low fat\" characteristic and a unit price below 200 yuan, and add the cheapest one. If there are multiple wines tied for the lowest price, add all of them. Finally, ask the AI Service Agent to calculate the total calcium content of the items in your cart.",
@@ -1155,14 +1155,14 @@
         }
       }
     ],
-    "task_id": 17,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 17
   },
   {
     "Instruction": "You are a health-conscious buyer (User ID: charlie_brown_789). Please ask the AI Service Agent to query the taste and country of origin of the wine with red accents on the cap located to the right of the wine containing red liquid. Then, ask the AI Service Agent to check if there are any wines from the same origin as the wine containing red liquid that have a \"sweet\" taste. If there are, ask the AI Service Agent to find wines from that origin with a unit price below 400 yuan and featuring \"low-calorie,\" and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. If there are not, ask the AI Service Agent to look for wines from New Zealand with \"low-sugar\" features, and add the one with the lowest sugar content. If there are multiple wines tied for the lowest sugar content, add all of them. Subsequently, ask the AI Service Agent to check the shopping list and the cart to identify which wines on the list have not been purchased or have not been purchased in full quantity, and add the missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total tax for the items in the cart.",
@@ -1233,14 +1233,14 @@
         }
       }
     ],
-    "task_id": 18,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Henkell Trocken"
-    ]
+    ],
+    "task_id": 18
   },
   {
     "Instruction": "You are a wine connoisseur (User ID: lisa_taylor_321). Please ask the AI Service Agent to query the nutritional information and discount status of the second bottle of wine you are pointing at. Then, ask the AI Service Agent to check whether the wine containing golden-yellow liquid is from France. If it is, ask the AI Service Agent to look for wines that are from France, have a tax rate below 0.14, and feature \"low calorie\", and add the cheapest qualifying wine to the shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines that are from Italy, have a \"sweet\" taste, and a unit price below 200 yuan, and add the one with the highest protein content. If there are multiple wines tied for the highest protein among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are not fully purchased, and ask the AI Service Agent to add all missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the shopping cart.",
@@ -1307,14 +1307,14 @@
         }
       }
     ],
-    "task_id": 19,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 19
   },
   {
     "Instruction": "You are a sommelier (User ID: emma_clark_654). Ask the AI Service Agent to confirm the country of origin for the second bottle of wine you are pointing at and the wine with the thickest bottle body. If the wine with a gold cap and red accents is from Germany, ask the AI Service Agent to find wines from Germany that have the \"low sugar\" characteristic, and add the one with the lowest calories to the cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If the thickest wine is from Belgium, ask the AI Service Agent to find wines from Belgium with a discount factor less than 1 and a taste of \"mild\", and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If neither condition is met, ask the AI Service Agent to find wines from Spain with a unit price below 250 yuan and the \"low sodium\" characteristic, and add the one with the highest protein. If there are multiple wines tied for the highest protein among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or not purchased in full quantity, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total carbohydrates of the items in the shopping cart.",
@@ -1403,7 +1403,6 @@
         }
       }
     ],
-    "task_id": 20,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1411,7 +1410,8 @@
     "value": [
       "Moscato Scanavino Rose",
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 20
   },
   {
     "Instruction": "You are a wine shopper (User ID: mark_taylor_789). Ask the AI Service Agent to check the respective discounts for the wine with a pink label and the first bottle of wine to its right. If the former has a discount, ask the AI Service Agent to find wines from Italy with a tax rate below 0.1 and a \"low fat\" feature, and add the lowest-priced one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. If the latter has a discount, ask the AI Service Agent to find wines from France with a \"sour\" taste, and add the one with the highest calories. If there are multiple wines tied for the highest calorie count among those that meet the conditions, add all of them. If neither has a discount, ask the AI Service Agent to find wines from New Zealand with a unit price above 50 yuan, and add the most expensive one. If there are multiple wines tied for the highest price among those that meet the conditions, add all of them. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the cart.",
@@ -1458,7 +1458,6 @@
         }
       }
     ],
-    "task_id": 21,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1466,7 +1465,8 @@
     "value": [
       "Moscato Scanavino Rose",
       "Henkell Trocken"
-    ]
+    ],
+    "task_id": 21
   },
   {
     "Instruction": "You are a chef (User ID: mike_roberts_234). Ask the AI service agent to confirm whether the wine with yellow liquid and the wine with red liquid are \"sweet\". If the yellow liquid wine is sweet, ask the AI service agent to find wines from Spain priced above 100 yuan and add the one with the lowest sodium content to the cart; if there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If the red liquid wine is sweet, ask the AI service agent to find wines from Italy with \"low sugar\" characteristics and a discount factor better than 0.9, and add the cheapest one to the cart; if there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If neither wine is sweet, ask the AI service agent to find wines from Australia with a \"bitter\" taste and priced below 150 yuan, and add the one with the lowest calories to the cart; if there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total tax for the items in the cart.",
@@ -1517,14 +1517,14 @@
         }
       }
     ],
-    "task_id": 22,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Moscato Scanavino"
-    ]
+    ],
+    "task_id": 22
   },
   {
     "Instruction": "You are a health-conscious customer (User ID: jane_doe_201). Ask the AI Service Agent to check the calories of the wine containing golden-yellow liquid and the wine with a pink label. If the wine with golden-yellow liquid is below 100 calories per unit, ask the AI Service Agent to search for wines from France, priced above 400 yuan, with a tax rate above 0.05, and featuring \"low sodium\", and add the one with the lowest sugar content to the cart. If there are multiple wines tied for the lowest sugar content, add all of them. If the wine with the pink label is below 100 calories per unit, ask the AI Service Agent to search for wines from New Zealand, featuring \"low fat\", and with a unit price above 66 yuan, and add the one with the highest protein content. If there are multiple wines tied for the highest protein, add all of them. If both wines exceed the calorie limit, ask the AI Service Agent to search for wines from Spain featuring \"low calorie\", and add the cheapest one. If there are multiple wines tied for the lowest price, add all of them. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the cart.",
@@ -1563,14 +1563,14 @@
         }
       }
     ],
-    "task_id": 23,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 23
   },
   {
     "Instruction": "You are a party planner (User ID: sarah_green_567). Ask the AI Service Agent to check whether the wine with the thickest bottle is from Germany and whether the second bottle of wine you are referring to is from Belgium. If both are true, ask the AI Service Agent to find wines from Italy with a tax rate below 0.1 and a \"Sweet\" taste, and add the one with the lowest price to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If not, ask the AI Service Agent to check if either of these bottles is \"Sweet\". If yes, ask the AI Service Agent to find wines from France with a \"Low Calorie\" feature and a discount factor better than 0.9, and add the one with the lowest sodium content. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If neither is true, ask the AI Service Agent to find wines from Australia that are \"Gluten-Free\", and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -1617,7 +1617,6 @@
         }
       }
     ],
-    "task_id": 24,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1625,7 +1624,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 24
   },
   {
     "Instruction": "You are a wine novice (User ID: charlie_brown_789). Ask the AI Service Agent to query the prices of wines with golden labels and golden body, as well as wines with pink labels. If the wines with golden patterns are below 150 yuan, ask the AI Service Agent to find wines from Italy with a \"sour\" taste, a tax rate below 0.08, and a \"low-cal\" feature, and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If the wines with pink labels are below 150 yuan, ask the AI Service Agent to find wines from Spain with a \"mild\" taste and a discount factor less than 0.9, and add the one with the highest protein. If there are multiple wines tied for the highest protein among those that meet the conditions, you want all of them to be added. If both are above 150 yuan, ask the AI Service Agent to find wines from France with a \"sour\" taste and priced below 200 yuan, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Afterwards, ask the AI Service Agent to check the shopping list and the cart to see which wines on the list are missing or not fully purchased, and add any missing or incomplete items to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total tax for the items in the cart.",
@@ -1700,14 +1700,14 @@
         }
       }
     ],
-    "task_id": 25,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 25
   },
   {
     "Instruction": "You are a gift purchaser (User ID: lisa_taylor_321). Ask the AI Service Agent to check whether wines with gold foil caps are on discount. If they are, ask the AI Service Agent to search for wines from France, priced above 300 yuan, with a tax rate higher than 0.07 and the \"low fat\" characteristic, and add the wine with the lowest sodium content to the cart. If multiple wines tie for the lowest sodium content, add all of them. If they are not on discount, ask the AI Service Agent to check its price. If it is higher than 100 yuan, ask the AI Service Agent to find wines from Italy with a \"sweet\" taste and add the cheapest one. If multiple wines tie for the lowest price, add all of them. If it is lower than 100 yuan, ask the AI Service Agent to find wines from New Zealand with the \"low sugar\" characteristic and a unit price below 150 yuan, and add the most expensive one. If multiple wines tie for the highest price, add all of them. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the cart.",
@@ -1746,14 +1746,14 @@
         }
       }
     ],
-    "task_id": 26,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 26
   },
   {
     "Instruction": "You are a cost-conscious customer (User ID: david_jones_987). Ask the AI Service Agent to retrieve the tax-inclusive prices for the bottle to the right of the first bottle you are pointing at and the bottle containing red liquid. If the price of the former is below 140 yuan, ask the AI Service Agent to search for wines from Spain with a tax rate higher than 0.05 and the \"low-calorie\" feature, and add the one with the lowest sugar content to the cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If the price of the red liquid wine is above 100 yuan, ask the AI Service Agent to find wines from Australia with a \"savory\" taste and a discount factor not equal to 0.8, and add the one with the highest protein content to the cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. If neither condition is met, ask the AI Service Agent to search for wines from Chile that are on sale and priced below 350 yuan, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the cart.",
@@ -1784,7 +1784,6 @@
         }
       }
     ],
-    "task_id": 27,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1792,7 +1791,8 @@
     "value": [
       "Scanavino Prosecco",
       "Scanavino Prosecco"
-    ]
+    ],
+    "task_id": 27
   },
   {
     "Instruction": "You are a customer with dietary restrictions (User ID: john_smith_123). Please ask the AI Service Agent to check the sugar content per unit of the thickest bottle and the second bottle you are pointing at. If the thickest bottle is below 5 grams, ask the AI Service Agent to find wines from Italy with a tax rate higher than 0.08 and the \"low sodium\" feature, and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If the second bottle is below 5 grams, ask the AI Service Agent to find wines from France with a \"mild\" taste, and add the one with the highest protein. If there are multiple wines tied for the highest protein among those that meet the conditions, you want all of them to be added. If both exceed the limit, ask the AI Service Agent to find wines from New Zealand with the \"low sugar\" feature and a discount factor better than 0.9, and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -1823,7 +1823,6 @@
         }
       }
     ],
-    "task_id": 28,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1831,7 +1830,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 28
   },
   {
     "Instruction": "You are a business traveler (User ID: alice_wong_456). Among the wines you pointed to, ask the AI Service Agent to check whether the wine with a white label and the wine containing red liquid are from France. If the white-label wine is from France, ask the AI Service Agent to find wines that are also from France, have a tax rate below 0.12, and feature \"low-fat\", and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If the red-liquid wine is from France, ask the AI Service Agent to find wines from Italy with a \"sweet\" taste and a unit price below 250 yuan, and add the one with the highest calories to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. If neither wine is from France, ask the AI Service Agent to find wines from Spain with a \"mild\" taste, \"low-sodium\" feature, and a tax rate below 0.08, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or have not been purchased in sufficient quantity, and ask the AI Service Agent to add any missing or insufficient wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -1886,7 +1886,6 @@
         }
       }
     ],
-    "task_id": 29,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1894,7 +1893,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 29
   },
   {
     "Instruction": "You are a sommelier (User ID: emma_clark_654). Ask the AI Service Agent to check whether the wine with a gold foil cap and yellow label, and the bottle to the right of the second bottle you are pointing at, are on sale. If the former is on sale, ask the AI Service Agent to find wines from the same origin with the \"low sugar\" feature, and add the one with the lowest calories per unit price to your cart. If there are multiple wines tied for the lowest calories per unit price among those that meet the conditions, you want all of them to be added. If it is not on sale, ask the AI Service Agent to find wines from France with a \"sour\" taste, and add the one with the lowest calories per unit price to your cart. If there are multiple wines tied for the lowest calories per unit price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -1903,7 +1903,7 @@
       {
         "tool_name": "get_discount",
         "parameters": {
-          "product_name": "Moscato Scanavino"
+          "product_name": "Moscato Scanavino Rose"
         }
       },
       {
@@ -1951,7 +1951,6 @@
         }
       }
     ],
-    "task_id": 30,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -1959,7 +1958,8 @@
     "value": [
       "Scanavino Prosecco",
       "Henkell Trocken"
-    ]
+    ],
+    "task_id": 30
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: mark_taylor_789). Ask the AI Service Agent to calculate the price difference between the first bottle you are pointing at and the second bottle you are pointing at. If the price difference is greater than 20 yuan, ask the AI Service Agent to look for wines that are from Italy, have a tax rate higher than 0.08, and feature \"low-calorie,\" and then add the cheapest qualifying wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If the price difference is less than or equal to 20 yuan, ask the AI Service Agent to find wines that are from Spain and have a \"savory\" taste, and then add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are not fully purchased. Ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -2086,7 +2086,6 @@
         }
       }
     ],
-    "task_id": 31,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2094,7 +2093,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 31
   },
   {
     "Instruction": "You are a nutritionist (User ID: jane_doe_201). Ask the AI Service Agent to compare the sugar content of the wine with the thickest bottle body and the second bottle to the right of the second bottle you are pointing at. If the thickest bottle has lower sugar content, ask the AI Service Agent to find wines from France with a tax rate higher than 0.05 and the \"low-fat\" characteristic, and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If the latter wine has lower sugar content, ask the AI Service Agent to find wines from New Zealand with a \"sweet\" taste and priced below 400 yuan, and add the one with the highest protein. If there are multiple wines tied for the highest protein among those that meet the conditions, you want all of them to be added. If they are the same, ask the AI Service Agent to find wines from Australia with a discount less than or equal to 0.9, and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are incomplete in quantity, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total protein content of the items in the shopping cart.",
@@ -2229,7 +2229,6 @@
         }
       }
     ],
-    "task_id": 32,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2237,7 +2236,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino"
-    ]
+    ],
+    "task_id": 32
   },
   {
     "Instruction": "Results:\nYou are an importer specializing in European wines (User ID: alice_wong_456). Among the wines you pointed to, please ask the AI Service Agent to query the country of origin for the wine with a white label and the wine containing red liquid. If they originate from the same country, ask the AI Service Agent to find wines from that country with a tax rate higher than 0.1, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If they originate from different countries, ask the AI Service Agent to look for wines from Italy with the\"low sugar\"feature and a unit price below 250 yuan, and add the one with the lowest calories. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. However, if neither of the original countries is Italy, ask the AI Service Agent to look for wines from Spain with a\"bitter\"taste and a calorie content higher than 80, and add the one with the highest protein. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total payment amount for the items in the cart.",
@@ -2340,7 +2340,6 @@
         }
       }
     ],
-    "task_id": 33,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2348,7 +2347,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 33
   },
   {
     "Instruction": "You are a dinner party host (User ID: john_smith_123). Ask the AI Service Agent to check whether the wine with a yellow body and the wine with a pink label are \"sweet\". If the gold foil capped wine is sweet, ask the AI Service Agent to search for wines from France with a tax rate below 0.12, and add the one with the lowest calorie count to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. If only the pink label wine is sweet, ask the AI Service Agent to search for wines from Italy with a \"low fat\" characteristic and priced below 350 yuan, and add the one with the highest protein content per unit price. If there are multiple wines tied for the highest protein content per unit price among those that meet the conditions, you want all of them to be added. If neither is sweet, ask the AI Service Agent to search for wines from New Zealand with a \"mild\" taste that are on discount, and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -2379,7 +2379,6 @@
         }
       }
     ],
-    "task_id": 34,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2387,7 +2386,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 34
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: bill_sue_119). Ask the AI Service Agent to check whether the two bottles to the right of the second bottle you are pointing at both carry the \"Low Calorie\" label. If both bottles have the label, ask the AI Service Agent to search for wines originating from Spain, with a tax rate below 0.08 and featuring \"Low Sugar\", and add the cheapest qualifying wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If only one bottle has the label, ask the AI Service Agent to search for wines originating from Australia, with a \"Sour\" taste and a unit price below 200 yuan, and add the wine with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. If neither bottle has the label, ask the AI Service Agent to search for wines originating from France, featuring \"Gluten-Free\" and with a discount factor better than 0.9, and add the wine with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -2415,7 +2415,7 @@
               "quantity": 2
             },
             {
-              "product_name": "Syrah Vieilles Vig1nes",
+              "product_name": "Syrah Vieilles Vignes",
               "quantity": 2
             },
             {
@@ -2426,7 +2426,6 @@
         }
       }
     ],
-    "task_id": 35,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2434,7 +2433,8 @@
     "value": [
       "Henkell Trocke",
       "Moscato Scanavino"
-    ]
+    ],
+    "task_id": 35
   },
   {
     "Instruction": "You are a professional sommelier (User ID: mike_roberts_234). Ask the AI Service Agent to check whether the price difference between the wine with the thickest bottle and the wine with the pink label exceeds 50 yuan. If it does, ask the AI Service Agent to search for wines that are from Italy, have a tax rate below 0.1, and feature a \"savory\" taste, then add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it does not, ask the AI Service Agent to find wines that are from France, have a \"low-fat\" feature, and cost less than 150 yuan per unit, then add the one with the highest calories to your cart. If there are multiple wines tied for the highest calorie count among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to remove the items just added, and then calculate the total tax for the empty cart.",
@@ -2469,7 +2469,6 @@
         }
       }
     ],
-    "task_id": 36,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2477,7 +2476,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 36
   },
   {
     "Instruction": "You are a restaurant manager (User ID: lisa_wong_456). Please ask the AI Service Agent to check whether the wine with a white label among the wines you pointed to,  and the wine containing red liquid among the wines you pointed to are from Italy. If the white-label wine is from Italy, ask the AI Service Agent to find wines that are also from Italy with a tax rate below 0.1, and add the wine with the lowest calories to the cart. If there are multiple wines tied for the lowest calories, add all of them. If the red-liquid wine is from Italy, ask the AI Service Agent to find wines from France with a \"sweet\" taste and priced below 250 yuan, and add the wine with the highest cellulose content. If there are multiple wines tied for the highest cellulose content, add all of them. If neither wine is from Italy, ask the AI Service Agent to find wines from Spain with a \"mild\" taste and a discount factor of 0.9, and add the cheapest wine. If there are multiple wines tied for the lowest price, add all of them. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to identify any wines on the list that have not been purchased or are incomplete, and ask the AI Service Agent to add all missing or incomplete wines from the shopping list to the cart. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -2548,7 +2548,6 @@
         }
       }
     ],
-    "task_id": 37,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2556,7 +2555,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 37
   },
   {
     "Instruction": "You are a party planner (User ID: tom_harris_123). Ask the AI Service Agent to check whether the first and second bottles of wine you are pointing at are \"Sweet\". If both are, ask the AI Service Agent to look for wines from Australia, with a tax rate below 0.12 and featuring \"Low Sugar\", and then add the one with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If only one of them is, ask the AI Service Agent to look for wines from New Zealand, with a \"Sour\" taste and priced below 350 yuan, and then add the one with the highest calories to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. If neither of them is, ask the AI Service Agent to look for wines from Chile, featuring \"Low Fat\" and with a discount factor greater than or equal to 0.9, and then add the most expensive one to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total price of the items in your cart.",
@@ -2651,7 +2651,6 @@
         }
       }
     ],
-    "task_id": 38,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2659,7 +2658,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 38
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: emma_clark_654). Ask the AI Service Agent to calculate the discounted prices of the wine with golden liquid and the wine with red liquid. If the golden liquid wine is cheaper, ask the AI Service Agent to search for wines from Italy with a tax rate greater than or equal to 0.08 and the \"low-calorie\" feature, and add the one with the lowest cellulose content to the cart. If there are multiple wines tied for the lowest cellulose content, add all of them. If the red liquid wine is cheaper, ask the AI Service Agent to find wines from France with a \"sweet\" taste and a unit price below 250 yuan, and add the one with the highest protein content. If there are multiple wines tied for the highest protein content, add all of them. If the prices are the same, ask the AI Service Agent to find wines from Spain with a \"mild\" taste, and add the cheapest one. If there are multiple wines tied for the lowest price, add all of them. Finally, ask the AI Service Agent to calculate the total cost of the items in the cart.",
@@ -2694,7 +2694,6 @@
         }
       }
     ],
-    "task_id": 39,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2702,7 +2701,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 39
   },
   {
     "Instruction": "You are a health-conscious enthusiast (User ID: mike_roberts_234). Ask the AI Service Agent to compare the calorie content of wines with red accents on the capsule versus wines containing golden-yellow liquid. If the wine with red accents has lower calories, ask the AI Service Agent to search for wines from New Zealand with a tax rate greater than or equal to 0.05 and a \"low sugar\" feature, and add the cheapest qualifying wine to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. If the wine with golden liquid has lower calories, ask the AI Service Agent to search for wines from Australia with a \"low fat\" feature and a unit price below 350 yuan, and add the wine with the lowest sugar content. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, add all of them. Afterwards, ask the AI Service Agent to check the shopping list and the cart to see which wines on the list have not been purchased or are incomplete, and add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total cost of the items in the cart.",
@@ -2757,7 +2757,6 @@
         }
       }
     ],
-    "task_id": 40,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2765,7 +2764,8 @@
     "value": [
       "Henkell Trocken",
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 40
   },
   {
     "Instruction": "You are a sommelier (User ID: lisa_wong_456). Ask the AI Service Agent to check whether the first bottle of wine you are pointing at and the wine containing red liquid are \"sweet\". If only one of them is sweet, ask the AI Service Agent to search for wines from France with a tax rate below 0.1 and the \"low sodium\" feature, and add the cheapest qualifying bottle to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If both are sweet, ask the AI Service Agent to find wines from Spain with a \"mild\" taste and a unit price below 250 yuan, and add the one with the highest calories. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. If neither is sweet, ask the AI Service Agent to find wines from Italy with a \"sweet\" taste, and add the one with the lowest tax cost. If there are multiple wines tied for the lowest tax cost among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total cost of the items in the cart.",
@@ -2804,14 +2804,14 @@
         }
       }
     ],
-    "task_id": 41,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Bosco del Merlo"
-    ]
+    ],
+    "task_id": 41
   },
   {
     "Instruction": "You are a nutritionist (User ID: tom_harris_123). Please ask the AI service agent to compare the sugar content between wines with gold foil caps and a yellow body and wines with pink labels. If the gold foil cap wine has lower sugar content, ask the AI service agent to find wines from Germany with a tax rate higher than 0.08 and the \"low sugar\" characteristic, and add the one with the lowest calories to the cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If the pink label wine has lower sugar content, ask the AI service agent to find wines from France with a \"sour\" taste and a unit price below 400 yuan, and add the one with the highest protein per unit price. If there are multiple wines tied for the highest protein per unit price among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total sugar content of the items in the cart.",
@@ -2858,7 +2858,6 @@
         }
       }
     ],
-    "task_id": 42,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2866,7 +2865,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 42
   },
   {
     "Instruction": "Results:\nYou are a gift shopper (User ID: david_jones_987). Ask the AI Service Agent to check whether the two bottles of wine you are pointing at have discounts. If both have discounts, ask the AI Service Agent to search for wines from Italy with a tax rate below 0.12 and a \"low-fat\" attribute, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If only one has a discount, ask the AI Service Agent to search for wines from Spain with a \"sweet\" taste and a unit price below 450 yuan, and add the one with the highest calories to the cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. If neither has a discount, ask the AI Service Agent to search for wines from Italy that are on sale, and add the one with the highest sugar concentration to the cart. If there are multiple wines tied for the highest sugar concentration among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total discounted amount for the items in your cart.",
@@ -2897,7 +2897,6 @@
         }
       }
     ],
-    "task_id": 43,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2905,7 +2904,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 43
   },
   {
     "Instruction": "You are a chef (User ID: sarah_green_567). Ask the AI Service Agent to confirm the country of origin for the wine with the thickest bottle and the wine with the pink label. If they are from the same country, ask the AI Service Agent to find wines from that country with a tax rate greater than or equal to 0.05 and a \"savory\" taste profile, and add the cheapest qualifying wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If they are from different countries, ask the AI Service Agent to search for wines from Italy with a \"low sugar\" characteristic and a unit price below 250 yuan, and add the one with the lowest calories. If there are multiple wines tied for the lowest calorie count, you want all of them to be added. Then, ask the AI Service Agent to check if the Italian wine(s) just added have a discount. If not, ask the AI Service Agent to find another Italian wine that is on sale and add the cheapest one. If there are multiple wines tied for the lowest price, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax amount for the items in the shopping cart.",
@@ -2968,7 +2968,6 @@
         }
       }
     ],
-    "task_id": 44,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -2976,7 +2975,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 44
   },
   {
     "Instruction": "You are a wine club member (User ID: alice_wong_456). Please ask the AI Service Agent to compare the tax rates of the two bottles to the right of the second bottle you are pointing at. If the bottle on the left has a lower tax rate, ask the AI Service Agent to search for wines produced in Italy that have the same tax rate and a \"mild\" taste profile, and add the wine with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If the bottle on the right has a lower tax rate, ask the AI Service Agent to find wines produced in France with a \"sweet\" taste and priced below 200 yuan, and add the wine with the lowest protein content. If there are multiple wines tied for the lowest protein content among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are incomplete, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total tax for the items in the shopping cart.",
@@ -3031,7 +3031,6 @@
         }
       }
     ],
-    "task_id": 45,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -3039,7 +3038,8 @@
     "value": [
       "Henkell Trocke",
       "Moscato Scanavino"
-    ]
+    ],
+    "task_id": 45
   },
   {
     "Instruction": "You are a shopping expert (User ID: bill_donk_143). Ask the AI Service Agent to compare the discounted prices of wines with both gold and red labels against wines with pink labels. If the former is cheaper, ask the AI Service Agent to find wines from Italy with a tax rate below 0.1 and the \"low fat\" feature, and add the one with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If the latter is cheaper, ask the AI Service Agent to find wines from Spain with a \"bitter\" taste and a price higher than 140 yuan, and add the one with the highest calories and lowest price to your cart. If there are multiple wines tied for the highest calories and lowest price among those that meet the conditions, you want all of them to be added. Next, ask the AI Service Agent to find wines with a discounted price higher than 60 yuan and the \"low sugar\" feature, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total cost of the items in your cart.",
@@ -3118,14 +3118,14 @@
         }
       }
     ],
-    "task_id": 46,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
     "key": "product_name",
     "value": [
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 46
   },
   {
     "Instruction": "You are a person with a sweet tooth (User ID: jane_doe_201). Ask the AI Service Agent to check the sugar content of the wine with golden liquid and the wine with red liquid. If the golden liquid wine is sweeter, ask the AI Service Agent to search for wines from France with a tax rate below 0.14 and a \"low calorie\" feature, and add the item with the highest discount amount to your cart. If there are multiple items tied for the highest discount amount, you want all of them to be added. If the red liquid wine is sweeter, ask the AI Service Agent to find wines from Italy with a \"sweet\" taste and a unit price below 200 yuan, and add the item with the highest sugar concentration. If there are multiple items tied for the highest sugar concentration, you want all of them to be added. If they are equally sweet, ask the AI Service Agent to find wines in the entire store with the highest sugar concentration and a discount factor better than 0.9, and add the cheapest one. If there are multiple items tied for the lowest price, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total calories of the items in your cart.",
@@ -3164,7 +3164,6 @@
         }
       }
     ],
-    "task_id": 47,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -3172,7 +3171,8 @@
     "value": [
       "Bosco del Merlo",
       "Moscato Scanavino Rose"
-    ]
+    ],
+    "task_id": 47
   },
   {
     "Instruction": "You are a wine collector (User ID: john_doe_123). Please ask the AI Service Agent to confirm the origin of the wine with a gold capsule and yellow label, and the wine with red accents on the capsule. If the wine with the gold capsule and yellow label is from Germany, ask the AI Service Agent to find wines from Germany with a tax rate below 0.12 and a \"low sodium\" feature, and add the wine with the lowest calorie count to the shopping cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, add all of them. If the wine with red accents on the capsule is from Germany, ask the AI Service Agent to find wines from France with a \"mild\" taste and a unit price below 250 yuan, and add the one with the highest protein content. If there are multiple wines tied for the highest protein among those that meet the conditions, add all of them. Next, ask the AI Service Agent to find German \"low sugar\" wines that are on sale, and add the cheapest one. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. Finally, ask the AI Service Agent to calculate the total tax for the items in the shopping cart.",
@@ -3215,7 +3215,6 @@
         }
       }
     ],
-    "task_id": 48,
     "image_name": "retail4",
     "image_path": "retail4.mp4",
     "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
@@ -3223,6 +3222,7 @@
     "value": [
       "Bosco del Merlo",
       "Henkell Trocken"
-    ]
+    ],
+    "task_id": 48
   }
 ]

@@ -1323,7 +1323,7 @@
           "user_id": "customer_007",
           "dishes": [
             {
-              "dish_name": "Homemade pappardelle with bolognese sauce*",
+              "dish_name": "Homemade pappardelle with bolognese sauce",
               "quantity": 1
             },
             {
@@ -1451,7 +1451,7 @@
           "user_id": "customer_008",
           "dishes": [
             {
-              "dish_name": "Handmade Bread",
+              "dish_name": "Walnut bread",
               "quantity": 1
             }
           ]
@@ -2729,7 +2729,7 @@
               "quantity": 1
             },
             {
-              "dish_name": "Kalamata olives'",
+              "dish_name": "Kalamata olives",
               "quantity": 1
             }
           ]

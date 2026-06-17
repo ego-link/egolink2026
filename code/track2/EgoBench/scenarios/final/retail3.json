@@ -64,14 +64,14 @@
         }
       }
     ],
-    "task_id": 1,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 1
   },
   {
     "Instruction": "You are a nutrition-conscious shopper (User ID: david_jones_987). Regarding the bottle of wine with a gold foil seal in your hand, ask the AI Service Agent to check whether its nutritional features include \"low calorie\". If so, ask the AI Service Agent to search for wines with a \"sweet\" taste, a tax rate not exceeding 0.14, and a unit price lower than that of this wine, and add the wine with the lowest calories among them to your shopping cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If not, ask the AI Service Agent to find all wines in the inventory that have the \"low calorie\" feature, a discount factor greater than 0.9, and are from France, and add the wine with the lowest carbohydrate content to your shopping cart. If there are multiple wines tied for the lowest carbohydrate content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total sugar content of the items in your shopping cart.",
@@ -134,14 +134,14 @@
         }
       }
     ],
-    "task_id": 2,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 2
   },
   {
     "Instruction": "You are a wine collector (User ID: john_doe_123). Ask the AI Service Agent to confirm whether the bottle of wine held in the right hand of the friend to your right has a discount. If there is a discount, ask the AI Service Agent to look for wines with a \"savory\" taste, priced higher than this copper-sealed wine, and with a tax rate below 0.15, and then add the wine with the lowest fat content to your cart. If there are multiple wines tied for the lowest fat content among those that meet the conditions, you want all of them to be added. If there is no discount, ask the AI Service Agent to find wines with a discount factor between 0.8 and 1.0 that originate from Italy, and then add the wine with the highest price to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or not purchased in full quantity, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the cart.",
@@ -476,14 +476,14 @@
         }
       }
     ],
-    "task_id": 3,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 3
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: lisa_taylor_321). Ask the AI Service Agent to identify the price of the wine with a blue oval on the label held in the left hand of the friend on your right. If the price exceeds 300 yuan, ask the AI Service Agent to look for wines with a tax rate below 0.1, a discount greater than 0.7, and a \"mild\" taste profile, and add the lowest-priced one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If the price does not exceed 300 yuan, ask the AI Service Agent to find wines with \"low-fat\" characteristics and calories lower than the gold-foil wine in your hand, and add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax amount for the items in the cart.",
@@ -550,14 +550,14 @@
         }
       }
     ],
-    "task_id": 4,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 4
   },
   {
     "Instruction": "You are a taste explorer (User ID: alice_wong_456). Ask the AI Service Agent to check whether the bottle of wine with golden liquid in your hand is classified as \"sweet\". If it is, ask the AI Service Agent to find wines in the mall that are also \"sweet\", have a lower tax rate than this wine, and are priced within 300 yuan, and then add the qualifying wine with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines that taste \"bitter\", feature \"low calories\", and have a discount factor better than 0.9, and then add the qualifying wine with the highest calorie content to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or not purchased in full quantity, and ask the AI Service Agent to add any missing or insufficient wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total protein content of all items in the shopping cart.",
@@ -660,14 +660,14 @@
         }
       }
     ],
-    "task_id": 5,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 5
   },
   {
     "Instruction": "You are a health-conscious shopper (User ID: charlie_brown_789). Ask the AI service agent to confirm whether the wine with a minimalist curve on the label is marked as \"Gluten-Free\". If it is, ask the AI service agent to search for wines that are priced lower than that wine, have a tax rate between 0.05 and 0.14, originate from Italy, and have a \"Sweet\" taste, and then add the wine with the lowest calories among them to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. If it is not, ask the AI service agent to search for wines that feature \"Low Sodium\" and have a discount factor between 0.8 and 1.0, and then add the wine with the highest carb content among them to your cart. If there are multiple wines tied for the highest carb content among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total amount payable (including tax) for the items in your cart.",
@@ -698,14 +698,14 @@
         }
       }
     ],
-    "task_id": 6,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 6
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: mike_roberts_234). Ask the AI service agent to obtain the tax rate of the bottle with the light blue bottle neck held by the friend on your right. If the tax rate is greater than 10%, ask the AI service agent to search for wines that have a tax rate higher than 5%, are priced within 300 yuan, and originate from France, and add the wine with the lowest fat content to your cart. If there are multiple wines tied for the lowest fat content among those that meet the conditions, you want all of them to be added. If the tax rate is not greater than 10%, ask the AI service agent to look for wines with a discount factor above 0.7 and a \"savory\" taste, and add the wine with the highest price to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total calorie value of the items in the shopping cart.",
@@ -916,14 +916,14 @@
         }
       }
     ],
-    "task_id": 7,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 7
   },
   {
     "Instruction": "You are a shopper keen on finding discounts (User ID: sarah_green_567). Please ask the AI Service Agent to check whether the wine in your hand, which has gold foil wrapping around the neck, is on discount. If it is on discount, ask the AI Service Agent to find other wines that are also on discount and have a lower tax rate than this wine, and add the wine with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If it is not on discount, ask the AI Service Agent to find wines priced between 100 and 300 yuan with a \"low-fat\" feature, and add the wine with the largest discount (smallest discount factor) to your cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for all items in the cart.",
@@ -1234,14 +1234,14 @@
         }
       }
     ],
-    "task_id": 8,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 8
   },
   {
     "Instruction": "You are a wine connoisseur (User ID: bill_donk_143). Ask the AI Service Agent to identify whether the bottle of wine with green liquid held by the friend on your right has the \"low sugar\" nutritional feature. If it does, ask the AI Service Agent to search for wines that also have the \"low sugar\" feature, have a tax rate below 0.15, and are priced higher than this wine, and then add the wine with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If it does not, ask the AI Service Agent to match wines in the inventory that have the \"low calorie\" feature and originate from France, and then add the wine with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total carbohydrate content of the items in the cart.",
@@ -1276,14 +1276,14 @@
         }
       }
     ],
-    "task_id": 9,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 9
   },
   {
     "Instruction": "You are a social shopper (User ID: jane_smith_789). Ask the AI Service Agent to determine whether the bottle of wine held in the left hand of the friend on your right is from New Zealand. If it is, ask the AI Service Agent to search for wines that are also from New Zealand, priced between 100 and 400 yuan, and have a tax rate lower than 0.13, and then add the wine with the lowest fat content to the shopping cart. If there are multiple wines tied for the lowest fat content among those that meet the conditions, you want all of them to be added. If it is not from New Zealand, ask the AI Service Agent to search for wines with the \"low sugar\" feature, a discount factor between 0.7 and 0.95, and a \"sour\" taste, and then add the wine with the highest calorie content to the shopping cart. If there are multiple wines tied for the highest calorie content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total sodium content of all items in the shopping cart.",
@@ -1378,14 +1378,14 @@
         }
       }
     ],
-    "task_id": 10,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 10
   },
   {
     "Instruction": "You are a sommelier (User ID: john_smith_123). Please ask the AI Service Agent to confirm whether the bottle of wine your friend is holding in their right hand is classified as \"sweet\". If it is, ask the AI Service Agent to search for wines from Italy, priced below 400 yuan per unit, and featuring \"low sugar\", and then add the qualifying bottle with the lowest calories to the shopping cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines from Italy, with a tax rate below 0.15, and a \"mild\" taste, and then add the qualifying bottle with the largest discount to the shopping cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or not purchased in sufficient quantity, and ask the AI Service Agent to add any missing or insufficient wines to the shopping cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total calories of the items in the shopping cart.",
@@ -1508,14 +1508,14 @@
         }
       }
     ],
-    "task_id": 11,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 11
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: emma_brown_123). Ask the AI Service Agent to identify whether the wine with a blue ellipse on its label is on sale. If it is on sale, ask the AI Service Agent to find wines that are from Spain and have a discount factor better than 0.9, and add the one with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not on sale, ask the AI Service Agent to find wines that are from New Zealand, priced between 100 and 500 yuan, and have a tax rate no higher than 0.14, and add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -1566,14 +1566,14 @@
         }
       }
     ],
-    "task_id": 12,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 12
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: alice_wong_456). Ask the AI Service Agent to check the sugar content of the golden-colored bottle of wine you are holding. If the sugar content is below 3g/100g, ask the AI Service Agent to search for wines that also have the \"low sugar\" characteristic and are from Italy, and add the one with the lowest calories to your shopping cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. If the sugar content exceeds the limit, ask the AI Service Agent to find wines with a tax rate lower than 0.14 and a taste profile of \"mild\", and add the one with the lowest sodium content to your shopping cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total protein content of the items in your shopping cart.",
@@ -1628,14 +1628,14 @@
         }
       }
     ],
-    "task_id": 13,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 13
   },
   {
     "Instruction": "You are a wine pairing consultant (User ID: bill_sue_119). Please ask the AI Service Agent to confirm the origin of the bottle wrapped with gold foil at the neck. If it is from France, ask the AI Service Agent to search the inventory for wines that are on sale, originate from Italy, and have a \"low-calorie\" feature, and then add the cheapest one to the shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not from France, ask the AI Service Agent to find wines from Spain that are on sale, and add the one with the highest calories to the shopping cart. If there are multiple wines tied for the highest calorie count among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for all items in the shopping cart.",
@@ -1670,14 +1670,14 @@
         }
       }
     ],
-    "task_id": 14,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 14
   },
   {
     "Instruction": "You are a gift buyer (User ID: tom_harris_123). Ask the AI Service Agent to verify whether the bottle of wine in your right hand is from France. If it is from France and the price is above 200 yuan, ask the AI Service Agent to search for wines that are also from France, have a tax rate of 0.14 or lower, and feature \"low sugar\". Add the wine with the lowest calorie count to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, add all of them to your cart. If it is not from France, ask the AI Service Agent to confirm whether the wine with the copper-colored seal is from France. If it is, add that wine to your cart. If it is not, add the Italian wine with the highest discount to your cart. If there are multiple wines tied for the highest discount, add all of them to your cart. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -1716,14 +1716,14 @@
         }
       }
     ],
-    "task_id": 15,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 15
   },
   {
     "Instruction": "You are an educator focused on low calories (User ID: bill_sue_119). Ask the AI Service Agent to check whether the bottle of wine held in your friend's left hand is \"low calorie\". If it is, ask the AI Service Agent to look for wines that are from New Zealand and have a \"sour\" taste, and add the one with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to search the inventory for all \"low calorie\" wines with a discount factor greater than 0.9, and add the one with the highest price to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total calories of the items in your cart.",
@@ -1806,14 +1806,14 @@
         }
       }
     ],
-    "task_id": 16,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 16
   },
   {
     "Instruction": "You are a wine retailer (User ID: bill_donk_143). Please ask the AI Service Agent to identify whether the wine with a minimalist curve on the label possesses \"sweetness\". If it does, have the AI Service Agent search the inventory for all wines originating from Italy, possessing \"sweetness\", and with a tax rate above 0.06, and select the one with the highest price to add to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. If it does not, have the AI Service Agent search for wines originating from France with prices between 100 and 500 yuan, and add the one with the deepest discount to your cart. If there are multiple wines tied for the deepest discount among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable including tax for the items in your cart.",
@@ -1864,14 +1864,14 @@
         }
       }
     ],
-    "task_id": 17,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 17
   },
   {
     "Instruction": "You are a nutritionist (User ID: sarah_green_567). Ask the AI Service Agent to retrieve the sodium content of the bottle of golden liquid wine you are holding. If the sodium content is below 50mg, ask the AI Service Agent to search for wines with the \"Gluten-free\" feature priced below 400 yuan, and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. If the sodium content is higher, ask the AI Service Agent to find wines labeled \"Low sugar\" with a tax rate below 0.15 and originating from Italy, and add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total calories of the items in your cart.",
@@ -1974,14 +1974,14 @@
         }
       }
     ],
-    "task_id": 18,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 18
   },
   {
     "Instruction": "You are a club manager (User ID: mike_roberts_234). Please ask the AI service agent to confirm whether the taste of the wine with the light blue bottle neck is \"smooth\". If the taste is \"smooth\", ask the AI service agent to find wines that are from Italy, priced above 100 yuan, and have the \"low sugar\" characteristic, and add the one with the lowest tax rate to the cart. If there are multiple wines tied for the lowest tax rate among those that meet the conditions, you want all of them to be added. If the taste is not \"smooth\", ask the AI service agent to find wines with a discount factor of 0.9 or below, a \"bitter\" taste, and from Spain, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI service agent to check the shopping list and the cart to see which wines on the list have not been purchased or are not fully purchased, and ask the AI service agent to add the missing or insufficient wines to the cart according to the shopping list. Finally, ask the AI service agent to calculate the total amount payable for all items in the cart.",
@@ -2032,14 +2032,14 @@
         }
       }
     ],
-    "task_id": 19,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 19
   },
   {
     "Instruction": "You are a health-conscious shopper (User ID: alice_wong_456). Ask the AI Service Agent to confirm whether the bottle with the bronze seal is \"low sugar\". If it is, ask the AI Service Agent to search for wines with a tax rate higher than 0.06, priced above 150, and originating from France, and add the qualifying wine with the lowest calorie content to your cart. If there are multiple wines tied for the lowest calorie content among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines originating from New Zealand with the \"low calorie\" feature, and add the qualifying wine with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to identify which wines on the list have not been purchased or are incomplete in quantity, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the shopping cart.",
@@ -2190,14 +2190,14 @@
         }
       }
     ],
-    "task_id": 20,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 20
   },
   {
     "Instruction": "You are an event planner (User ID: john_smith_123). Ask the AI Service Agent to check the price of the bottle of wine you are holding in your right hand. If the price is higher than 250 yuan, ask the AI Service Agent to search the inventory for wines with a tax rate below 0.09, a taste profile of \"savory\", and origin from Italy, and add the one with the largest discount to the cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. If the price is lower than 250 yuan, ask the AI Service Agent to find wines from France, with a \"gluten-free\" feature, and priced between 100 and 500 yuan, and add the one with the highest calories to the cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in the cart.",
@@ -2256,14 +2256,14 @@
         }
       }
     ],
-    "task_id": 21,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 21
   },
   {
     "Instruction": "You are a budget-conscious customer (User ID: jane_doe_201). Please ask the AI Service Agent to verify whether the bottle of wine held in your friend's left hand is currently discounted. If it is discounted, ask the AI Service Agent to search for other wines that are also discounted, have a tax rate below 0.14, and are from Chile, and add the one with the lowest unit price to your shopping cart. If there are multiple wines tied for the lowest price, add all of them. If it is not discounted, ask the AI Service Agent to find wines priced below 500 yuan, with \"low-fat\" characteristics and a \"mild\" taste, and add the one with the highest calorie count to your shopping cart. If there are multiple wines tied for the highest calories, add all of them. Finally, ask the AI Service Agent to calculate the total tax amount for the items in your shopping cart.",
@@ -2318,14 +2318,14 @@
         }
       }
     ],
-    "task_id": 22,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 22
   },
   {
     "Instruction": "Results:\nYou are a wine collector (User ID: mike_roberts_234). Ask the AI Service Agent to confirm whether the wine with a minimalist curve on its label is from France. If it is from France, ask the AI Service Agent to search the inventory for wines that are also from France, priced over 500 yuan, and have the \"low sugar\" feature, then add the wine with the lowest tax rate to your cart. If there are multiple wines tied for the lowest tax rate among those that meet the conditions, you want all of them to be added. If it is not from France, ask the AI Service Agent to find wines from Italy with a \"sweet\" taste and a discount factor above 0.9, then add the wine with the highest calories to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -2360,14 +2360,14 @@
         }
       }
     ],
-    "task_id": 23,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 23
   },
   {
     "Instruction": "You are a customer who dislikes sour taste (User ID: david_jones_987). Ask the AI service agent to check whether that golden-colored wine is \"sour\". If it is, ask the AI service agent to avoid sour tastes and search for wines that are \"sweet\", have a tax rate below 0.13, and are from France, then add the one with the lowest unit price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not, ask the AI service agent to find wines that are \"savory\" and have a \"low-fat\" characteristic, then add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total sugar content of the items in your cart.",
@@ -2414,14 +2414,14 @@
         }
       }
     ],
-    "task_id": 24,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 24
   },
   {
     "Instruction": "You are a customer concerned about low calories (User ID: sarah_green_567). Please ask the AI Service Agent to check whether the wine with a blue oval on its label is marked as \"Low Calorie\". If it is, ask the AI Service Agent to search for wines priced below 400 yuan and originating from New Zealand, and add the one with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines in the database with a tax rate between 0.05 and 0.1 and the same origin as the bottle to its right, and add the one with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or not purchased in full quantity, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the shopping cart.",
@@ -2508,14 +2508,14 @@
         }
       }
     ],
-    "task_id": 25,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 25
   },
   {
     "Instruction": "You are a customer focused on taste (User ID: emma_clark_654). Ask the AI Service Agent to check whether the bottle of wine held in your friend's right hand is \"bitter\". If it is, have the AI Service Agent exclude bitter wines and search for wines that are \"sweet\", originate from Italy, and have a discount factor less than 1. Add the cheapest qualifying wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not bitter, have the AI Service Agent search for wines with \"low sugar\" characteristics, a tax rate below 0.13, and the same origin as the bottle to its left. Add the qualifying wine with the highest calories to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. Subsequently, have the AI Service Agent check the shopping list and the shopping cart to see which wines on the list have not been purchased or are incomplete. Have the AI Service Agent add any unbought or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -2582,14 +2582,14 @@
         }
       }
     ],
-    "task_id": 26,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 26
   },
   {
     "Instruction": "You are a customer who wants to compare origins (User ID: bill_donk_143). Ask the AI Service Agent to confirm whether the origin of the wine wrapped in gold foil at the bottle neck is the same as that of the wine with a copper-colored seal. If they are not the same, ask the AI Service Agent to look for wines that are from France, priced between 100 and 400 yuan, and have the \"gluten-free\" attribute, and then add the qualifying bottle with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If they are the same, ask the AI Service Agent to find wines that are from Italy, have a \"sour\" taste, and have a discount factor higher than 0.9, and then add the qualifying bottle with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -2624,14 +2624,14 @@
         }
       }
     ],
-    "task_id": 27,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 27
   },
   {
     "Instruction": "You are a customer named \"tom_harris_123\". Ask the AI Service Agent to check the price of the bottle of wine held in your friend's left hand. If the price of this wine is higher than 300 yuan, ask the AI Service Agent to search for wines that are priced below 500 yuan, have a tax rate below 0.1, and originate from Spain, and add the qualifying wine with the lowest fat content to your shopping cart. If there are multiple wines tied for the lowest fat content among those that meet the conditions, you want all of them to be added. If the price is not higher than 300 yuan, ask the AI Service Agent to find wines that share the same origin as the bottle to the right of this wine and possess the \"low sugar\" characteristic, and add the qualifying wine with the highest unit price to your shopping cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount spent on the items in your shopping cart.",
@@ -2670,14 +2670,14 @@
         }
       }
     ],
-    "task_id": 28,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 28
   },
   {
     "Instruction": "You are a customer concerned about tax rates (User ID: lisa_taylor_321). Ask the AI Service Agent to check the tax rate of the bottle of golden liquid wine you are holding. If the tax rate is higher than 0.1, ask the AI Service Agent to search for wines with a tax rate below 0.10, priced under 300 yuan, and originating from New Zealand, and add the one with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If the tax rate is not higher than 0.1, ask the AI Service Agent to find wines with a discount factor greater than 0.9 and a \"savory\" taste, and add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total calorie value of the items in your cart.",
@@ -2740,14 +2740,14 @@
         }
       }
     ],
-    "task_id": 29,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 29
   },
   {
     "Instruction": "You are a wine collector (User ID: emma_clark_654). Ask the AI Service Agent to verify the origin of the bottle of wine you are holding in your right hand. If it is from France, ask the AI Service Agent to look for wines that are also from France, priced above 400 yuan, and have the \"low fat\" feature, and then add the one with the lowest calories to your shopping cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If it is not from France, ask the AI Service Agent to confirm the origin of the bottle with the light blue bottle cap. If it is not from China, ask the AI Service Agent to add the wine from the inventory that has the same origin as that wine but offers the deepest discount to your shopping cart. If there are multiple wines tied for the deepest discount among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total price of the items in the shopping cart.",
@@ -2798,14 +2798,14 @@
         }
       }
     ],
-    "task_id": 30,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 30
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: alice_wong_456). Ask the AI service agent to check whether the wine with a minimalist curve on its label is \"low calorie\". If it is, ask the AI service agent to search for wines priced between 100 and 500 yuan that originate from Spain, and add the one with the lowest sodium content to your cart. If it is not, ask the AI service agent to find all \"low sugar\" wines that share the same origin as the bottle to its left, and add the one with the lowest fat content to your cart. If there are multiple wines tied for the lowest sodium or fat content among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total sugar content of the items in your cart.",
@@ -2876,14 +2876,14 @@
         }
       }
     ],
-    "task_id": 31,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 31
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: john_doe_123). Please ask the AI service agent to confirm the taste of that golden-colored bottle of wine. If it is \"bitter\", ask the AI service agent to search for wines that are not bitter, originate from France, and have the \"low-calorie\" feature, and add the one with the lowest price to the shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If not, ask the AI service agent to check whether the bottle held in the friend's right hand is \"sour\". If so, ask the AI service agent to find a wine originating from New Zealand with a tax rate below 0.12 and the highest unit price, and add it to the shopping cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI service agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are not fully purchased, and ask the AI service agent to add all the unpurchased or incomplete wines to the shopping cart according to the shopping list. Finally, ask the AI service agent to calculate the total tax amount for the items in the shopping cart.",
@@ -2946,14 +2946,14 @@
         }
       }
     ],
-    "task_id": 32,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 32
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: lisa_taylor_321). Ask the AI Service Agent to retrieve the price of the wine with gold foil wrapped around the bottle neck. If the price exceeds 200 yuan, ask the AI Service Agent to search for wines priced between 100 and 250 yuan, featuring \"low sodium,\" and originating from Chile, and add the qualifying wine with the largest discount to your cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. If the price is 200 yuan or less, ask the AI Service Agent to find wines with a tax rate below 0.14 and originating from France, and add the qualifying wine with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Afterwards, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the shopping list have not been bought or are insufficient in quantity, and ask the AI Service Agent to add the wines that haven't been bought or are insufficient to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -3036,14 +3036,14 @@
         }
       }
     ],
-    "task_id": 33,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 33
   },
   {
     "Instruction": "You are a connoisseur (User ID: mike_roberts_234). Please ask the AI Service Agent to verify the origin of the bottle of wine you are holding in your right hand. If it is from France, ask the AI Service Agent to further confirm whether it has a \"bitter\" taste. If it is bitter, ask the AI Service Agent to search for wines that are produced in France, priced below 500 yuan, and feature \"low sugar,\" and add the one with the lowest sodium content to the shopping cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If the origin is not France or the taste is not bitter, ask the AI Service Agent to confirm whether the bottle with the copper-colored seal is from \"Germany.\" If it is not, ask the AI Service Agent to add the wine produced in Italy with the highest calorie content to the cart. If there are multiple wines tied for the highest calorie content, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total sugar content of the items in the shopping cart.",
@@ -3078,14 +3078,14 @@
         }
       }
     ],
-    "task_id": 34,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 34
   },
   {
     "Instruction": "You are a wine lover (User ID: david_jones_987). Ask the AI Service Agent to check whether that golden-colored wine is \"low sugar\". If it is low sugar and the price is higher than 250 yuan, ask the AI Service Agent to search for wines priced below 250 yuan and originating from New Zealand, and add the one with the lowest tax rate to your cart. If there are multiple wines tied for the lowest tax rate among those that meet the conditions, you want all of them to be added. If not, ask the AI Service Agent to find wines that have a savory (non-aromatic) taste profile, are discounted, and originate from Spain, and add the one with the highest calorie count to your cart. If there are multiple wines tied for the highest calorie count among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -3132,14 +3132,14 @@
         }
       }
     ],
-    "task_id": 35,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 35
   },
   {
     "Instruction": "You are an enthusiast (User ID: sarah_green_567). Ask the AI Service Agent to verify the taste of the wine wrapped in gold foil at the bottle neck. If it is \"bitter\" and originates from France, ask the AI Service Agent to search for wines that are also from France, have a tax rate below 0.15, and possess the \"gluten-free\" attribute, and then add the most expensive one to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. If these conditions are not both met, ask the AI Service Agent to confirm whether the wine with a minimalist curve on the label is \"high protein\". If it is not, ask the AI Service Agent to add the wine from Italy with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total protein content of the items in your cart.",
@@ -3178,14 +3178,14 @@
         }
       }
     ],
-    "task_id": 36,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 36
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: charlie_brown_789). Ask the AI Service Agent to get the price of the bottle of wine in your right hand. If the price is higher than 200 yuan, ask the AI Service Agent to confirm whether the wine with a blue oval on its label is \"low-calorie\". If it is, ask the AI Service Agent to search the inventory for wines that are also low-calorie and from Chile, and add the one with the deepest discount to your cart. If there are multiple wines tied for the deepest discount among those that meet the conditions, add all of them. If the price does not exceed the limit, ask the AI Service Agent to find wines with the \"low-sodium\" feature and a \"sweet\" taste, and add the one with the highest calorie count. If there are multiple wines tied for the highest calories among those that meet the conditions, add all of them. Subsequently, ask the AI Service Agent to check the shopping list and the cart to see which wines on the list have not been purchased or are not fully purchased, and ask the AI Service Agent to add any missing or incomplete items to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total price of the items in the cart.",
@@ -3248,14 +3248,14 @@
         }
       }
     ],
-    "task_id": 37,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 37
   },
   {
     "Instruction": "You are a collector (User ID: jane_doe_201). Please ask the AI service agent to confirm whether that golden-colored bottle of wine is from France. If it is from France and the taste is \"bitter\", instruct the AI service agent to search for wines from France with \"low sugar\" characteristics priced between 10 and 500 yuan, and add the one with the lowest tax rate to your cart. If there are multiple wines tied for the lowest tax rate among those that meet the conditions, you want all of them to be added. If not, ask the AI service agent to confirm whether the bottle held in your friend's left hand is from New Zealand. Regardless of the outcome, instruct the AI service agent to add to the cart the wine from that origin with \"gluten-free\" characteristics and the lowest unit price. If there are multiple wines tied for the lowest unit price, you want all of them to be added. Subsequently, have the AI service agent check the shopping list and the shopping cart to see which wines on the list have not been purchased or are incomplete in quantity. Instruct the AI service agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, have the AI service agent calculate the total tax amount for the items in the shopping cart.",
@@ -3316,14 +3316,14 @@
         }
       }
     ],
-    "task_id": 38,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 38
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: tom_harris_123). Ask the AI Service Agent to check whether the bottle of wine held in your friend's right hand has both \"low sugar\" and \"sour taste\". If it does, ask the AI Service Agent to search the inventory for wines that are from France, priced below 450 yuan, and have \"gluten-free\" characteristics, and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. If it does not, ask the AI Service Agent to find wines among all \"low-calorie\" options that have a discount factor greater than 0.9 and are from Italy, and add the one with the highest sodium content to your cart. If there are multiple wines tied for the highest sodium content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total protein of the items in your shopping cart.",
@@ -3362,14 +3362,14 @@
         }
       }
     ],
-    "task_id": 39,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 39
   },
   {
     "Instruction": "You are a budget shopper (User ID: alice_wong_456). Ask the AI Service Agent to check whether the price of the wine with gold foil wrapping around the bottle neck is below 450 yuan. If it is below 450 yuan and has the \"low sugar\" feature, ask the AI Service Agent to search for wines that are from New Zealand, also low sugar, and have a tax rate below 0.14, and then add the qualifying wine with the highest calorie count to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. If the price is not below 450 yuan or it does not have the \"low sugar\" feature, ask the AI Service Agent to find wines that are priced above 100 yuan, have the \"low calorie\" feature, and are from Spain, and then add the qualifying wine with the largest discount to your cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in your cart.",
@@ -3424,14 +3424,14 @@
         }
       }
     ],
-    "task_id": 40,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 40
   },
   {
     "Instruction": "You are a high-calorie enthusiast (User ID: david_jones_987). Please ask the AI Service Agent to check the calorie content of the golden-colored wine bottle in your hand. If the calories exceed 80kcal/100g, ask the AI Service Agent to find wines with the same origin, a tax rate below 0.13, and a unit price between 40 and 400 yuan, and then add the qualifying wine with the highest calorie content to your cart. If there are multiple wines tied for the highest calorie content among those that meet the conditions, you want all of them to be added. If the calories do not exceed the limit, ask the AI Service Agent to find wines produced in Italy with a calorie content over 80kcal, and then add the qualifying wine with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -3478,14 +3478,14 @@
         }
       }
     ],
-    "task_id": 41,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 41
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: emma_clark_654). Ask the AI Service Agent to check whether the bottle of golden liquid wine you are holding contains the \"low fat\" feature. If it does, ask the AI Service Agent to search for wines from New Zealand that are priced below 550 yuan and have a \"sour\" taste, and add the wine with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If it does not, ask the AI Service Agent to find wines from Australia that also have the \"low fat\" label and a tax rate below 0.12, and add the wine with the smallest discount factor to your cart. If there are multiple wines tied for the smallest discount factor among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been bought or are incomplete, and have the AI Service Agent add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total tax for the items in the shopping cart.",
@@ -3596,14 +3596,14 @@
         }
       }
     ],
-    "task_id": 42,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 42
   },
   {
     "Instruction": "You are a collector focusing on French wines (User ID: mike_roberts_234). Ask the AI service agent to confirm whether the bottle you are holding in your right hand is from France. If the bottle is from France and has a \"bitter taste\", ask the AI service agent to search for wines that are from France, have a unit price below 350 yuan, and feature \"low sugar\", and then add the qualifying wine with the lowest tax rate to your cart. If there are multiple wines tied for the lowest tax rate among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI service agent to find French wines that do not have a bitter taste, feature \"low calorie\", and are currently on sale (discount factor < 1.0), and then add the qualifying wine with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total nutritional content of the items in your cart.",
@@ -3638,14 +3638,14 @@
         }
       }
     ],
-    "task_id": 43,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 43
   },
   {
     "Instruction": "You are a flavor explorer (User ID: sarah_green_567). Ask the AI Service Agent to identify the taste of the wine with a copper-colored seal. If it includes \"sweetness\", ask the AI Service Agent to search for wines that are from Italy, priced below 450 yuan, and have the \"gluten-free\" feature, and add the one with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, add one of each of those tied items. If not, ask the AI Service Agent to find wines that have the \"low sugar\" feature, a tax rate between 0.05 and 0.14, and are from France, and add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, add one of each of those tied items. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are incomplete, and ask the AI Service Agent to add any missing or incomplete wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -3780,14 +3780,14 @@
         }
       }
     ],
-    "task_id": 44,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 44
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: jane_doe_201). Ask the AI Service Agent to retrieve the calorie content of the bottle wrapped with gold foil at the neck. If it exceeds 100kcal/100g, ask the AI Service Agent to search the inventory for wines that are also from France and have calories exceeding 100kcal, and add the one with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them to the cart. If the calorie content does not exceed this threshold, ask the AI Service Agent to find a wine from New Zealand with the highest calorie content and add it to your cart. If there are multiple wines tied for the highest calorie content among those that meet the conditions, add all of them to the cart. Finally, ask the AI Service Agent to calculate the total tax amount for the items in your cart.",
@@ -3838,14 +3838,14 @@
         }
       }
     ],
-    "task_id": 45,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 45
   },
   {
     "Instruction": "You are a discount shopper (User ID: john_smith_123). Ask the AI service agent to check whether that golden-colored wine is on sale. If it is, ask the AI service agent to search the inventory for wines that are also discounted, originate from New Zealand, and have the \"low calorie\" feature, and then add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not on sale, ask the AI service agent to find wines priced below 150 yuan with a discount factor of 0.8 or lower, and then add the one with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total calories of the items in your cart.",
@@ -3920,14 +3920,14 @@
         }
       }
     ],
-    "task_id": 46,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 46
   },
   {
     "Instruction": "You are a customer concerned about low sodium (User ID: lisa_taylor_321). Ask the AI Service Agent to check whether the bottle of wine held in your friend's left hand is \"low sodium\". If it is, ask the AI Service Agent to search for wines from New Zealand with \"low sugar\" characteristics and add the one with the lowest calories to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines with \"low sodium\" characteristics, a tax rate below 0.12, and a \"mild\" taste, and add the one with the largest discount to your cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to see which wines on the list have not been purchased or are insufficient in quantity, and ask the AI Service Agent to add the missing or insufficient wines to the cart according to the shopping list. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -4054,14 +4054,14 @@
         }
       }
     ],
-    "task_id": 47,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Merlot Oyster Bay"
-    ]
+    ],
+    "task_id": 47
   },
   {
     "Instruction": "You are an enthusiast who enjoys sour wines (User ID: charlie_brown_789). Please ask the AI Service Agent to check whether the bottle of wine you are holding in your right hand is \"sour\". If it is, ask the AI Service Agent to search for wines that are also \"sour\" in taste and originate from France, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to find wines with a protein content higher than 0.1, a tax rate lower than 0.10, and originating from New Zealand, and add the one with the highest carbohydrate content to your cart. If there are multiple wines tied for the highest carbohydrate content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax on the items in your cart.",
@@ -4108,14 +4108,14 @@
         }
       }
     ],
-    "task_id": 48,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 48
   },
   {
     "Instruction": "You are a shopper focused on French wine (User ID: bill_sue_119). Please ask the AI Service Agent to confirm whether the bottle with a minimalist curve on the label is from France. If it is, ask the AI Service Agent to search for French wines with a unit price below 150 yuan, featuring \"low sodium,\" and having a \"mild\" taste, and then add the qualifying wine with the lowest calorie content to your cart. If there are multiple wines tied for the lowest calorie content among those that meet the conditions, you want all of them to be added. If it is not from France, ask the AI Service Agent to find wines priced below 300 yuan, with a discount factor greater than or equal to 0.9, and originating from Spain, and then add the qualifying wine with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total protein content of the items in your cart.",
@@ -4150,13 +4150,13 @@
         }
       }
     ],
-    "task_id": 49,
     "image_name": "retail3",
     "image_path": "retail3.mp4",
     "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
     "key": "product_name",
     "value": [
       "River Terrace Chardonnay"
-    ]
+    ],
+    "task_id": 49
   }
 ]

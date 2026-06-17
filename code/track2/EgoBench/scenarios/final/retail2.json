@@ -60,7 +60,6 @@
         }
       }
     ],
-    "task_id": 1,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -68,7 +67,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 1
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: grace_liu_999) who has just picked up two bottles of wine. Ask the AI Service Agent to determine whether both bottles possess a \"bitter\" taste. If both have bitterness, ask the AI Service Agent to compare their nutritional content and determine which bottle is cheaper, then add two bottles of the cheaper option to your cart. If both wines are tied for the lowest price, add two bottles of each. If only one bottle has bitterness, ask the AI Service Agent to add the bottle in your left hand to the cart. If neither bottle has bitterness, ask the AI Service Agent to add one bottle of the wine in your right hand to the cart. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in your cart.",
@@ -115,7 +115,6 @@
         }
       }
     ],
-    "task_id": 2,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -123,7 +122,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 2
   },
   {
     "Instruction": "You are a customer keen on finding deals (User ID: david_brown_777) who has just selected a bottle of wine with a gold cap. Please ask the AI Service Agent to check if this wine has a discount. If it has a discount, have the AI Service Agent add two bottles of this wine to your cart. If it does not have a discount, have the AI Service Agent check if there are other wines from the same country of origin that are currently on sale. If found, add the wine with the lowest discounted price to your cart. If there are multiple wines tied for the lowest discounted price among those that meet the conditions, you want all of them to be added. If neither of the above conditions is met, have the AI Service Agent select a wine with the same origin as the gold-capped wine in your hand and the lowest price, and add it to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, have the AI Service Agent calculate the total tax amount for the items in the cart.",
@@ -154,14 +154,14 @@
         }
       }
     ],
-    "task_id": 3,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 3
   },
   {
     "Instruction": "You are a customer (User ID: jack_huang_666) comparing two bottles of wine in your hand, and you are interested in the one with a blue foil cap. Please ask the AI Service Agent to confirm the country of origin of this wine and check if there are other wines from that country with exactly the same taste characteristics. If there are, ask the AI Service Agent to add the cheapest one to your shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If there are no such wines, ask the AI Service Agent to check if there are wines from that country priced below 200 yuan with the same nutritional characteristics. If there are, add the one with the lowest calories to your shopping cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your shopping cart.",
@@ -192,14 +192,14 @@
         }
       }
     ],
-    "task_id": 4,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 4
   },
   {
     "Instruction": "You are a customer (User ID: tom_harris_999) who was just holding two bottles of wine. Focus on the bottle with the greener body. Please ask the AI service agent to verify the nutritional information of this wine. Then, have the AI service agent check if there are wines from the same origin with a price difference of no more than 20 yuan. If there are any, have the AI service agent select the one with the lowest calories among them and add one bottle to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want one bottle of each of those tied items to be added. If there are none, have the AI service agent look for wines with the same nutrition label that are currently on sale. If found, add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want one bottle of each of those tied items to be added. Finally, have the AI service agent calculate the total nutritional value of the items in your cart.",
@@ -230,14 +230,14 @@
         }
       }
     ],
-    "task_id": 5,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 5
   },
   {
     "Instruction": "You are a wine collector (User ID: henry_tan_555) who just picked up two bottles of wine. Regarding the bottle you put back second, ask the AI Service Agent to query its flavor characteristics and nutritional content. Then, ask the AI Service Agent to search for other wines that have exactly the same flavor characteristics and nutritional content. If any are found, ask the AI Service Agent to add the cheapest qualifying bottle to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If none are found, ask the AI Service Agent to search for wines from the same country that are priced below 150 yuan. If any exist, add the cheapest qualifying bottle to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax amount for the items in your cart.",
@@ -276,14 +276,14 @@
         }
       }
     ],
-    "task_id": 6,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 6
   },
   {
     "Instruction": "You are a customer (User ID: jack_huang_666) holding two bottles of wine. Ask the AI Service Agent to confirm whether the wine with the blue tin cap has a \"sweet\" taste. If it does, ask the AI Service Agent to find other wines with the exact same flavor and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it does not, ask the AI Service Agent to check if there are wines from the same country of origin that are \"sweet\" and priced below 200 yuan. If so, add the one with the highest calories to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the cart.",
@@ -314,14 +314,14 @@
         }
       }
     ],
-    "task_id": 7,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 7
   },
   {
     "Instruction": "You are a customer (User ID: alice_wong_789), currently comparing two bottles of wine. Regarding the bottle that was put back earlier, ask the AI service agent to query the tax rate for this bottle. If the tax rate is below 10%, ask the AI service agent to search for other wines from the same country of origin with a tax rate less than or equal to 10%. If found, ask the AI service agent to add the cheapest option among them to your cart; if there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If not found, ask the AI service agent to check for wines with the same nutritional characteristics and a tax rate less than or equal to 10%. If found, add the cheapest option among them to your cart; if there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total amount payable for the items in your cart.",
@@ -376,14 +376,14 @@
         }
       }
     ],
-    "task_id": 8,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 8
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: bill_donk_143) currently holding two bottles of wine. Ask the AI Service Agent to check the price and confirm the country of origin of the wine in your left hand. If the price is below 200 yuan, ask the AI Service Agent to further check the tax rate of the wine in your right hand. If the tax rate is below 0.10, have the AI Service Agent add two bottles of the right-hand wine to your cart. If the tax rate is 0.10 or higher, have the AI Service Agent add one bottle of the left-hand wine to your cart. Next, ask the AI Service Agent to verify if there are other wines from the same country as the left-hand wine that are priced over 200 yuan. If there are, add the cheapest one to your cart. If multiple wines tie for the lowest price, add one of each of those tied items. Finally, ask the AI Service Agent to calculate the total nutritional content of the items in your cart.",
@@ -446,14 +446,14 @@
         }
       }
     ],
-    "task_id": 9,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 9
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: grace_liu_999) who has just selected two wines. Ask the AI Service Agent to confirm whether either of these two wines has a \"sweet\" taste. If the bottle on the left is sweet, ask the AI Service Agent to check if it is on discount. If it is on discount, ask the AI Service Agent to add three bottles of that wine to your cart; if it is not on discount, ask the AI Service Agent to add two bottles of the wine on the right to your cart. Next, ask the AI Service Agent to check if there are any other Italian wines that also have the same sweet taste. If there are, add the lowest-priced one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add one of each of those tied items. Finally, ask the AI Service Agent to calculate the total tax amount for the items in your cart.",
@@ -516,7 +516,6 @@
         }
       }
     ],
-    "task_id": 10,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -524,7 +523,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 10
   },
   {
     "Instruction": "Results:\nYou are a health-conscious shopper (User ID: jack_huang_666) holding two bottles of wine. Ask the AI Service Agent to check whether the first bottle you picked up is low-calorie. If it is, ask the AI Service Agent to add it to your cart. If it is not, ask the AI Service Agent to check whether the second bottle you picked up is low-calorie, and if so, add it to your cart. Additionally, ask the AI Service Agent to search for low-sugar wines among other wines from the origin country of the selected wine. If any are found, add the cheapest one to your cart. If there are multiple wines tied for the lowest price, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional content of the items in your cart.",
@@ -571,14 +571,14 @@
         }
       }
     ],
-    "task_id": 11,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 11
   },
   {
     "Instruction": "You are a trader (User ID: alex_wilson_333) who just picked up and put back two bottles of wine in succession. Ask the AI service agent to determine which wine has a higher tax rate. If the wine put back later has a higher tax rate, ask the AI service agent to check if it is from France; if so, add three bottles to the cart. If the wine put back earlier has a higher tax rate, ask the AI service agent to check if it is from Italy; if so, add one bottle to the cart. If both wines have the same tax rate, check if both wines originate from the same country; if so, add one bottle with a sour taste to the cart. Next, ask the AI service agent to find other wines from France or Italy within a price range of ±10% of the selected wine's price, and add the cheapest one among them to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total amount payable for the items in the cart.",
@@ -645,7 +645,6 @@
         }
       }
     ],
-    "task_id": 12,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -653,7 +652,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 12
   },
   {
     "Instruction": "You are a wine collector (User ID: diana_park_456) currently viewing two wines. Please ask the AI Service Agent to confirm whether either of the wines is classified as \"low-fat\". If the wine with the yellow body is low-fat, have the AI Service Agent add three bottles of it to the cart. If the wine with the yellow body is not low-fat, have the AI Service Agent check if the other wine is low-fat; if so, add two bottles of it to the cart. Subsequently, ask the AI Service Agent to search for other wines that originate from the same country as the selected wine and are also low-fat, and add the cheapest one to the cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add one of each of those tied items. Finally, ask the AI Service Agent to calculate the total tax for the items in the cart.",
@@ -704,7 +704,6 @@
         }
       }
     ],
-    "task_id": 13,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -712,7 +711,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 13
   },
   {
     "Instruction": "You are a gift purchaser (User ID: tom_harris_999), holding two bottles of wine. Please ask the AI Service Agent to confirm the category of these two wines and determine whether the yellow bottle is from France. If it is, ask the AI Service Agent to check its price; if the price is below 100 yuan, add one bottle to the shopping cart. If any of the above conditions are not met, ask the AI Service Agent to add the third bottle to the right of this bottle's location to the shopping cart. Next, ask the AI Service Agent to check if there are any low-fat wines among other wines produced in the same country as the selected wine, and add the one with the largest discount to the shopping cart. If there are multiple wines tied for the largest discount, add one of each of those tied items. Finally, ask the AI Service Agent to calculate the total amount payable for the items in the shopping cart.",
@@ -819,7 +819,6 @@
         }
       }
     ],
-    "task_id": 14,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -827,7 +826,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 14
   },
   {
     "Instruction": "You are a fitness coach (User ID: emma_davis_666) selecting wine for a client. Please ask the AI Service Agent to query the sugar content of the two wines picked up in sequence. If the bottle put back first has lower sugar content, ask the AI Service Agent to add one bottle of that wine to the cart. If the bottle put back later has lower sugar content, ask the AI Service Agent to add two bottles of that wine to the cart. Next, ask the AI Service Agent to find other low-sugar wines from the same country of origin as the selected wine, and add the wine with the lowest calories to the cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional content of the items in the cart.",
@@ -894,14 +894,14 @@
         }
       }
     ],
-    "task_id": 15,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 15
   },
   {
     "Instruction": "Results:\nYou are a restaurant owner (User ID: mark_jones_555), currently holding two bottles of wine. Ask the AI Service Agent to confirm whether these two wines are from different countries. If they are, ask the AI Service Agent to add the lower-priced one to your cart. If both wines are tied for the lower price, add both. If they are not, ask the AI Service Agent to add two bottles of the wine with the lowest calories that is from France and has a sweet taste to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, add two bottles of each of those tied items. Next, ask the AI Service Agent to find other low-calorie wines from the same country of origin as the selected wine, and add the lowest-priced one among them to your cart. If there are multiple wines tied for the lowest price, add one of each of those tied items. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -968,7 +968,6 @@
         }
       }
     ],
-    "task_id": 16,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -976,7 +975,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 16
   },
   {
     "Instruction": "You are a sommelier (User ID: olivia_white_1010) who has picked up two bottles of wine to examine. You need to ask the AI Service Agent to check whether either of these two wines has a \"sour taste\". If the wine with the yellow body has a sour taste, ask the AI Service Agent to check if it is on discount. If it is on discount, ask the AI Service Agent to add two bottles of this wine to your cart. If it is not on discount, ask the AI Service Agent to add one bottle of the third wine to the right of this wine's location to your cart. Next, ask the AI Service Agent to find other wines from the same country as the selected wine that also have a \"sour taste\", and add the lowest-priced one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add one of each of those tied items to the cart. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in your cart.",
@@ -1043,7 +1043,6 @@
         }
       }
     ],
-    "task_id": 17,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1051,7 +1050,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 17
   },
   {
     "Instruction": "You are a savvy shopper (User ID: lisa_taylor_444), currently examining two bottles of wine you are holding. Please ask the AI Service Agent to check the discount status of these two wines. If the bottle from the lower shelf has a discount, have the AI Service Agent add one bottle of it to your cart. If the bottle from the higher shelf has a discount, have the AI Service Agent add two bottles of it to your cart. If neither bottle has a discount, have the AI Service Agent add one bottle of the cheaper one to your cart. If both bottles are tied for the lower price, you want one bottle of each to be added. Next, have the AI Service Agent search for all other discounted wines from the same country of origin as the selected wine(s), and add the cheapest one among them to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want one of each to be added. Finally, have the AI Service Agent calculate the total tax payable for the items in your cart.",
@@ -1118,7 +1118,6 @@
         }
       }
     ],
-    "task_id": 18,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1126,7 +1125,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 18
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: bill_donk_143), and you have picked up two bottles of wine. Ask the AI service agent to confirm the prices of these two bottles and check whether either of them is on sale. If both are on sale, ask the AI service agent to add two bottles of the cheaper one to your cart. If both discounted wines are tied for the lowest price, you want two bottles of each added. If only one is on sale, ask the AI service agent to add two bottles of the discounted one to your cart. If neither is on sale, ask the AI service agent to add one bottle of each to your cart. Finally, ask the AI service agent to calculate the total tax and fees for the items in the cart.",
@@ -1173,7 +1173,6 @@
         }
       }
     ],
-    "task_id": 19,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1181,7 +1180,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 19
   },
   {
     "Instruction": "You are a health-conscious wine lover (User ID: jane_smith_222). You pick up two bottles of wine. Ask the AI Service Agent to check whether the nutritional features of these two bottles include \"low sugar\". If both bottles are \"low sugar\", ask the AI Service Agent to add two bottles of the one with lower calories to your cart. If both bottles tie for the lowest calorie count, add two bottles of each. If only one bottle is \"low sugar\", ask the AI Service Agent to add two bottles of that one to your cart. If neither bottle is \"low sugar\", ask the AI Service Agent to add one bottle of each to your cart. Finally, ask the AI Service Agent to calculate the total nutritional value and total cost of the items in your cart.",
@@ -1240,7 +1240,6 @@
         }
       }
     ],
-    "task_id": 20,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1248,7 +1247,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 20
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: alex_wilson_333) interested in Italian wines. Focus on the bottle you picked up from the lower shelf. Ask the AI Service Agent to confirm its origin. If it is from Italy, ask the AI Service Agent to check its tax rate. If the tax rate is higher than 5%, ask the AI Service Agent to find other French wines with a tax rate equal to or lower than that, and add the cheapest qualifying bottle to your cart. If there are multiple bottles tied for the lowest price among those that meet the conditions, you want all of them to be added. If the tax rate is 5% or lower, ask the AI Service Agent to add two bottles of this wine to your cart. Finally, ask the AI Service Agent to calculate the total tax amount for the items in your cart.",
@@ -1299,14 +1299,14 @@
         }
       }
     ],
-    "task_id": 21,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 21
   },
   {
     "Instruction": "You are a wine enthusiast who prefers bitter wines (User ID: lisa_taylor_444). You are holding two bottles of wine. Please ask the AI service agent to query the taste characteristics of these two wines. If both are bitter, ask the AI service agent to add two bottles of the one with the lower sugar content to your cart. If both wines are tied for the lowest sugar content, you want two bottles of each to be added. If only one is bitter, ask the AI service agent to add two bottles of that wine to your cart. If neither is bitter, ask the AI service agent to add one bottle of the third wine to the right of the wine in your left hand and one bottle of the third wine to the left of the wine in your right hand. Finally, ask the AI service agent to calculate the total nutritional content of the items in your cart.",
@@ -1357,7 +1357,6 @@
         }
       }
     ],
-    "task_id": 22,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1365,7 +1364,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 22
   },
   {
     "Instruction": "You are a wine connoisseur (User ID: mark_jones_555). You have picked up two bottles of wine one after another. Please ask the AI service agent to check the nutritional content and origin of these two wines. If the origins are the same and both wines are classified as \"low sugar\", ask the AI service agent to add two bottles of the wine with the lower sugar content to your cart. If both wines have the same sugar content, you want two bottles of each to be added. If only one wine is classified as \"low sugar\", ask the AI service agent to add two bottles of the cheapest wine from the same origin as this low-sugar wine to your cart. If there are multiple wines tied for the lowest price among those from the same origin, you want two bottles of each of them to be added. If neither wine is \"low sugar\", ask the AI service agent to add the wine with the lowest sugar content among all wines on sale to your cart. If there are multiple wines tied for the lowest sugar content, you want one of each of them to be added. Finally, ask the AI service agent to calculate the total nutritional value of the items in the cart.",
@@ -1416,7 +1416,6 @@
         }
       }
     ],
-    "task_id": 23,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1424,7 +1423,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 23
   },
   {
     "Instruction": "You are a wine buyer (User ID: emma_davis_666). You are holding two bottles of wine. Ask the AI Service Agent to check the discount status of these two wines. If both wines are on sale, ask the AI Service Agent to add two bottles of the lower-priced one to your cart. If there are multiple wines tied for the lowest price, you want two bottles of each tied item to be added. If only one wine is on sale, ask the AI Service Agent to add one bottle of the discounted wine to your cart, and then add one more bottle of the wine with the lowest discounted price currently in your cart. If multiple items in the cart tie for the lowest discounted price, you want one bottle of each to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -1475,7 +1475,6 @@
         }
       }
     ],
-    "task_id": 24,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1483,7 +1482,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 24
   },
   {
     "Instruction": "You are a wine enthusiast who prefers Italian wines (User ID: david_brown_777). Ask the AI Service Agent to confirm the origin of the bottle from the lower shelf among the wines you are holding. If it is from Italy, ask the AI Service Agent to check its tax rate. If the tax rate is higher than 5%, ask the AI Service Agent to find other Italian wines with a lower tax rate, and add the cheapest one among them to the shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want one of each of them to be added. If the tax rate is 5% or below, ask the AI Service Agent to add two bottles of this wine to the shopping cart. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart, verify which wines on the list haven't been purchased or haven't been purchased in full quantity, and add these wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total tax amount for the items in the shopping cart.",
@@ -1530,14 +1530,14 @@
         }
       }
     ],
-    "task_id": 25,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 25
   },
   {
     "Instruction": "You are a shopper looking for wines with specific flavors (User ID: sarah_green_888). You are holding two bottles of wine. Please ask the AI Service Agent to query the flavor characteristics and nutritional information of these two wines. If both wines are \"sweet\", ask the AI Service Agent to add two bottles of the one with the lower sugar content to your cart. If there is a tie for the lowest sugar content among the sweet wines, add two bottles of each tied item. If only one wine is \"sweet\", ask the AI Service Agent to add two bottles of this sweet wine to your cart. If neither wine is \"sweet\", ask the AI Service Agent to add one bottle of each to your cart. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart, verify which wines on the list are missing or not fully purchased, and add those wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total nutritional content of the items in the shopping cart.",
@@ -1612,7 +1612,6 @@
         }
       }
     ],
-    "task_id": 26,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1620,7 +1619,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 26
   },
   {
     "Instruction": "You are a savvy shopper (User ID: grace_liu_999), currently examining two bottles of wine you are holding. Please ask the AI Service Agent to check the discount status of these two wines. If the bottle from the lower shelf has a discount, have the AI Service Agent add one bottle to your cart. If the bottle from the higher shelf has a discount, have the AI Service Agent add two bottles to your cart. If neither bottle has a discount, have the AI Service Agent add one bottle of the cheaper one to your cart. Next, have the AI Service Agent search for other discounted wines from the same country of origin as the selected wine, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add one of each tied item. Subsequently, have the AI Service Agent check the shopping list and the shopping cart, verify which wines on the list have not been purchased or have not been purchased in sufficient quantity, and add these wines to the cart according to the list. Finally, have the AI Service Agent calculate the total tax for the items in the shopping cart.",
@@ -1747,7 +1747,6 @@
         }
       }
     ],
-    "task_id": 27,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -1755,7 +1754,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 27
   },
   {
     "Instruction": "You are a wine collector who prefers French wines (User ID: grace_liu_999). Regarding the yellowish bottle of wine you are holding in your hand, ask the AI Service Agent to confirm its origin and flavor characteristics, and then verify its price and tax rate. If the tax rate is higher than 5%, ask the AI Service Agent to search for other French wines that have a tax rate no higher than this wine and a price within 50 yuan of this wine's price. If such wines exist, ask the AI Service Agent to add the one with the lowest discounted price among them to the shopping cart. If there are multiple wines tied for the lowest discounted price among those that meet the conditions, you want all of them to be added. If no such wines exist, ask the AI Service Agent to add the wine with the same origin as this bottle and the lowest discounted price to the shopping cart. If there are multiple wines tied for the lowest discounted price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax amount for the items in the shopping cart.",
@@ -1814,14 +1814,14 @@
         }
       }
     ],
-    "task_id": 28,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 28
   },
   {
     "Instruction": "You are a health-conscious consumer (User ID: jack_huang_666) looking for low-calorie wine. You pick up a bottle with a blue cap. Ask the AI Service Agent to query the nutrition information and calorie content of this wine and determine if it carries a \"low-calorie\" label. If it does, ask the AI Service Agent to add one bottle of this wine to your cart. If it does not, ask the AI Service Agent to check the nutrition information of the bottle immediately to its left. If the bottle on the left has lower calories, add it to the cart. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart to verify which wines on the list have not been purchased or have not been purchased in full quantity. Add these wines to the cart according to the list. Then, ask the AI Service Agent to add the wine with the lowest price in the inventory to the cart. If there are multiple wines tied for the lowest price, you want one of each of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the shopping cart.",
@@ -1922,14 +1922,14 @@
         }
       }
     ],
-    "task_id": 29,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 29
   },
   {
     "Instruction": "You are a quality-conscious customer (User ID: alex_wilson_333) who prefers Italian wine. You are holding an Italian wine bottle in your right hand. Please ask the AI Service Agent to confirm the price of this wine. If the price of this wine is below 50 yuan, ask the AI Service Agent to search for a wine from the same origin that is more than 200 yuan more expensive than this one. If such a wine exists, ask the AI Service Agent to add it to your cart. If no such wine exists, ask the AI Service Agent to add the most expensive wine with the same origin and taste as the current bottle to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -1980,14 +1980,14 @@
         }
       }
     ],
-    "task_id": 30,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 30
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: emma_davis_666) looking for sweet wines. You are holding one bottle in each hand. Ask the AI Service Agent to confirm whether both bottles are sweet wines. If both are sweet, have the AI Service Agent add one bottle of each to your cart. If only one is sweet, have the AI Service Agent add that sweet bottle to your cart. If neither is sweet, have the AI Service Agent search the inventory for other sweet wines and add the one with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the cart, verify which wines on the list have not been purchased or are incomplete, and add those wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total tax for the items in the cart.",
@@ -2118,7 +2118,6 @@
         }
       }
     ],
-    "task_id": 31,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2126,7 +2125,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 31
   },
   {
     "Instruction": "You are a shopper (User ID: tom_harris_999) comparing two bottles of wine. You are holding one bottle in each hand. Please ask the AI Service Agent to query which bottle has a higher alcohol content (calories are positively correlated with alcohol content). Ask the AI Service Agent to add the bottle with the higher alcohol content to your cart. Subsequently, ask the AI Service Agent to find a wine that shares at least one flavor profile with the unselected bottle, and add the wine with the highest alcohol content among them to your cart. If there are multiple wines tied for the highest alcohol content among those that meet the conditions, add one of each of those tied wines. Next, ask the AI Service Agent to check the shopping list and the cart, verify which wines on the list have not been purchased or are insufficient in quantity, and add these wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the cart.",
@@ -2237,7 +2237,6 @@
         }
       }
     ],
-    "task_id": 32,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2245,7 +2244,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 32
   },
   {
     "Instruction": "You are a shopper (User ID: sarah_green_888) looking for a wine suitable for pairing with desserts. Focus on the bottle of wine from the high shelf that you are holding. Ask the AI Service Agent to confirm whether its taste is sweet. If this wine is sweet, ask the AI Service Agent to add it to your cart. At the same time, ask the AI Service Agent to check if the third bottle immediately to its left is sweet. If it is, ask the AI Service Agent to add that bottle to your cart as well. If it is not, ask the AI Service Agent to select the cheapest sweet wine in the inventory and add it to your cart. If there are multiple sweet wines tied for the lowest price, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
@@ -2304,14 +2304,14 @@
         }
       }
     ],
-    "task_id": 33,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 33
   },
   {
     "Instruction": "You are a shopper (User ID: david_brown_777) looking for a wine that is both sour and from Italy. Ask the AI service agent to confirm which of the two bottles in hand meets this requirement, and add any qualifying bottles to your cart. At the same time, ask the AI service agent to find the lowest-priced wine from all available wines that meets this condition and add it to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI service agent to check the shopping list and your cart, verify which wines on the list haven't been bought or haven't been bought in full quantity, and add these wines to the cart according to the list. Finally, ask the AI service agent to calculate the total amount for the items in your cart.",
@@ -2374,7 +2374,6 @@
         }
       }
     ],
-    "task_id": 34,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2382,7 +2381,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 34
   },
   {
     "Instruction": "You are a customer (User ID: jane_smith_222) looking for discounted wines. You are holding a bottle of wine in your left hand; please ask the AI Service Agent to check if this bottle has a discount. If this bottle has a discount, ask the AI Service Agent to add two bottles of this wine to your cart. Subsequently, ask the AI Service Agent to check if the third bottle to the right of its location on the shelf has a discount; if so, add one bottle to your cart. Next, ask the AI Service Agent to find the wine that offers the greatest savings after discount among all wines and add one bottle to your cart. If multiple wines tie for the greatest savings, you want one bottle of each of those tied items to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -2453,14 +2453,14 @@
         }
       }
     ],
-    "task_id": 35,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 35
   },
   {
     "Instruction": "You are a budget-conscious customer (User ID: ann_donk_143) currently standing in the wine aisle. Ask the AI Service Agent to calculate which of the two bottles in your hand offers greater savings after the discount, and add the bottle with the higher savings to your cart. Next, ask the AI Service Agent to search for wines that share the same nutrition label as this bottle, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Then, ask the AI Service Agent to review the shopping list and the cart, check which wines on the list are missing or have insufficient quantities, and add these wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -2531,7 +2531,6 @@
         }
       }
     ],
-    "task_id": 36,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2539,7 +2538,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 36
   },
   {
     "Instruction": "You are a health-conscious shopper (User ID: jack_huang_666), selecting wines for a party. Ask the AI Service Agent to check whether both of these wines are low-calorie. If both wines are low-calorie, ask the AI Service Agent to add one bottle of the wine with the lowest calories that shares the same origin as these two wines to your cart. If there are multiple wines tied for the lowest calories among those from the same origin, you want all of them to be added. If only one wine is low-calorie, ask the AI Service Agent to add one bottle of the cheapest wine that shares the same flavor as that wine to your cart. If there are multiple wines tied for the cheapest price among those with the same flavor, you want all of them to be added. If neither wine is low-calorie, ask the AI Service Agent to add the wine with the lowest calories among all wines that are on discount and have a tax rate higher than 10% to your cart. If there are multiple wines tied for the lowest calories among those meeting the discount and tax conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total tax amount for the items in your cart.",
@@ -2570,7 +2570,6 @@
         }
       }
     ],
-    "task_id": 37,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2578,7 +2577,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 37
   },
   {
     "Instruction": "You are a wine collector (User ID: diana_park_456), currently selecting wines for your collection. Ask the AI Service Agent to check whether both of these wines in hand are on discount. If both are on discount, ask the AI Service Agent to find, for each of these two wines, the wine with the highest price among those sharing the same discount rate, and add one bottle of each to the cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. If only one is on discount, ask the AI Service Agent to add two bottles of that discounted wine to the cart. If neither is on discount, ask the AI Service Agent to choose the wine with the higher price and add one bottle of it to the cart. If the two wines tie for the higher price, you want one bottle of each to be added. Subsequently, ask the AI Service Agent to check the shopping list and the shopping cart, verify which wines on the list have not been purchased or not purchased in full quantity, and add these wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in the shopping cart.",
@@ -2645,7 +2645,6 @@
         }
       }
     ],
-    "task_id": 38,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2653,7 +2652,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 38
   },
   {
     "Instruction": "You are a nutritionist (User ID: jack_huang_666) selecting wine for a client. Focus on the bottle with the gold cap in your hand. Ask the AI Service Agent to query its nutrition information. If this wine is low-sugar, instruct the AI Service Agent to add two bottles of it to your cart. If this wine is not low-sugar, instruct the AI Service Agent to add one bottle of the third bottle to the right on the shelf where this bottle is located to your cart. Subsequently, ask the AI Service Agent to find the cheapest wine among those with the same discount and origin as the wine just added to your cart, and add three bottles of it to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want three bottles of each of them to be added. Finally, ask the AI Service Agent to calculate the total tax for the items in your cart.",
@@ -2702,14 +2702,14 @@
         }
       }
     ],
-    "task_id": 39,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
     "key": "product_name",
     "value": [
       "Mouton Cadet"
-    ]
+    ],
+    "task_id": 39
   },
   {
     "Instruction": "You are a wine enthusiast (User ID: grace_liu_999), selecting wines for a tasting event. You have picked up two bottles of wine. Please ask the AI Service Agent to confirm whether the country of origin for these two wines is the same. If they come from the same country, ask the AI Service Agent to add the cheapest low-fat wine from that same origin to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If they come from different countries, ask the AI Service Agent to add the cheapest low-fat wine from the same origin as the first bottle you picked up to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to check the shopping list and the cart, verify which wines on the list have not been purchased or are incomplete, and add these wines to the cart according to the list. Finally, ask the AI Service Agent to calculate the total nutritional content of the items in the cart.",
@@ -2804,7 +2804,6 @@
         }
       }
     ],
-    "task_id": 40,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2812,7 +2811,8 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 40
   },
   {
     "Instruction": "You are a budget-conscious shopper (User ID: ann_donk_143) currently in the wine aisle. Ask the AI service agent to compare the prices of the two wines you are holding and add the cheaper bottle to your cart. Then, ask the AI service agent to find the cheapest wine among all wines that share the same tax rate as the previous bottle and are low-sugar, and add one bottle to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add one bottle of each tied item. Next, ask the AI service agent to check the shopping list and the cart, verify which wines on the list have not been purchased or are insufficient in quantity, and add these wines to the cart according to the list. Finally, ask the AI service agent to calculate the total tax for the items in the cart.",
@@ -2879,7 +2879,6 @@
         }
       }
     ],
-    "task_id": 41,
     "image_name": "retail2",
     "image_path": "retail2.mp4",
     "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
@@ -2887,6 +2886,7 @@
     "value": [
       "Mouton Cadet",
       "Riunite Moscato"
-    ]
+    ],
+    "task_id": 41
   }
 ]
