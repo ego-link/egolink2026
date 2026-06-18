@@ -377,6 +377,39 @@
   {
     "type": "function",
     "function": {
+      "tool_name": "find_products_by_allergen",
+      "description": "Find all products that contain a specific allergen.",
+      "parameters": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "allergen": {
+            "type": "string",
+            "enum": [
+              "alcohol",
+              "barley",
+              "coconut",
+              "egg",
+              "garlic",
+              "gluten",
+              "grapes",
+              "milk",
+              "nut",
+              "nuts",
+              "soy",
+              "sulfites"
+            ]
+          }
+        },
+        "required": [
+          "allergen"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
       "tool_name": "list_discounted_products",
       "description": "Return all product names where discount < 1.0.",
       "parameters": {

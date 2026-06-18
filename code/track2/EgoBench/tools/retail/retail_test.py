@@ -60,16 +60,17 @@ def print_menu():
     print("[12] Get Tax Rate")
     print("[13] Get Discount")
     print("[14] Get Category")
+    print("[15] Find Products by Allergen")
     print("\n=== Cart Management ===")
-    print("[15] Add to Cart")
-    print("[16] Get Cart Contents")
-    print("[17] Remove from Cart")
-    print("[18] Clear Cart")
+    print("[16] Add to Cart")
+    print("[17] Get Cart Contents")
+    print("[18] Remove from Cart")
+    print("[19] Clear Cart")
     print("\n=== Calculations ===")
-    print("[19] Compute Total Payment")
-    print("[20] Compute Total Tax")
-    print("[21] Compute Total Nutrition")
-    print("[22] Get Shopping List")
+    print("[20] Compute Total Payment")
+    print("[21] Compute Total Tax")
+    print("[22] Compute Total Nutrition")
+    print("[23] Get Shopping List")
     print("\n[0] Exit")
     print("-" * 60)
 
@@ -444,6 +445,20 @@ def test_get_shopping_list(db: RetailDB):
         print(f"  {result.get('message', 'Unknown error')}")
 
 
+def test_find_products_by_allergen(db: RetailDB):
+    """Test find_products_by_allergen method."""
+    allergen = input("Enter allergen (e.g. grapes, milk, gluten, soy, nuts): ").strip()
+    result = db.find_products_by_allergen(allergen)
+    print("\nResult:")
+    names = result.get("product_names", [])
+    if names:
+        print(f"  Found {len(names)} product(s) containing '{allergen}':")
+        for name in names:
+            print(f"    - {name}")
+    else:
+        print(f"  No products found containing '{allergen}'")
+
+
 def show_catalog_summary(db: RetailDB):
     """Show a summary of the catalog."""
     print("\nCatalog Summary:")
@@ -508,20 +523,22 @@ def main():
         elif choice == "14":
             test_get_category(db)
         elif choice == "15":
-            test_add_to_cart(db)
+            test_find_products_by_allergen(db)
         elif choice == "16":
-            test_get_cart(db)
+            test_add_to_cart(db)
         elif choice == "17":
-            test_remove_from_cart(db)
+            test_get_cart(db)
         elif choice == "18":
-            test_clear_cart(db)
+            test_remove_from_cart(db)
         elif choice == "19":
-            test_compute_total_payment(db)
+            test_clear_cart(db)
         elif choice == "20":
-            test_compute_total_tax(db)
+            test_compute_total_payment(db)
         elif choice == "21":
-            test_compute_total_nutrition(db)
+            test_compute_total_tax(db)
         elif choice == "22":
+            test_compute_total_nutrition(db)
+        elif choice == "23":
             test_get_shopping_list(db)
         elif choice == "0":
             print("Goodbye!")
