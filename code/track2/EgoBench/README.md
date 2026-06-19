@@ -25,9 +25,9 @@ In the June 16 version, although the ground-truth annotations have been removed 
 No. The JSON files under EgoBench/scenarios/final, as well as any information contained in them, must not be directly accessed or used by the service agent. The service agent is only allowed to obtain information from the video and the Simulated User’s feedback. In the evaluation workflow, the files under EgoBench/scenarios/final are intended to be used only by the Simulated User. Moreover, the remaining key-value pairs in these files were included merely as supplementary information to assist human annotators’ understanding, and they do not represent the ground truth used in the final evaluation.
 To avoid causing similar confusion for other participants, we will remove irrelevant information from the files under EgoBench/scenarios/final. In addition, during the evaluation phase, we will also strictly examine whether the service agent designed by any participant directly uses information from the files under EgoBench/scenarios/final. Any such use will be considered cheating and handled accordingly.
 
-### Q2:
+#### Q2:
 In the order2 scenario, we still found that the descriptions of four tasks contain taste attributes that do not belong to the predefined enum list. How should we handle these cases?
-### A2:
+#### A2:
 For the final evaluation, when selecting the 50–100 tasks to be included in the participant answer assessment, we will avoid choosing tasks with this issue. Therefore, there is no need to be overly concerned about the answers to these few tasks. You may handle them in whatever way you consider most appropriate.
 
 ### How to Run the Final Evaluation Scenarios (has released on 2026.06.16)
