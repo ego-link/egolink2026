@@ -65,7 +65,6 @@
                 "high_omega3",
                 "vegan",
                 "high_antioxidants",
-                "high_calorie",
                 "high_calories",
                 "high_carbs",
                 "high_fat",
@@ -74,8 +73,7 @@
                 "high_monounsaturated_fat",
                 "high_sodium",
                 "high_sugar",
-                "high_vitaminA",
-                "low_calorie"
+                "high_vitaminA"
               ]
             },
             "description": "Nutritional/health tags."

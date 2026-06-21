@@ -13624,7 +13624,7 @@ retail_init_data6 = {
         "sweet",
         "nutty"
       ],
-      "country_of_origin": "Danmark",
+      "country_of_origin": "Denmark",
       "nutrition": {
         "basis": "PER_100G",
         "serving_size_g": 100.0,
@@ -13639,7 +13639,7 @@ retail_init_data6 = {
       "allergens": [
         "gluten",
         "milk",
-        "nuts"
+        "nut"
       ]
     },
     {
@@ -15094,7 +15094,7 @@ retail_init_data7 = {
         "sweet",
         "nutty"
       ],
-      "country_of_origin": "Danmark",
+      "country_of_origin": "Denmark",
       "nutrition": {
         "basis": "PER_100G",
         "serving_size_g": 100.0,
@@ -15109,7 +15109,7 @@ retail_init_data7 = {
       "allergens": [
         "gluten",
         "milk",
-        "nuts"
+        "nut"
       ]
     },
     {
@@ -16535,7 +16535,7 @@ retail_init_data8 = {
         "sweet",
         "nutty"
       ],
-      "country_of_origin": "Danmark",
+      "country_of_origin": "Denmark",
       "nutrition": {
         "basis": "PER_100G",
         "serving_size_g": 100.0,
@@ -16550,7 +16550,7 @@ retail_init_data8 = {
       "allergens": [
         "gluten",
         "milk",
-        "nuts"
+        "nut"
       ]
     },
     {
