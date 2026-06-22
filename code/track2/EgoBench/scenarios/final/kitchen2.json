@@ -575,7 +575,7 @@
         "parameters": {
           "user_id": "cook_004",
           "ingredient_name": "Dill",
-          "quantity": "0.02"
+          "quantity": "0.1"
         }
       },
       {
@@ -2320,7 +2320,7 @@
         "parameters": {
           "user_id": "cook_007",
           "ingredient_name": "Dill",
-          "quantity": "0.02"
+          "quantity": "0.1"
         }
       },
       {
@@ -2328,7 +2328,7 @@
         "parameters": {
           "user_id": "cook_007",
           "ingredient_name": "Thyme",
-          "quantity": "0.02"
+          "quantity": "0.05"
         }
       },
       {

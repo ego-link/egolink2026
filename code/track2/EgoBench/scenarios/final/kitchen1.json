@@ -48,7 +48,7 @@
         "parameters": {
           "user_id": "cook_009",
           "ingredient_name": "Chicken",
-          "quantity": "2.5"
+          "quantity": "2"
         }
       },
       {
@@ -56,7 +56,7 @@
         "parameters": {
           "user_id": "cook_009",
           "ingredient_name": "Butter",
-          "quantity": "0.1"
+          "quantity": "0.15"
         }
       },
       {
@@ -106,11 +106,11 @@
             },
             {
               "ingredient_name": "Chicken",
-              "quantity": 2.5
+              "quantity": 2
             },
             {
               "ingredient_name": "Butter",
-              "quantity": 0.1
+              "quantity": 0.15
             }
           ]
         }
@@ -361,7 +361,7 @@
         "parameters": {
           "user_id": "cook_010",
           "ingredient_name": "Shrimp",
-          "quantity": "2.0"
+          "quantity": "1.5"
         }
       },
       {
@@ -783,7 +783,7 @@
         "parameters": {
           "user_id": "cook_008",
           "ingredient_name": "Eggs",
-          "quantity": "0.2"
+          "quantity": "4"
         }
       },
       {
@@ -1464,7 +1464,7 @@
         "parameters": {
           "user_id": "cook_001",
           "ingredient_name": "Soy Sauce",
-          "quantity": "0.35"
+          "quantity": "0.4"
         }
       },
       {
@@ -2116,9 +2116,9 @@
       {
         "tool_name": "add_to_shopping_list",
         "parameters": {
-          "user_id": "",
+          "user_id": "cook_003",
           "ingredient_name": "Eggs",
-          "quantity": "0.2"
+          "quantity": "4"
         }
       },
       {
@@ -2314,7 +2314,7 @@
         "parameters": {
           "user_id": "cook_007",
           "ingredient_name": "Asparagus",
-          "quantity": "1.5"
+          "quantity": "1"
         }
       },
       {

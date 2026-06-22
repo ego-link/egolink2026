@@ -294,7 +294,7 @@
         "parameters": {
           "user_id": "cook_003",
           "ingredient_name": "Banana",
-          "quantity": "12"
+          "quantity": "6"
         }
       },
       {
@@ -1281,7 +1281,7 @@
         "parameters": {
           "user_id": "cook_003",
           "ingredient_name": "Cod",
-          "quantity": "2.0"
+          "quantity": "1.8"
         }
       },
       {
