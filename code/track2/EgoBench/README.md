@@ -12,7 +12,7 @@ In light of this change, and to allow sufficient time for participants to rerun 
 
 All other submission requirements remain unchanged. Please ensure that **all kitchen4 submissions are generated based on the updated tasks and database**.
 
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————————— (new notice separator)
 
 The final evaluation test set will be released on **June 16, 2026 at 20:00 (GMT+8)**. All participants are required to submit their result files and technical report by the deadline of **June 22, 2026 at 20:00 (GMT+8)**.
 
