@@ -46,18 +46,6 @@
     "analysis": "Results:\n1. Determine whether the flavor description of the drink topped with a rectangular bread slice is bitter.\n\n2. If it is bitter, filter the menu for drinks labeled as low-calorie and containing 0 fat. Add the drink with the highest sodium content to the order. If multiple drinks tie for the highest sodium content among those that meet the conditions, add all of them to the order.\n\n3. Otherwise, search for gluten-free drinks and add the one with the lowest original price to the order. If multiple drinks tie for the lowest original price, add all of them to the order.\n\n4. Check if the drink at the top right corner of the left menu is included in any set meal. If it is, add that set meal to the order and remove the cheapest single item from the existing order.\n\n5. Calculate the total calories (kcal) for the current order.",
     "ground_truth": [
       {
-        "tool_name": "add_dish_to_order",
-        "parameters": {
-          "user_id": "customer_008",
-          "dish_name": "F",
-          "quantity": 1,
-          "category": "Espresso",
-          "price": 14.2,
-          "tax_rate": 0.05,
-          "discount": 0.8
-        }
-      },
-      {
         "tool_name": "compute_total_nutrition",
         "parameters": {
           "user_id": "customer_008",
@@ -68,10 +56,6 @@
             },
             {
               "dish_name": "Cold Brew & Cheesecake Set",
-              "quantity": 1
-            },
-            {
-              "dish_name": "F",
               "quantity": 1
             }
           ]
@@ -494,42 +478,10 @@
     "analysis": "1. Determine whether the drink with a rectangular bread slice pressed on the rim contains alcohol allergens.\n\n2. If it contains alcohol allergens, search for specialty drinks priced between 68 and 88 yuan with less than 10g of carbohydrates. Add the item with the lowest calorie count to the order. If multiple items tie for the lowest calorie count, add all of them.\n\n3. Otherwise, search the entire menu for gluten-free options. Add the item with the highest discounted price to the order. If multiple items tie for the highest discounted price, add all of them.\n\n4. Calculate the total tax for the current order.\n\n5. If the total tax is less than 5 yuan, additionally add the drink located in the middle of the bottom row on the left menu to the order.",
     "ground_truth": [
       {
-        "tool_name": "add_dish_to_order",
-        "parameters": {
-          "user_id": "customer_007",
-          "dish_name": "Black Tea",
-          "quantity": 1,
-          "category": "Antipasti & Snacks",
-          "price": 78,
-          "tax_rate": 0.11,
-          "discount": 1
-        }
-      },
-      {
-        "tool_name": "add_dish_to_order",
-        "parameters": {
-          "user_id": "customer_007",
-          "dish_name": "Oolong Tea",
-          "quantity": 1,
-          "category": "Antipasti & Snacks",
-          "price": 78,
-          "tax_rate": 0.14,
-          "discount": 1
-        }
-      },
-      {
         "tool_name": "compute_total_tax",
         "parameters": {
           "user_id": "customer_007",
           "dishes": [
-            {
-              "dish_name": "Black Tea",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Oolong Tea",
-              "quantity": 1
-            },
             {
               "dish_name": "White Tea",
               "quantity": 1
@@ -1033,30 +985,6 @@
         "tool_name": "add_dish_to_order",
         "parameters": {
           "user_id": "customer_003",
-          "dish_name": "Latte",
-          "quantity": 1,
-          "category": "Antipasti & Snacks",
-          "price": 35,
-          "tax_rate": 0.11,
-          "discount": 0.8
-        }
-      },
-      {
-        "tool_name": "add_dish_to_order",
-        "parameters": {
-          "user_id": "customer_003",
-          "dish_name": "Mocha",
-          "quantity": 1,
-          "category": "Antipasti & Snacks",
-          "price": 40,
-          "tax_rate": 0.09,
-          "discount": 0.9
-        }
-      },
-      {
-        "tool_name": "add_dish_to_order",
-        "parameters": {
-          "user_id": "customer_003",
           "dish_name": "H",
           "quantity": 1,
           "category": "Cold Brew",
@@ -1076,14 +1004,6 @@
             },
             {
               "dish_name": "Cheesecake",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Latte",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Mocha",
               "quantity": 1
             },
             {
@@ -1116,23 +1036,21 @@
         }
       },
       {
-        "tool_name": "compute_total_payment",
+        "tool_name": "get_dish_price",
         "parameters": {
-          "user_id": "customer_006",
-          "dishes": [
-            {
-              "dish_name": "Cappuccino",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Latte & Tiramisu Set",
-              "quantity": 1
-            },
-            {
-              "dish_name": "H",
-              "quantity": 1
-            }
-          ]
+          "dish_name": "Cappuccino"
+        }
+      },
+      {
+        "tool_name": "get_dish_price",
+        "parameters": {
+          "dish_name": "Latte & Tiramisu Set"
+        }
+      },
+      {
+        "tool_name": "get_dish_price",
+        "parameters": {
+          "dish_name": "H"
         }
       }
     ],
@@ -1175,20 +1093,20 @@
           "user_id": "customer_005",
           "dishes": [
             {
-              "dish_name": "Cheesecake",
-              "quantity": 1
-            },
-            {
-              "dish_name": "T",
-              "quantity": 2
-            },
-            {
               "dish_name": "Cold Brew",
               "quantity": 1
             },
             {
               "dish_name": "Tiramisu",
               "quantity": 1
+            },
+            {
+              "dish_name": "Cheesecake",
+              "quantity": 1
+            },
+            {
+              "dish_name": "T",
+              "quantity": 2
             }
           ]
         }
