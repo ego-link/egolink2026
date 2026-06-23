@@ -6,7 +6,7 @@ We released the ground-truth answers for all test scenarios at **6.23 15:00 (UTC
 To avoid possible ambiguity in the ground truth of certain tasks, the final set of tasks that will be counted toward the official test results is:
 
 - `retail6`: 1–5, 7-9, 11-13, 15-23
-- `retail10`: 1–20
+- `retail10`: 1-4, 6-11, 13-17, 19-23
 - `order2`: 1, 2, 3, 5, 7, 8, 11, 12, 13, 15, 16, 19, 20, 21, 22, 23, 24, 26, 27, 28
 - `kitchen4`: 1–14, 16–21
 - `restaurant5`: 1–20

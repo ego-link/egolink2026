@@ -183,7 +183,7 @@
         "parameters": {
           "user_id": "cook_003",
           "ingredient_name": "Celery",
-          "quantity": "1"
+          "quantity": "0.3"
         }
       },
       {
@@ -191,7 +191,7 @@
         "parameters": {
           "user_id": "cook_003",
           "ingredient_name": "Milk",
-          "quantity": "1"
+          "quantity": "0.3"
         }
       },
       {
@@ -327,12 +327,6 @@
     "Instruction": "Your user ID is cook_002, and today is May 7, 2026. Please ask the AI Service Agent to identify the specific ingredient of the green vegetable in the basin, as well as the specific ingredient of the meat in the basin. Next, ask the AI Service Agent to determine if the storage location of the meat ingredient is in the freezer compartment. If it is, ask the AI Service Agent to find the ingredient with the highest remaining stock among all vegetable ingredients, and add 500g of that ingredient to your shopping list. If there are multiple vegetables tied for the highest remaining stock, add 500g of each of them. Otherwise, ask the AI Service Agent to find the ingredient with the highest dietary fiber content among all ingredients belonging to the fruit category, and add 1000g of that ingredient to your shopping list. If there are multiple fruits tied for the highest dietary fiber content, add 1000g of each of them. Then, ask the AI Service Agent to delete all ingredients in the current shopping list that are more than one week away from expiration. Finally, ask the AI Service Agent to calculate the total sodium content of all ingredients in the current shopping list.",
     "analysis": "1. Identify the specific types of green vegetables and meat in the basin.\n\n2. If the meat is stored in the freezer, find the vegetable ingredient(s) with the highest remaining stock quantity among all vegetables. Add 500g of each qualifying ingredient to the shopping list. If there are multiple vegetables tied for the highest stock among those that meet the conditions, add 500g of each of them.\n\n3. If the meat is not stored in the freezer, find the fruit ingredient(s) with the highest dietary fiber content among all fruits. Add 1000g of each qualifying ingredient to the shopping list. If there are multiple fruits tied for the highest dietary fiber content among those that meet the conditions, add 1000g of each of them.\n\n4. Remove ingredients from the current shopping list that have more than one week remaining until expiration.\n\n5. Calculate the total sodium content of all ingredients in the current shopping list.",
     "ground_truth": [
-      {
-        "tool_name": "get_recipe_ingredients",
-        "parameters": {
-          "recipe_name": "Pork & Chive Dumplings"
-        }
-      },
       {
         "tool_name": "add_to_shopping_list",
         "parameters": {
@@ -762,7 +756,7 @@
         "parameters": {
           "user_id": "cook_002",
           "ingredient_name": "Celery",
-          "quantity": "1.2"
+          "quantity": "0.6"
         }
       },
       {

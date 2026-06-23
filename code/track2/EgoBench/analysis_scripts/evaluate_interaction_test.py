@@ -53,7 +53,7 @@ SCENARIO_FUZZY_FIELDS = {
 # ===================== Selected Scenario Task IDs =====================
 SELECTED_SCENARIO_TASKS = {
     ("retail", 6): list(range(1, 6)) + list(range(7, 10)) + list(range(11, 14)) + list(range(15, 24)),
-    ("retail", 10): list(range(1, 21)),
+    ("retail", 10): list(range(1, 5)) + list(range(6, 12)) + list(range(13, 18)) + list(range(19, 24)),
     ("order", 2): [1, 2, 3, 5, 7, 8, 11, 12, 13, 15, 16, 19, 20, 21, 22, 23, 24, 26, 27, 28],
     ("kitchen", 4): list(range(1, 15)) + list(range(16, 22)),
     ("restaurant", 5): list(range(1, 21)),

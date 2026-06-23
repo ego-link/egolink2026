@@ -19133,16 +19133,12 @@ retail_init_data10 = {
       "user_id": "user_202",
       "items": [
         {
-          "product_name": "blue cheese",
-          "quantity": 1
-        },
-        {
           "product_name": "brie cheese",
           "quantity": 1
         },
         {
           "product_name": "blue cheese",
-          "quantity": 2
+          "quantity": 3
         }
       ]
     },

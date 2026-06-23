@@ -548,6 +548,14 @@
         }
       },
       {
+        "tool_name": "remove_from_cart",
+        "parameters": {
+          "user_id": "user_123",
+          "product_name": "roquefort cheese",
+          "qty": 2
+        }
+      },
+      {
         "tool_name": "compute_total_nutrition",
         "parameters": {
           "user_id": "user_123",
@@ -571,6 +579,10 @@
             {
               "product_name": "Blue Cheese",
               "quantity": 2
+            },
+            {
+              "product_name": "Parmesan Cheese",
+              "quantity": 1
             },
             {
               "product_name": "Brie Cheese",
@@ -976,7 +988,7 @@
       {
         "tool_name": "compute_total_nutrition",
         "parameters": {
-          "user_id": "",
+          "user_id": "user_404",
           "products": [
             {
               "product_name": "Emmental Cheese",
@@ -1183,6 +1195,10 @@
             {
               "product_name": "Cheddar Cheese",
               "quantity": 3
+            },
+            {
+              "product_name": "Basiron Old Amsterdan Cheese",
+              "quantity": 1
             }
           ]
         }
@@ -1467,23 +1483,11 @@
         "tool_name": "add_to_cart",
         "parameters": {
           "user_id": "user_101",
-          "product_name": "Provolone Cheese",
+          "product_name": "Goat Cheese",
           "qty": 1,
           "category": "cheese",
-          "price": 28.8,
-          "tax_rate": 0.09,
-          "discount": 0.8
-        }
-      },
-      {
-        "tool_name": "add_to_cart",
-        "parameters": {
-          "user_id": "user_101",
-          "product_name": "Brie Cheese",
-          "qty": 2,
-          "category": "cheese",
-          "price": 25.8,
-          "tax_rate": 0.05,
+          "price": 26.8,
+          "tax_rate": 0.13,
           "discount": 0.8
         }
       },
@@ -1493,12 +1497,8 @@
           "user_id": "user_101",
           "products": [
             {
-              "product_name": "Provolone Cheese",
+              "product_name": "Goat Cheese",
               "quantity": 1
-            },
-            {
-              "product_name": "Brie Cheese",
-              "quantity": 2
             }
           ]
         }
