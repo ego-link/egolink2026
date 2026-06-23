@@ -421,7 +421,7 @@
         }
       },
       {
-        "tool_name": "compute_total_tax",
+        "tool_name": "compute_total_payment",
         "parameters": {
           "restaurant_name": "Mediterranean Greek Restaurant",
           "user_id": "customer_005",
@@ -1077,11 +1077,27 @@
           "user_id": "customer_001",
           "dishes": [
             {
-              "dish_name": "Avgolemono Soup",
+              "dish_name": "Moussaka",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Spanakopita",
+              "quantity": 3
+            },
+            {
+              "dish_name": "Greek Salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Dessert Pairing Set",
               "quantity": 2
             },
             {
               "dish_name": "Hummus Dip",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Avgolemono Soup",
               "quantity": 2
             },
             {
@@ -1090,26 +1106,6 @@
             },
             {
               "dish_name": "Melitzanosalata",
-              "quantity": 2
-            },
-            {
-              "dish_name": "Spanakopita",
-              "quantity": 2
-            },
-            {
-              "dish_name": "Moussaka",
-              "quantity": 2
-            },
-            {
-              "dish_name": "Spanakopita",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Greek Salad",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Dessert Pairing Set",
               "quantity": 2
             }
           ]
@@ -1219,14 +1215,6 @@
           "user_id": "customer_003",
           "dishes": [
             {
-              "dish_name": "Loukoumades",
-              "quantity": 2
-            },
-            {
-              "dish_name": "Vanilla pudding",
-              "quantity": 2
-            },
-            {
               "dish_name": "Greek Village Roast Chicken Leg",
               "quantity": 2
             },
@@ -1240,7 +1228,7 @@
             },
             {
               "dish_name": "Vanilla pudding",
-              "quantity": 1
+              "quantity": 3
             },
             {
               "dish_name": "Tzatziki",
@@ -1248,6 +1236,10 @@
             },
             {
               "dish_name": "Greek Classic Set",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Loukoumades",
               "quantity": 2
             }
           ]
@@ -1260,14 +1252,6 @@
           "user_id": "customer_003",
           "dishes": [
             {
-              "dish_name": "Loukoumades",
-              "quantity": 2
-            },
-            {
-              "dish_name": "Vanilla pudding",
-              "quantity": 2
-            },
-            {
               "dish_name": "Greek Village Roast Chicken Leg",
               "quantity": 2
             },
@@ -1281,7 +1265,7 @@
             },
             {
               "dish_name": "Vanilla pudding",
-              "quantity": 1
+              "quantity": 3
             },
             {
               "dish_name": "Tzatziki",
@@ -1289,6 +1273,10 @@
             },
             {
               "dish_name": "Greek Classic Set",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Loukoumades",
               "quantity": 2
             }
           ]
@@ -1401,14 +1389,6 @@
           "user_id": "customer_005",
           "dishes": [
             {
-              "dish_name": "Greek Lemon Potatoes",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Greek Salad",
-              "quantity": 1
-            },
-            {
               "dish_name": "Grilled Fish",
               "quantity": 1
             },
@@ -1422,7 +1402,7 @@
             },
             {
               "dish_name": "Greek Salad",
-              "quantity": 2
+              "quantity": 3
             },
             {
               "dish_name": "Vanilla pudding",
@@ -1430,6 +1410,10 @@
             },
             {
               "dish_name": "Mediterranean Feast Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Greek Lemon Potatoes",
               "quantity": 1
             }
           ]
@@ -1442,14 +1426,6 @@
           "user_id": "customer_005",
           "dishes": [
             {
-              "dish_name": "Greek Lemon Potatoes",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Greek Salad",
-              "quantity": 1
-            },
-            {
               "dish_name": "Grilled Fish",
               "quantity": 1
             },
@@ -1463,7 +1439,7 @@
             },
             {
               "dish_name": "Greek Salad",
-              "quantity": 2
+              "quantity": 3
             },
             {
               "dish_name": "Vanilla pudding",
@@ -1471,6 +1447,10 @@
             },
             {
               "dish_name": "Mediterranean Feast Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Greek Lemon Potatoes",
               "quantity": 1
             }
           ]
@@ -2008,7 +1988,7 @@
         "tool_name": "remove_dish_from_order",
         "parameters": {
           "restaurant_name": "Mediterranean Greek Restaurant",
-          "user_id": "ustomer_001",
+          "user_id": "customer_001",
           "dish_name": "Greek Lamb Chops",
           "quantity": 1
         }
@@ -2019,10 +1999,6 @@
           "restaurant_name": "Mediterranean Greek Restaurant",
           "user_id": "customer_001",
           "dishes": [
-            {
-              "dish_name": "Tzatziki",
-              "quantity": 2
-            },
             {
               "dish_name": "Moussaka",
               "quantity": 2
@@ -2037,6 +2013,10 @@
             },
             {
               "dish_name": "Dessert Pairing Set",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Tzatziki",
               "quantity": 2
             }
           ]
@@ -2049,10 +2029,6 @@
           "user_id": "customer_001",
           "dishes": [
             {
-              "dish_name": "Tzatziki",
-              "quantity": 2
-            },
-            {
               "dish_name": "Moussaka",
               "quantity": 2
             },
@@ -2066,6 +2042,10 @@
             },
             {
               "dish_name": "Dessert Pairing Set",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Tzatziki",
               "quantity": 2
             }
           ]
