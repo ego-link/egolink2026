@@ -1,3 +1,25 @@
+## Important Update on Final Evaluation Answers and Selected Scored Tasks
+
+We released the ground-truth answers for all test scenarios at **6.23 15:00 (UTC+8)** under `egolink2026/code/track2/EgoBench/scenarios/test_GT/`.
+
+
+To avoid possible ambiguity in the ground truth of certain tasks, the final set of tasks that will be counted toward the official test results is:
+
+- `retail6`: 1–20
+- `retail10`: 1–20
+- `order2`: 1, 2, 3, 5, 7, 8, 11, 12, 13, 15, 16, 19, 20, 21, 22, 23, 24, 26, 27, 28
+- `kitchen4`: 1–14, 16–21
+- `restaurant5`: 1–20
+
+We have also released the latest evaluation script at:
+
+- `egolink2026/code/track2/EgoBench/analysis_scripts/evaluate_interaction_test.py`
+
+Please note that we have **only checked the tasks listed above** in the final evaluation. We encourage all participants to focus on these selected tasks first. If you find any issue with any of the above tasks, please feel free to open a corresponding issue or submit a PR directly.
+
+The selected teams will be notified by email to provide the corresponding complete technical report **no later than 6.23 24:00 (AOE)**, i.e., **6.24 20:00 (UTC+8)**.
+
+
 ## Final Evaluation Phase
 
 ### Important Notice（**12:00 UTC+8 on June 22**）: EgoLink Track 2 Test Set Database Update and Submission Deadline Extension
