@@ -55,11 +55,26 @@ SELECTED_SCENARIO_TASKS = {
     ("retail", 6): list(range(1, 6)) + list(range(7, 10)) + list(range(11, 14)) + list(range(15, 24)),
     ("retail", 10): list(range(1, 5)) + list(range(6, 12)) + list(range(13, 18)) + list(range(19, 24)),
     ("order", 2): [1, 2, 3, 5, 7, 8, 11, 12, 13, 15, 16, 19, 20, 21, 22, 23, 24, 26, 27, 28],
-    ("kitchen", 4): list(range(1, 15)) + list(range(16, 22)),
-    ("restaurant", 5): list(range(1, 21)),
+    ("kitchen", 4): [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    ("restaurant", 5): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20],
 }
 
 TARGET_MODE = "easy"
+
+# ===================== Merge Similar Items Configuration =====================
+MERGE_NAME_KEYS = [
+    "product_name",
+    "ingredient_name",
+    "dish_name",
+    "set_meal_name",
+    "restaurant_name",
+    "recipe_name",
+    "name",
+]
+
+MERGE_SUM_KEYS = {
+    "quantity",
+}
 
 
 # ===================== Numeric Normalization for Hashing =====================
@@ -76,6 +91,401 @@ def normalize_for_hash(value):
     if isinstance(value, float):
         return int(value) if value.is_integer() else value
     return value
+
+
+# ===================== Generic Helpers =====================
+def try_parse_number(value):
+    try:
+        if isinstance(value, bool):
+            return None
+        if isinstance(value, (int, float)):
+            return float(value)
+        if isinstance(value, str):
+            v = value.strip()
+            if v == "":
+                return None
+            return float(v)
+    except Exception:
+        return None
+    return None
+
+
+def canonical_string(value: Any) -> str:
+    if value is None:
+        return ""
+    return str(value).strip().lower()
+
+
+# ===================== Fuzzy Match Function =====================
+def fuzzy_match_str(query: str, target: str) -> bool:
+    """Generic string fuzzy matching: lowercase containment check"""
+    if not query or not target:
+        return False
+    return query.lower() in target.lower() or target.lower() in query.lower()
+
+
+# ===================== Scenario-based Fuzzy Matching Core Function =====================
+def fuzzy_match_field(gt_name: str, inter_name: str, db_instance: Any, scenario: str) -> bool:
+    """
+    Perform fuzzy matching based on scenario.
+    """
+    if not db_instance:
+        return fuzzy_match_str(inter_name, gt_name)
+
+    if scenario == "kitchen":
+        return gt_name.lower().strip() == inter_name.lower().strip()
+
+    match_method = DB_MATCH_METHOD.get(scenario)
+    set_meal_method = DB_SET_MEAL_MATCH_METHOD.get(scenario)
+
+    def _collect_matching_names(name: str) -> set:
+        all_names = set()
+
+        if match_method and hasattr(db_instance, match_method):
+            try:
+                match_func = getattr(db_instance, match_method)
+                if scenario == "order":
+                    for r_name in db_instance.restaurants:
+                        matches = match_func(r_name, name)
+                        all_names.update(m.name for m in matches)
+                else:
+                    matches = match_func(name)
+                    all_names.update(m.name for m in matches)
+            except Exception:
+                pass
+
+        if set_meal_method and hasattr(db_instance, set_meal_method):
+            try:
+                sm_func = getattr(db_instance, set_meal_method)
+                if scenario == "order":
+                    for r_name in db_instance.restaurants:
+                        matches = sm_func(r_name, name)
+                        all_names.update(m.name for m in matches)
+                else:
+                    matches = sm_func(name)
+                    all_names.update(m.name for m in matches)
+            except Exception:
+                pass
+
+        return all_names
+
+    gt_names = _collect_matching_names(gt_name)
+    inter_names = _collect_matching_names(inter_name)
+
+    if len(gt_names) > 0 and len(inter_names) > 0:
+        return len(gt_names & inter_names) > 0
+
+    return fuzzy_match_str(inter_name, gt_name)
+
+
+# ===================== Merge Similar Items Before Matching =====================
+def get_merge_identity_key(item: dict):
+    """
+    Return the first available name-like key for grouping similar dict items.
+    """
+    for key in MERGE_NAME_KEYS:
+        if key in item and item[key] is not None:
+            return key
+    return None
+
+
+def merge_two_dict_items(base: dict, incoming: dict) -> dict:
+    """
+    Merge two similar dict items:
+    - sum numeric quantity-like fields in MERGE_SUM_KEYS
+    - for other fields, keep existing non-empty value; otherwise fill from incoming
+    """
+    merged = dict(base)
+
+    for k, v in incoming.items():
+        if k in MERGE_SUM_KEYS:
+            a = try_parse_number(merged.get(k))
+            b = try_parse_number(v)
+            if a is not None and b is not None:
+                summed = a + b
+                merged[k] = int(summed) if summed.is_integer() else summed
+            elif merged.get(k) is None:
+                merged[k] = v
+        else:
+            existing = merged.get(k)
+            if existing is None or (isinstance(existing, str) and existing.strip() == ""):
+                merged[k] = v
+
+    return merged
+
+
+def merge_similar_items_in_list(items, db_instance=None, scenario="retail", current_key=None):
+    """
+    Merge similar dict items in a list before matching.
+    Typical use case:
+    [
+        {"dish_name": "apple", "quantity": 1},
+        {"dish_name": "apple", "quantity": 2}
+    ]
+    =>
+    [
+        {"dish_name": "apple", "quantity": 3}
+    ]
+    """
+    if not isinstance(items, list):
+        return items
+
+    normalized_items = [
+        merge_similar_items_in_value(item, db_instance=db_instance, scenario=scenario, current_key=current_key)
+        for item in items
+    ]
+
+    if not normalized_items:
+        return normalized_items
+
+    if not all(isinstance(x, dict) for x in normalized_items):
+        return normalized_items
+
+    merged_groups = []
+
+    for item in normalized_items:
+        name_key = get_merge_identity_key(item)
+        if not name_key:
+            merged_groups.append(item)
+            continue
+
+        current_name = item.get(name_key)
+        merged = False
+
+        for idx, existing in enumerate(merged_groups):
+            if not isinstance(existing, dict):
+                continue
+            existing_name_key = get_merge_identity_key(existing)
+            if existing_name_key != name_key:
+                continue
+
+            existing_name = existing.get(existing_name_key)
+            if isinstance(current_name, str) and isinstance(existing_name, str):
+                same = False
+                if name_key in FUZZY_KEYS.get(scenario, []):
+                    same = fuzzy_match_field(existing_name, current_name, db_instance, scenario)
+                else:
+                    same = canonical_string(existing_name) == canonical_string(current_name)
+
+                if same:
+                    merged_groups[idx] = merge_two_dict_items(existing, item)
+                    merged = True
+                    break
+            else:
+                if current_name == existing_name:
+                    merged_groups[idx] = merge_two_dict_items(existing, item)
+                    merged = True
+                    break
+
+        if not merged:
+            merged_groups.append(item)
+
+    def sort_key(x):
+        if isinstance(x, dict):
+            name_key = get_merge_identity_key(x)
+            if name_key:
+                return canonical_string(x.get(name_key))
+        return json.dumps(normalize_for_hash(x), ensure_ascii=False, sort_keys=True, default=str)
+
+    return sorted(merged_groups, key=sort_key)
+
+
+def merge_similar_items_in_value(value, db_instance=None, scenario="retail", current_key=None):
+    """
+    Recursively merge similar items in complex parameter values.
+    """
+    if isinstance(value, dict):
+        return {
+            k: merge_similar_items_in_value(v, db_instance=db_instance, scenario=scenario, current_key=k)
+            for k, v in value.items()
+        }
+    if isinstance(value, list):
+        return merge_similar_items_in_list(value, db_instance=db_instance, scenario=scenario, current_key=current_key)
+    if isinstance(value, tuple):
+        return [
+            merge_similar_items_in_value(v, db_instance=db_instance, scenario=scenario, current_key=current_key)
+            for v in value
+        ]
+    return value
+
+
+def normalize_call_parameters_before_match(params, db_instance=None, scenario="retail"):
+    """
+    Normalize parameters before comparison:
+    1. recursively process nested values
+    2. merge similar items in lists
+    """
+    if not isinstance(params, dict):
+        return params
+    return merge_similar_items_in_value(params, db_instance=db_instance, scenario=scenario)
+
+
+# ===================== Strict / Exact Comparison Helpers =====================
+def compare_parameters_recursive_exact(
+    gt_val: Any,
+    inter_val: Any,
+    db_instance: Any = None,
+    scenario: str = "retail",
+    current_key: str = None
+) -> bool:
+    """
+    Exact recursive comparison.
+    For list:
+    - unordered exact matching only
+    For fuzzy keys:
+    - exact means normalized string equality, NOT fuzzy db matching
+    """
+    if type(gt_val) != type(inter_val):
+        try:
+            if isinstance(gt_val, (str, int, float)) and isinstance(inter_val, (str, int, float)):
+                return float(gt_val) == float(inter_val)
+        except (ValueError, TypeError):
+            pass
+        return False
+
+    if isinstance(gt_val, list):
+        gt_val = merge_similar_items_in_list(gt_val, db_instance, scenario, current_key)
+        inter_val = merge_similar_items_in_list(inter_val, db_instance, scenario, current_key)
+
+        if len(gt_val) != len(inter_val):
+            return False
+
+        inter_used = [False] * len(inter_val)
+        for gt_item in gt_val:
+            found = False
+            for j, inter_item in enumerate(inter_val):
+                if inter_used[j]:
+                    continue
+                if compare_parameters_recursive_exact(gt_item, inter_item, db_instance, scenario, current_key):
+                    inter_used[j] = True
+                    found = True
+                    break
+            if not found:
+                return False
+        return True
+
+    if isinstance(gt_val, dict):
+        gt_val = merge_similar_items_in_value(gt_val, db_instance, scenario, current_key)
+        inter_val = merge_similar_items_in_value(inter_val, db_instance, scenario, current_key)
+
+        if set(gt_val.keys()) != set(inter_val.keys()):
+            return False
+
+        for key, g_val in gt_val.items():
+            i_val = inter_val[key]
+            if not compare_parameters_recursive_exact(g_val, i_val, db_instance, scenario, key):
+                return False
+        return True
+
+    if isinstance(gt_val, str):
+        if current_key in FUZZY_KEYS.get(scenario, []):
+            return canonical_string(gt_val) == canonical_string(inter_val)
+        return gt_val == inter_val
+
+    return gt_val == inter_val
+
+
+# ===================== Recursive Parameter Comparison =====================
+def compare_parameters_recursive(
+    gt_val: Any,
+    inter_val: Any,
+    db_instance: Any = None,
+    scenario: str = "retail",
+    current_key: str = None
+) -> bool:
+    """
+    Recursively compare two parameter values.
+
+    For list:
+    1. unordered exact matching first
+    2. remaining unmatched elements use unordered fuzzy matching
+    """
+    if type(gt_val) != type(inter_val):
+        try:
+            if isinstance(gt_val, (str, int, float)) and isinstance(inter_val, (str, int, float)):
+                return float(gt_val) == float(inter_val)
+        except (ValueError, TypeError):
+            pass
+        return False
+
+    if isinstance(gt_val, list):
+        gt_val = merge_similar_items_in_list(gt_val, db_instance, scenario, current_key)
+        inter_val = merge_similar_items_in_list(inter_val, db_instance, scenario, current_key)
+
+        if len(gt_val) != len(inter_val):
+            return False
+
+        gt_exact_matched = [False] * len(gt_val)
+        inter_matched = [False] * len(inter_val)
+
+        # Step 1: unordered exact match first
+        for i, gt_item in enumerate(gt_val):
+            for j, inter_item in enumerate(inter_val):
+                if inter_matched[j]:
+                    continue
+                if compare_parameters_recursive_exact(gt_item, inter_item, db_instance, scenario, current_key):
+                    gt_exact_matched[i] = True
+                    inter_matched[j] = True
+                    break
+
+        # Step 2: unmatched items use fuzzy match
+        for i, gt_item in enumerate(gt_val):
+            if gt_exact_matched[i]:
+                continue
+
+            found = False
+            for j, inter_item in enumerate(inter_val):
+                if inter_matched[j]:
+                    continue
+                if compare_parameters_recursive(gt_item, inter_item, db_instance, scenario, current_key):
+                    inter_matched[j] = True
+                    found = True
+                    break
+
+            if not found:
+                return False
+
+        return True
+
+    if isinstance(gt_val, dict):
+        gt_val = merge_similar_items_in_value(gt_val, db_instance, scenario, current_key)
+        inter_val = merge_similar_items_in_value(inter_val, db_instance, scenario, current_key)
+
+        if set(gt_val.keys()) != set(inter_val.keys()):
+            return False
+
+        for key, g_val in gt_val.items():
+            i_val = inter_val[key]
+            if key in FUZZY_KEYS.get(scenario, []):
+                if isinstance(g_val, str):
+                    if not fuzzy_match_field(g_val, i_val, db_instance, scenario):
+                        return False
+                else:
+                    if not compare_parameters_recursive(g_val, i_val, db_instance, scenario, key):
+                        return False
+            else:
+                if not compare_parameters_recursive(g_val, i_val, db_instance, scenario, key):
+                    return False
+        return True
+
+    if isinstance(gt_val, str):
+        if current_key in FUZZY_KEYS.get(scenario, []):
+            return gt_val.lower().strip() == inter_val.lower().strip()
+        return gt_val == inter_val
+
+    return gt_val == inter_val
+
+
+# ===================== Parameter Comparison Wrapper =====================
+def compare_parameters_with_fuzzy_match(
+    gt_params: Dict[str, Any],
+    interaction_params: Dict[str, Any],
+    db_instance: Any = None,
+    scenario: str = "retail"
+) -> bool:
+    gt_params = normalize_call_parameters_before_match(gt_params, db_instance, scenario)
+    interaction_params = normalize_call_parameters_before_match(interaction_params, db_instance, scenario)
+    return compare_parameters_recursive(gt_params, interaction_params, db_instance, scenario)
 
 
 # ===================== Database Hash Calculation =====================
@@ -206,9 +616,10 @@ def calculate_db_hash(db_instance):
 
 
 # ===================== Ground Truth Tool Call Simplification =====================
-def simplify_tool_calls(db_instance, tool_calls):
+def simplify_tool_calls(db_instance, tool_calls, scenario="retail"):
     """
     Simplify ground truth tool calls, keeping only parameters needed by database methods.
+    Also normalize parameters by merging similar items before matching/execution.
     """
     simplified_calls = []
     for tool_call in tool_calls:
@@ -220,12 +631,18 @@ def simplify_tool_calls(db_instance, tool_calls):
                 method = getattr(db_instance, method_name)
                 sig = inspect.signature(method)
                 valid_params = {k: v for k, v in params.items() if k in sig.parameters}
+                valid_params = normalize_call_parameters_before_match(valid_params, db_instance, scenario)
                 simplified_calls.append({
                     "tool_name": method_name,
                     "parameters": valid_params
                 })
             else:
-                simplified_calls.append(tool_call)
+                tool_call_copy = dict(tool_call)
+                if "parameters" in tool_call_copy:
+                    tool_call_copy["parameters"] = normalize_call_parameters_before_match(
+                        tool_call_copy.get("parameters", {}), db_instance, scenario
+                    )
+                simplified_calls.append(tool_call_copy)
         except Exception:
             simplified_calls.append(tool_call)
 
@@ -233,8 +650,8 @@ def simplify_tool_calls(db_instance, tool_calls):
 
 
 # ===================== Tool Execution Function =====================
-def execute_tool_chain(db_instance, tool_calls):
-    """Execute tool call chain with parameter filtering."""
+def execute_tool_chain(db_instance, tool_calls, scenario="retail"):
+    """Execute tool call chain with parameter filtering and pre-merge normalization."""
     results = []
     for tool_call in tool_calls:
         try:
@@ -245,6 +662,7 @@ def execute_tool_chain(db_instance, tool_calls):
                 method = getattr(db_instance, method_name)
                 sig = inspect.signature(method)
                 valid_params = {k: v for k, v in params.items() if k in sig.parameters}
+                valid_params = normalize_call_parameters_before_match(valid_params, db_instance, scenario)
 
                 result = method(**valid_params)
                 results.append({
@@ -270,142 +688,11 @@ def execute_tool_chain(db_instance, tool_calls):
     return results
 
 
-# ===================== Fuzzy Match Function =====================
-def fuzzy_match_str(query: str, target: str) -> bool:
-    """Generic string fuzzy matching: lowercase containment check"""
-    if not query or not target:
-        return False
-    return query.lower() in target.lower() or target.lower() in query.lower()
-
-
-# ===================== Recursive Parameter Comparison =====================
-def compare_parameters_recursive(
-    gt_val: Any,
-    inter_val: Any,
-    db_instance: Any = None,
-    scenario: str = "retail",
-    current_key: str = None
-) -> bool:
-    """
-    Recursively compare two parameter values.
-    """
-    if type(gt_val) != type(inter_val):
-        try:
-            if isinstance(gt_val, (str, int, float)) and isinstance(inter_val, (str, int, float)):
-                return float(gt_val) == float(inter_val)
-        except (ValueError, TypeError):
-            pass
-        return False
-
-    if isinstance(gt_val, list):
-        if len(gt_val) != len(inter_val):
-            return False
-
-        gt_matched = [False] * len(gt_val)
-        inter_matched = [False] * len(inter_val)
-
-        for i, gt_item in enumerate(gt_val):
-            for j, inter_item in enumerate(inter_val):
-                if not inter_matched[j] and compare_parameters_recursive(gt_item, inter_item, db_instance, scenario, current_key):
-                    gt_matched[i] = True
-                    inter_matched[j] = True
-                    break
-        return all(gt_matched)
-
-    if isinstance(gt_val, dict):
-        if set(gt_val.keys()) != set(inter_val.keys()):
-            return False
-
-        for key, g_val in gt_val.items():
-            i_val = inter_val[key]
-            if key in FUZZY_KEYS.get(scenario, []):
-                if isinstance(g_val, str):
-                    if not fuzzy_match_field(g_val, i_val, db_instance, scenario):
-                        return False
-                else:
-                    if not compare_parameters_recursive(g_val, i_val, db_instance, scenario, key):
-                        return False
-            else:
-                if not compare_parameters_recursive(g_val, i_val, db_instance, scenario, key):
-                    return False
-        return True
-
-    if isinstance(gt_val, str):
-        if current_key in FUZZY_KEYS.get(scenario, []):
-            return gt_val.lower().strip() == inter_val.lower().strip()
-        return gt_val == inter_val
-
-    return gt_val == inter_val
-
-
-# ===================== Scenario-based Fuzzy Matching Core Function =====================
-def fuzzy_match_field(gt_name: str, inter_name: str, db_instance: Any, scenario: str) -> bool:
-    """
-    Perform fuzzy matching based on scenario.
-    """
-    if not db_instance:
-        return fuzzy_match_str(inter_name, gt_name)
-
-    if scenario == "kitchen":
-        return gt_name.lower().strip() == inter_name.lower().strip()
-
-    match_method = DB_MATCH_METHOD.get(scenario)
-    set_meal_method = DB_SET_MEAL_MATCH_METHOD.get(scenario)
-
-    def _collect_matching_names(name: str) -> set:
-        all_names = set()
-
-        if match_method and hasattr(db_instance, match_method):
-            try:
-                match_func = getattr(db_instance, match_method)
-                if scenario == "order":
-                    for r_name in db_instance.restaurants:
-                        matches = match_func(r_name, name)
-                        all_names.update(m.name for m in matches)
-                else:
-                    matches = match_func(name)
-                    all_names.update(m.name for m in matches)
-            except Exception:
-                pass
-
-        if set_meal_method and hasattr(db_instance, set_meal_method):
-            try:
-                sm_func = getattr(db_instance, set_meal_method)
-                if scenario == "order":
-                    for r_name in db_instance.restaurants:
-                        matches = sm_func(r_name, name)
-                        all_names.update(m.name for m in matches)
-                else:
-                    matches = sm_func(name)
-                    all_names.update(m.name for m in matches)
-            except Exception:
-                pass
-
-        return all_names
-
-    gt_names = _collect_matching_names(gt_name)
-    inter_names = _collect_matching_names(inter_name)
-
-    if len(gt_names) > 0 and len(inter_names) > 0:
-        return len(gt_names & inter_names) > 0
-
-    return fuzzy_match_str(inter_name, gt_name)
-
-
-# ===================== Parameter Comparison Wrapper =====================
-def compare_parameters_with_fuzzy_match(
-    gt_params: Dict[str, Any],
-    interaction_params: Dict[str, Any],
-    db_instance: Any = None,
-    scenario: str = "retail"
-) -> bool:
-    return compare_parameters_recursive(gt_params, interaction_params, db_instance, scenario)
-
-
 # ===================== Tool Call Comparison =====================
 def compare_tool_calls(ground_truth_calls, interaction_calls, db_instance=None, scenario="retail"):
     """
     Compare tool calls.
+    Before matching, merge similar items in parameters.
     """
     def extract_call_info(call):
         if isinstance(call, dict):
@@ -420,13 +707,17 @@ def compare_tool_calls(ground_truth_calls, interaction_calls, db_instance=None, 
             try:
                 method = getattr(db, tool_name)
                 sig = inspect.signature(method)
-                return {k: v for k, v in params.items() if k in sig.parameters}
+                params = {k: v for k, v in params.items() if k in sig.parameters}
             except Exception:
                 pass
-        return params
+        return normalize_call_parameters_before_match(params, db, scenario)
 
     try:
         gt_calls = [extract_call_info(call) for call in ground_truth_calls]
+        for call in gt_calls:
+            call["parameters"] = normalize_call_parameters_before_match(
+                call.get("parameters", {}), db_instance, scenario
+            )
 
         interaction_only_calls = []
         for entry in interaction_calls:
@@ -653,7 +944,7 @@ def evaluate_interaction_success(
         }
 
         db_instance_for_matching = get_init_db(scenario, args.scenario_number)
-        gt_tool_calls = simplify_tool_calls(db_instance_for_matching, gt_tool_calls_raw)
+        gt_tool_calls = simplify_tool_calls(db_instance_for_matching, gt_tool_calls_raw, scenario=scenario)
 
         matches, total_gt, total_interactions = compare_tool_calls(
             gt_tool_calls, interaction_tool_calls, db_instance_for_matching, scenario
@@ -683,7 +974,7 @@ def evaluate_interaction_success(
         result_success = False
         try:
             gt_db = get_init_db(scenario, args.scenario_number)
-            gt_tool_calls = execute_tool_chain(gt_db, gt_tool_calls)
+            gt_tool_calls = execute_tool_chain(gt_db, gt_tool_calls, scenario=scenario)
             gt_hash = calculate_db_hash(gt_db)
 
             interaction_db = get_init_db(scenario, args.scenario_number)
@@ -694,7 +985,7 @@ def evaluate_interaction_success(
                         interaction_only_calls.extend(entry["calls"])
                     elif "call" in entry:
                         interaction_only_calls.append(entry["call"])
-            interaction_only_calls = execute_tool_chain(interaction_db, interaction_only_calls)
+            interaction_only_calls = execute_tool_chain(interaction_db, interaction_only_calls, scenario=scenario)
             interaction_hash = calculate_db_hash(interaction_db)
 
             detailed_result["result_based"].update({

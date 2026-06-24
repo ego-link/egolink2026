@@ -28,21 +28,9 @@
         }
       },
       {
-        "tool_name": "add_to_cart",
+        "tool_name": "find_products_by_country_of_origin",
         "parameters": {
-          "user_id": "user_123",
-          "product_name": "Camembert Cheese",
-          "qty": 1,
-          "category": "cheese",
-          "price": 22.8,
-          "tax_rate": 0.06,
-          "discount": 0.9
-        }
-      },
-      {
-        "tool_name": "get_country_of_origin",
-        "parameters": {
-          "product_name": "Gruyere AOP Cheese"
+          "country": "Switzerland"
         }
       },
       {
@@ -75,22 +63,6 @@
           "user_id": "user_123",
           "products": [
             {
-              "product_name": "Camembert Cheese",
-              "quantity": 1
-            },
-            {
-              "product_name": "Brie Cheese",
-              "quantity": 2
-            },
-            {
-              "product_name": "Camembert Cheese",
-              "quantity": 1
-            },
-            {
-              "product_name": "Goat Cheese",
-              "quantity": 3
-            },
-            {
               "product_name": "Cheddar Cheese",
               "quantity": 1
             },
@@ -113,6 +85,18 @@
             {
               "product_name": "Roquefort Cheese",
               "quantity": 2
+            },
+            {
+              "product_name": "Camembert Cheese",
+              "quantity": 1
+            },
+            {
+              "product_name": "Brie Cheese",
+              "quantity": 2
+            },
+            {
+              "product_name": "Goat Cheese",
+              "quantity": 3
             }
           ]
         }
@@ -392,9 +376,9 @@
         }
       },
       {
-        "tool_name": "get_country_of_origin",
+        "tool_name": "find_products_by_country_of_origin",
         "parameters": {
-          "product_name": "Basiron Gouda Cheese"
+          "country": "Netherlands"
         }
       },
       {
@@ -750,9 +734,9 @@
         }
       },
       {
-        "tool_name": "get_country_of_origin",
+        "tool_name": "find_products_by_country_of_origin",
         "parameters": {
-          "product_name": "Basiron Gouda Cheese"
+          "country": "Switzerland"
         }
       },
       {
@@ -956,9 +940,9 @@
         }
       },
       {
-        "tool_name": "get_country_of_origin",
+        "tool_name": "find_products_by_country_of_origin",
         "parameters": {
-          "product_name": "Gruyere AOP Cheese"
+          "country": "Switzerland"
         }
       },
       {
@@ -1052,9 +1036,21 @@
         }
       },
       {
-        "tool_name": "get_taste",
+        "tool_name": "find_products_by_taste",
         "parameters": {
-          "product_name": "Emmi Gruyere Cheese"
+          "taste": "savory"
+        }
+      },
+      {
+        "tool_name": "find_products_by_taste",
+        "parameters": {
+          "taste": "creamy"
+        }
+      },
+      {
+        "tool_name": "find_products_by_taste",
+        "parameters": {
+          "taste": "nutty"
         }
       },
       {
@@ -1521,18 +1517,18 @@
         "tool_name": "add_to_cart",
         "parameters": {
           "user_id": "user_303",
-          "product_name": "Goat Cheese",
+          "product_name": "Provolone Cheese",
           "qty": 1,
           "category": "cheese",
-          "price": 26.8,
-          "tax_rate": 0.13,
+          "price": 28.8,
+          "tax_rate": 0.09,
           "discount": 0.8
         }
       },
       {
-        "tool_name": "get_country_of_origin",
+        "tool_name": "find_products_by_country_of_origin",
         "parameters": {
-          "product_name": "Switzerland Swiss Cheese"
+          "country": "Switzerland"
         }
       },
       {
@@ -1549,7 +1545,7 @@
               "quantity": 2
             },
             {
-              "product_name": "Goat Cheese",
+              "product_name": "Provolone Cheese",
               "quantity": 1
             }
           ]
@@ -1686,18 +1682,6 @@
         }
       },
       {
-        "tool_name": "add_to_cart",
-        "parameters": {
-          "user_id": "user_606",
-          "product_name": "Mystic Valley Cheese",
-          "qty": 2,
-          "category": "cheese",
-          "price": 25.8,
-          "tax_rate": 0.08,
-          "discount": 1
-        }
-      },
-      {
         "tool_name": "compute_total_nutrition",
         "parameters": {
           "user_id": "user_606",
@@ -1724,7 +1708,7 @@
             },
             {
               "product_name": "Mystic Valley Cheese",
-              "quantity": 4
+              "quantity": 2
             }
           ]
         }
