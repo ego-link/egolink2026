@@ -1,12 +1,7 @@
 ## Notice 2026-06-24 13:30 (UTC+8)
 Thank you all very much for raising various questions and feedback regarding the final evaluation set. We have carefully reviewed them one by one and made the corresponding corrections and updates.
 
-We will soon announce the top five teams ranked by test set scores among all participating teams, along with their scores.
-
-The team(s) ultimately invited to submit the full paper will be notified individually by email before 8:00 PM tonight.
-
-In addition, as stated in the submission requirements in the README, test set scores are not the sole criterion for our final selection. Beyond performance on the test set, we will also conduct a comprehensive evaluation based on each team’s preliminary technical report, specific implementation approach, and code quality. We will also take into consideration factors such as the generalization ability and versatility of the proposed technical methods.
-
+We have released the top five teams ranked by test set scores among all participating teams, along with their scores.
 ## 🏆 Top 5 Leaderboard
 
 | Rank | Team | Joint Success Rate | Micro Accuracy | Result-based Success Rate | Tool-based Success Rate |
@@ -17,6 +12,9 @@ In addition, as stated in the submission requirements in the README, test set sc
 | 🏅 4 | **uestc_goat** | 0.667 | 0.795 | 0.740 | 0.688 |
 | 🏅 5 | **EgoMinds** | 0.573 | 0.724 | 0.635 | 0.583 |
 
+The team(s) ultimately invited to submit the full paper will be notified individually by email before 8:00 PM tonight.
+
+In addition, as stated in the submission requirements in the README, test set scores are not the sole criterion for our final selection. Beyond performance on the test set, we will also conduct a comprehensive evaluation based on each team’s preliminary technical report, specific implementation approach, and code quality. We will also take into consideration factors such as the generalization ability and versatility of the proposed technical methods.
 
 
 ## Important Update on Final Evaluation Answers and Selected Scored Tasks
