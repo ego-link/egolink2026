@@ -856,7 +856,7 @@
         "tool_name": "add_recipe_to_menu",
         "parameters": {
           "user_id": "cook_005",
-          "recipe_name": "Tofu Soup"
+          "recipe_name": "Egg & Spinach Frittata"
         }
       },
       {
@@ -880,7 +880,7 @@
         "parameters": {
           "user_id": "cook_005",
           "recipes": [
-            "Tofu Soup",
+            "Egg & Spinach Frittata",
             "Shrimp & Asparagus Stir-fry",
             "Yogurt & Berry Parfait",
             "Lamb & Potato Stew"

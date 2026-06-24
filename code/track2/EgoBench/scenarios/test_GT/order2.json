@@ -1777,7 +1777,7 @@
         "parameters": {
           "restaurant_name": "Mediterranean Greek Restaurant",
           "user_id": "customer_009",
-          "dish_name": "Greek Lemon Potatoes",
+          "dish_name": "Lentil Soup",
           "quantity": 1,
           "category": "Sides",
           "price": 48,
@@ -1817,7 +1817,7 @@
               "quantity": 2
             },
             {
-              "dish_name": "Greek Lemon Potatoes",
+              "dish_name": "Lentil Soup",
               "quantity": 1
             }
           ]
@@ -1846,7 +1846,7 @@
               "quantity": 2
             },
             {
-              "dish_name": "Greek Lemon Potatoes",
+              "dish_name": "Lentil Soup",
               "quantity": 1
             }
           ]

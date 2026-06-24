@@ -6,11 +6,11 @@ We have released the top five teams ranked by test set scores among all particip
 
 | Rank | Team | Joint Success Rate | Micro Accuracy | Result-based Success Rate | Tool-based Success Rate |
 |:---:|:---|---:|---:|---:|---:|
-| 🥇 1 | **MediaLab** | **0.792** | 0.897 | 0.865 | **0.802** |
-| 🥈 2 | **GML—MM Group** | 0.760 | **0.898** | 0.844 | 0.771 |
-| 🥉 3 | **BigVisionAgentGoGoGo** | 0.740 | 0.871 | **0.885** | 0.760 |
-| 🏅 4 | **uestc_goat** | 0.667 | 0.795 | 0.740 | 0.688 |
-| 🏅 5 | **EgoMinds** | 0.573 | 0.724 | 0.635 | 0.583 |
+| 🥇 1 | **MediaLab** | **0.844** | **0.916** | 0.875 | **0.854** |
+| 🥈 2 | **GML—MM Group** | 0.823 | 0.914 | 0.854 | 0.823 |
+| 🥉 3 | **BigVisionAgentGoGoGo** | 0.781 | 0.889 | **0.896** | 0.802 |
+| 🏅 4 | **uestc_goat** | 0.729 | 0.814 | 0.760 | 0.740 |
+| 🏅 5 | **EgoMinds** | 0.604 | 0.733 | 0.646 | 0.615 |
 
 The team(s) ultimately invited to submit the full paper will be notified individually by email before 8:00 PM tonight.
 

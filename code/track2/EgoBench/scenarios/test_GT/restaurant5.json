@@ -1116,23 +1116,21 @@
         }
       },
       {
-        "tool_name": "compute_total_payment",
+        "tool_name": "get_dish_price",
         "parameters": {
-          "user_id": "customer_006",
-          "dishes": [
-            {
-              "dish_name": "Cappuccino",
-              "quantity": 1
-            },
-            {
-              "dish_name": "Latte & Tiramisu Set",
-              "quantity": 1
-            },
-            {
-              "dish_name": "H",
-              "quantity": 1
-            }
-          ]
+          "dish_name": "Cappuccino"
+        }
+      },
+      {
+        "tool_name": "get_dish_price",
+        "parameters": {
+          "dish_name": "Latte & Tiramisu Set"
+        }
+      },
+      {
+        "tool_name": "get_dish_price",
+        "parameters": {
+          "dish_name": "H"
         }
       }
     ],

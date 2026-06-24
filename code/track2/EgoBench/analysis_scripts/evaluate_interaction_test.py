@@ -226,6 +226,10 @@ def merge_similar_items_in_list(items, db_instance=None, scenario="retail", curr
     [
         {"dish_name": "apple", "quantity": 3}
     ]
+
+    注意：
+    为保证 list 参数评估时是“无序精准匹配”，这里的“similar”也只按严格相等合并，
+    不再对 name 类字段使用模糊匹配合并。
     """
     if not isinstance(items, list):
         return items
@@ -261,11 +265,7 @@ def merge_similar_items_in_list(items, db_instance=None, scenario="retail", curr
 
             existing_name = existing.get(existing_name_key)
             if isinstance(current_name, str) and isinstance(existing_name, str):
-                same = False
-                if name_key in FUZZY_KEYS.get(scenario, []):
-                    same = fuzzy_match_field(existing_name, current_name, db_instance, scenario)
-                else:
-                    same = canonical_string(existing_name) == canonical_string(current_name)
+                same = canonical_string(existing_name) == canonical_string(current_name)
 
                 if same:
                     merged_groups[idx] = merge_two_dict_items(existing, item)
@@ -396,9 +396,9 @@ def compare_parameters_recursive(
     """
     Recursively compare two parameter values.
 
-    For list:
-    1. unordered exact matching first
-    2. remaining unmatched elements use unordered fuzzy matching
+    关键修改：
+    当参数是 list 时，严格按照“无序精准匹配”进行评估，
+    不再使用任何模糊匹配。
     """
     if type(gt_val) != type(inter_val):
         try:
@@ -409,43 +409,8 @@ def compare_parameters_recursive(
         return False
 
     if isinstance(gt_val, list):
-        gt_val = merge_similar_items_in_list(gt_val, db_instance, scenario, current_key)
-        inter_val = merge_similar_items_in_list(inter_val, db_instance, scenario, current_key)
-
-        if len(gt_val) != len(inter_val):
-            return False
-
-        gt_exact_matched = [False] * len(gt_val)
-        inter_matched = [False] * len(inter_val)
-
-        # Step 1: unordered exact match first
-        for i, gt_item in enumerate(gt_val):
-            for j, inter_item in enumerate(inter_val):
-                if inter_matched[j]:
-                    continue
-                if compare_parameters_recursive_exact(gt_item, inter_item, db_instance, scenario, current_key):
-                    gt_exact_matched[i] = True
-                    inter_matched[j] = True
-                    break
-
-        # Step 2: unmatched items use fuzzy match
-        for i, gt_item in enumerate(gt_val):
-            if gt_exact_matched[i]:
-                continue
-
-            found = False
-            for j, inter_item in enumerate(inter_val):
-                if inter_matched[j]:
-                    continue
-                if compare_parameters_recursive(gt_item, inter_item, db_instance, scenario, current_key):
-                    inter_matched[j] = True
-                    found = True
-                    break
-
-            if not found:
-                return False
-
-        return True
+        # 严格要求 list 使用无序精准匹配，不进行模糊匹配
+        return compare_parameters_recursive_exact(gt_val, inter_val, db_instance, scenario, current_key)
 
     if isinstance(gt_val, dict):
         gt_val = merge_similar_items_in_value(gt_val, db_instance, scenario, current_key)
