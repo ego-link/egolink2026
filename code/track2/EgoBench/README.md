@@ -27,8 +27,8 @@ To avoid possible ambiguity in the ground truth of certain tasks, the final set 
 - `retail6`: 1–5, 7-9, 11-13, 15-23
 - `retail10`: 1-4, 6-11, 13-17, 19-23
 - `order2`: 1, 2, 3, 5, 7, 8, 11, 12, 13, 15, 16, 19, 20, 21, 22, 23, 24, 26, 27, 28
-- `kitchen4`: 1–14, 16–21
-- `restaurant5`: 1–20
+- `kitchen4`: 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20
+- `restaurant5`: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 20
 
 We have also released the latest evaluation script at:
 
