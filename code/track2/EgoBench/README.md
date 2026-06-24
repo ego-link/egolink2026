@@ -1,3 +1,24 @@
+## Notice 2026-06-24 13:30 (UTC+8)
+Thank you all very much for raising various questions and feedback regarding the final evaluation set. We have carefully reviewed them one by one and made the corresponding corrections and updates.
+
+We will soon announce the top five teams ranked by test set scores among all participating teams, along with their scores.
+
+The team(s) ultimately invited to submit the full paper will be notified individually by email before 8:00 PM tonight.
+
+In addition, as stated in the submission requirements in the README, test set scores are not the sole criterion for our final selection. Beyond performance on the test set, we will also conduct a comprehensive evaluation based on each team’s preliminary technical report, specific implementation approach, and code quality. We will also take into consideration factors such as the generalization ability and versatility of the proposed technical methods.
+
+## 🏆 Top 5 Leaderboard
+
+| Rank | Team | Joint Success Rate | Micro Accuracy | Result-based Success Rate | Tool-based Success Rate |
+|:---:|:---|---:|---:|---:|---:|
+| 🥇 1 | **MediaLab** | **0.792** | 0.897 | 0.865 | **0.802** |
+| 🥈 2 | **GML—MM Group** | 0.760 | **0.898** | 0.844 | 0.771 |
+| 🥉 3 | **BigVisionAgentGoGoGo** | 0.740 | 0.871 | **0.885** | 0.760 |
+| 🏅 4 | **uestc_goat** | 0.667 | 0.795 | 0.740 | 0.688 |
+| 🏅 5 | **EgoMinds** | 0.573 | 0.724 | 0.635 | 0.583 |
+
+
+
 ## Important Update on Final Evaluation Answers and Selected Scored Tasks
 
 We released the ground-truth answers for all test scenarios at **6.23 15:00 (UTC+8)** under `egolink2026/code/track2/EgoBench/scenarios/test_GT/`.
